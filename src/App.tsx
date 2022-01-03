@@ -1,7 +1,15 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import RootRouter from "./navigation/RootRouter";
+import "./assets/styles/reset.css";
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <Link to="/">home</Link>
+      <Link to="/search">search</Link>
+      <RootRouter />
+    </div>
+  );
 }
 
 export default App;
