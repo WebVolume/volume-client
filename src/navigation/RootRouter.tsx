@@ -6,6 +6,7 @@ const RootRouter = () => {
     <Routes>
       <Route path="/" element={<Screens.Home />} />
       <Route path="/search" element={<Screens.Search />} />
+      <Route path='/test' element={<Screens.SignUpModal />} />
     </Routes>
   );
 };

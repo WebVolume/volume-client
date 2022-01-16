@@ -1,0 +1,97 @@
+.SignIn{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000050;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: black;
+  div{
+    width: 25vw;
+  }
+  .or {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 2vh;
+    height: 1vh;
+    margin: 1vh 0;
+  }
+  .or::before,
+  .or::after {
+    content: "";
+    flex-grow: 1;
+    background: black;
+    height: 1px;
+    line-height: 0px;
+    margin: 0px 5px;
+  }
+  
+  .btn , .loginInput{
+    font-size: 1.5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 4vh; 
+    border-radius: 3px;
+    display: table;
+    p{
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+    }
+
+  .modalContainer {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;// fix___
+    width: 25vw;// fix___
+    position: relative;
+    z-index: 201;
+    background: white;
+    padding: 4vh 2vw 4vh 2vw;
+
+    .loginTitle{
+      font-size: 4vh;
+      margin-bottom: 4vh;
+    }
+
+    .loginContainer{
+      display: flex;
+      flex-direction: column;
+      
+      .continueBtn{
+        background: #1472FF;
+        color: white;
+        display: table;
+      }
+    }
+    .simpleLoginContainer{
+      font-size: 2vh;
+      margin-top: 1vh;
+      .googleLoginBtn{
+        border: 1px solid gray;
+      }
+      .kakaoLoginBtn{
+        background: #FFC93E;
+      }
+    }
+    .signUpContainer{
+      display: flex;
+      flex-direction: row;
+      color: gray;
+      height: 3vh;
+      .signUpBtn{
+        text-align: end;
+      }
+    }
+  }
+  
+}

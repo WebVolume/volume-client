@@ -7,6 +7,7 @@ function App() {
     <div>
       <Link to="/">home</Link>
       <Link to="/search">search</Link>
+      <Link to='/test'>testPage</Link>
       <RootRouter />
     </div>
   );
