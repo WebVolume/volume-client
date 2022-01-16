@@ -10,11 +10,9 @@ function Home() {
   const [signInModalVisible, setsingInModalVisible] = useState(false);
   const [signUpModalVisible, setsingUpModalVisible] = useState(false);
   const handleSignInModalVisible = () => {
-    console.log('in Togg')
     setsingInModalVisible(!signInModalVisible)
   }
   const handleSignUpModalVisible = () => {
-    console.log('up Togg')
     setsingUpModalVisible(!signUpModalVisible)
   }
   return (
@@ -23,13 +21,13 @@ function Home() {
       {signUpModalVisible && <SignUpModal handleSignUpModalVisible={handleSignUpModalVisible} />}
       <header className="headerContainer">
         <div className="logoTitle">Volume</div>
-        <div className="signUpBtn" onClick={handleSignUpModalVisible}>Sign up</div>
-        <div className="signInBtn" onClick={handleSignInModalVisible}>Sign in</div>
+        <div className="signUpBtn btn" onClick={handleSignUpModalVisible}>Sign up</div>
+        <div className="signInBtn btn" onClick={handleSignInModalVisible}>Sign in</div>
       </header>
       <main className="mainContainer">
         <div className="logoTitle">Volume</div>
         <img className="logoImg" src={logoImg} alt='로고이미지' />
-        <div className="signUpBtn" onClick={handleSignUpModalVisible}><p>Sign Up</p></div>
+        <div className="signUpBtn btn" onClick={handleSignUpModalVisible}><p>Sign Up</p></div>
       </main>
     </div>
   );
