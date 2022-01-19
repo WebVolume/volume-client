@@ -16,18 +16,18 @@ function Home() {
     setsingUpModalVisible(!signUpModalVisible)
   }
   return (
-    < div className="homeContainer" >
+    < div className="home-wrapper" >
       {signInModalVisible && <SignInModal handleSignInModalVisible={handleSignInModalVisible} />}
       {signUpModalVisible && <SignUpModal handleSignUpModalVisible={handleSignUpModalVisible} />}
-      <header className="headerContainer">
-        <div className="logoTitle">Volume</div>
-        <div className="signUpBtn btn" onClick={handleSignUpModalVisible}>Sign up</div>
-        <div className="signInBtn btn" onClick={handleSignInModalVisible}>Sign in</div>
+      <header className="header-container">
+        <div className="header-container__logo-title">Volume</div>
+        <button className="header-container__signup-btn btn" onClick={handleSignUpModalVisible}>Sign up</button>
+        <button className="header-container__signin-btn btn" onClick={handleSignInModalVisible}>Sign in</button>
       </header>
-      <main className="mainContainer">
-        <div className="logoTitle">Volume</div>
-        <img className="logoImg" src={logoImg} alt='로고이미지' />
-        <div className="signUpBtn btn" onClick={handleSignUpModalVisible}><p>Sign Up</p></div>
+      <main className="main-container">
+        <p className="main-container__logo-title">Volume</p>
+        <img className="main-container__logo-img" src={logoImg} alt='로고이미지' />
+        <button className="main-container__signup-btn btn" onClick={handleSignUpModalVisible}><p>Sign Up</p></button>
       </main>
     </div>
   );
