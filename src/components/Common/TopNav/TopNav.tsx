@@ -1,15 +1,14 @@
-import SearchBar from "./SearchBar";
-import "./TopNav.scss";
-
 import FolderIcoSrc from "@ico/folder.png";
 import MypageIcoSrc from "@ico/people.png";
 import { Link } from "react-router-dom";
+import SearchBar from "./SearchBar";
+import "./TopNav.scss";
 
 function TopNav() {
   return (
     <>
       <nav className="top-nav">
-        <a href="/" className="logo mont-600 fs-30">
+        <a href="/" className="logo mont w-600 fs-30">
           Volume
         </a>
 

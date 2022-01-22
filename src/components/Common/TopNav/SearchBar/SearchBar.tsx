@@ -1,7 +1,7 @@
-import "./SearchBar.scss";
 import SearcIconSrc from "@ico/search.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./SearchBar.scss";
 
 function SearchBar() {
   const [inputText, setInputText] = useState("");

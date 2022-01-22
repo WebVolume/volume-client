@@ -6,4 +6,14 @@
   height: 100%;
 
   background-color: $BLACK_18B;
+
+  padding: vw(85px) vw(18px) vw(18px);
+  overflow: scroll;
+
+  &-title-wrapper {
+    &--play-icon {
+      width: vw(19px);
+      margin-left: vw(10px);
+    }
+  }
 }

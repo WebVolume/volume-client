@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding-left: $LAYOUT_LEFT_PADDING;
-  padding-right: get-vw(29px);
+  padding-right: vw(29px);
 
   background-color: black;
 
@@ -21,11 +21,11 @@
   .nav-list {
     &--item {
       & + .nav-list--item {
-        margin-left: get-vw(31px);
+        margin-left: vw(31px);
       }
 
       &_ico {
-        width: get-vw(22.59px);
+        width: vw(22.59px);
       }
     }
   }

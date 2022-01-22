@@ -1,13 +1,13 @@
 .search-bar {
   .input-wrapper {
     border-bottom: 2px solid #fff;
-    margin-right: get-vw(14.41px);
+    margin-right: vw(14.41px);
     input {
       caret-color: white;
       color: #fff;
     }
   }
   .search-icon {
-    width: get-vw(22.59px);
+    width: vw(22.59px);
   }
 }

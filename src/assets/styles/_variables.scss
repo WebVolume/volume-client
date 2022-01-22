@@ -5,6 +5,6 @@ $MAIN_BLACK: #0b0b0b;
 $BLACK_18B: #18181b;
 
 // loyout
-$RIGHT_ASIDE_WIDTH: get-vw(300px);
-$TOP_BAR_HEIGHT: get-vw(119px);
-$LAYOUT_LEFT_PADDING: get-vw(325px);
+$RIGHT_ASIDE_WIDTH: vw(300px);
+$TOP_BAR_HEIGHT: vw(119px);
+$LAYOUT_LEFT_PADDING: vw(325px);
