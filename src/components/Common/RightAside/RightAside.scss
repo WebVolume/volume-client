@@ -1,0 +1,11 @@
+.right-aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: $RIGHT_ASIDE_WIDTH;
+  height: 100%;
+
+  &--top {
+    background-color: white;
+  }
+}

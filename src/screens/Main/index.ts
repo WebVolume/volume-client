@@ -1,3 +1,5 @@
 import Main from "./Main";
+import Dashboard from "./Dashboard";
+import Search from "./Search";
 
-export default Main;
+export { Main, Dashboard, Search };

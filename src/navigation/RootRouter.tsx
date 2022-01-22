@@ -1,16 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 import * as Screens from "../screens";
-import Dashboard from "../screens/Main/Dashboard";
 
 const RootRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<Screens.Home />} />
 
-      <Route path="/main/*" element={<Screens.Main />}>
-        <Route path="" element={<Dashboard />} />
+      <Route path="main/*" element={<Screens.Main.Main />}>
+        <Route path="" element={<Screens.Main.Dashboard />} />
+        <Route path="search" element={<Screens.Main.Search />} />
       </Route>
-      <Route path="/search" element={<Screens.Search />} />
       <Route path="/test" element={<Screens.SignUpModal />} />
     </Routes>
   );

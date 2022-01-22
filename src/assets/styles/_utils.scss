@@ -2,6 +2,6 @@ $vw-viewport: 1920;
 
 @function get-vw($size) {
   $vw-context: $vw-viewport * 0.01 * 1px;
-  @return $size / $vw-context * 1vw;
+  @return calc($size / $vw-context * 1vw);
   @return $size;
 }

@@ -1,5 +1,7 @@
+import "./Dashboard.scss";
+
 function Dashboard() {
-  return <div>홈</div>;
+  return <div className="dashboard-screen">홈</div>;
 }
 
 export default Dashboard;

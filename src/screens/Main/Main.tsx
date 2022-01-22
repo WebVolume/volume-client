@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom";
-import TopNav from "../../components/Common/TopNav/TopNav";
+import * as Common from "@components/Common";
 import "./Main.scss";
 
 function Main() {
   return (
     <div className="main-screen">
-      <TopNav />
+      <Common.TopNav />
+      <Common.RightAside />
       <Outlet />
     </div>
   );
