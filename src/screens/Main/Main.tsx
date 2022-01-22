@@ -7,7 +7,10 @@ function Main() {
     <div className="main-screen">
       <Common.TopNav />
       <Common.RightAside />
-      <Outlet />
+
+      <main className="main-container">
+        <Outlet />
+      </main>
     </div>
   );
 }

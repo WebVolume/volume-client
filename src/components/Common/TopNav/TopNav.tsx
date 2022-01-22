@@ -3,6 +3,7 @@ import "./TopNav.scss";
 
 import FolderIcoSrc from "@ico/folder.png";
 import MypageIcoSrc from "@ico/people.png";
+import { Link } from "react-router-dom";
 
 function TopNav() {
   return (
@@ -19,13 +20,13 @@ function TopNav() {
           </li>
 
           <li className="nav-list--item">
-            <a href="/some">
+            <Link to="/main/library">
               <img
                 className="nav-list--item_ico"
                 src={FolderIcoSrc}
                 alt="폴더 아이콘 이미지"
               />
-            </a>
+            </Link>
           </li>
 
           <li className="nav-list--item">

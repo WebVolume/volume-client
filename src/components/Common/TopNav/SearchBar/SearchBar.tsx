@@ -1,6 +1,7 @@
 import "./SearchBar.scss";
 import SearcIconSrc from "@ico/search.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function SearchBar() {
   const [inputText, setInputText] = useState("");
@@ -14,13 +15,13 @@ function SearchBar() {
         />
       </div>
 
-      <a href="#">
+      <Link to="/main/search" state={{ query: inputText }}>
         <img
           className="search-icon"
           src={SearcIconSrc}
           alt="검색 돋보기 아이콘"
         />
-      </a>
+      </Link>
     </div>
   );
 }
