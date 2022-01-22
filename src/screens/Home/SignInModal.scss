@@ -1,0 +1,70 @@
+@import url("./Modal.scss");
+.signin-dimmer{
+  .modal-container {
+    &__login-title{
+      font-size: 3.2vh;
+      margin-bottom: 4vh;
+      font-family: Montserrat Alternates;
+    }
+    .login-form{
+      &__password-input{
+        margin-bottom: 1vh;
+      }
+      &__message{
+        font-size: 1.3vh;
+        color: #FF1D1D;
+        margin-bottom: 1.4vh;
+      }
+    }
+    .signup-wrapper{
+      display: flex;
+      background: none;
+      height: 5vh;
+      @mixin signup-btn {
+        padding: 1vh 0vw 2.1vh 0vw;
+        margin: 0;
+        color: #969696;
+        font-size: 1.7vh;
+      }
+      &__find-account-btn{
+        @include signup-btn();
+        text-align: start;
+      }
+      &__signup-btn{
+        @include signup-btn();
+        text-align: end;
+      }
+    }
+
+    &__or {
+      display: flex;
+      align-items: center;
+      color: black;
+      font-size: 1.7vh;
+      height: 1vh;
+      margin-bottom: 4.4vh;
+    }
+
+    &__or::before,
+    &__or::after {
+      content: "";
+      flex-grow: 1;
+      background: black;
+      height: 0.1vh;
+      margin: 0vh 0.3vw;
+    }
+
+    .simple-login-form{
+      font-size: 1.7vh;
+      &__google-login-btn{
+        margin-top: 1vh;
+        border: 0.1vh solid #c2c2c2;
+      }
+      &__kakao-login-btn{
+        background: #FFC93E;
+      }
+    }
+    
+  }
+  
+}

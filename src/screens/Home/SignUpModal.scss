@@ -1,0 +1,27 @@
+@import url("./Modal.scss");
+.signup-dimmer{
+  .modal-container {
+    &__signup-title{
+      margin-bottom: 1.7vh;
+    }
+    &__sub-title{
+      font-size: 1.7vh;
+      color: #969696;
+      margin-bottom: 3.6vh;
+    }
+    &__id-input{
+      margin-bottom: 3.9vh;
+    }
+    &__password-auth-input{
+      margin-bottom: 0.5vh;
+    }
+    &__password-comment{
+      font-size: 1.3vh;
+      color: #969696;
+      margin-bottom: 1.3vh;
+    }
+    &__email-input{
+      margin-bottom: 4.6vh;
+    }
+  }
+}
