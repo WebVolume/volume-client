@@ -6,7 +6,8 @@
       "@pages/*": ["./pages/*"],
       "@components/*": ["./components/*"],
       "@styles/*": ["./assets/styles/*"],
-      "@ico/*": ["./assets/images/ico/*"]
+      "@ico/*": ["./assets/images/ico/*"],
+      "@images/*": ["./assets/images/*"]
     }
   }
 }
