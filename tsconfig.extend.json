@@ -5,7 +5,8 @@
       "@app": ["./App.tsx"],
       "@pages/*": ["./pages/*"],
       "@components/*": ["./components/*"],
-      "@styles/*": ["./assets/styles/*"]
+      "@styles/*": ["./assets/styles/*"],
+      "@ico/*": ["./assets/images/ico/*"]
     }
   }
 }

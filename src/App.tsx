@@ -1,6 +1,7 @@
 import RootRouter from "./navigation/RootRouter";
 import "./assets/styles/reset.css";
-import "./App.scss";
+import "./assets/styles/_typography.scss";
+import "./assets/styles/_common.scss";
 
 function App() {
   return <RootRouter />;
