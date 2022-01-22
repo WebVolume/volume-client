@@ -1,55 +1,56 @@
-html{
-  background: url(../../assets/images/background.png) no-repeat center center fixed;
+.home-wrapper {
+  background: url(../../assets/images/background.png) no-repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-.home-wrapper {
+
   color: white;
   height: 100vh;
   font-family: Montserrat Alternates;
-  button{
+  button {
     background: none;
     border: none;
   }
-  button:hover{
+  button:hover {
     cursor: pointer;
     transform: scale(1.03);
   }
 
-  .header-container{
+  .header-container {
     display: flex;
     flex-direction: row;
     padding: 4vh 19.5vw;
-    &__logo-title{
+    &__logo-title {
       font-size: 3.3vh;
       flex: 8;
     }
-    &__signup-btn, &__signin-btn{
+    &__signup-btn,
+    &__signin-btn {
       font-family: Montserrat Alternates;
       font-size: 2.2vh;
       flex: 1;
       color: white;
     }
   }
-  
-  .main-container{
+
+  .main-container {
     position: relative;
     left: 45.9vw;
-    top:28.9vh;
-    &__logo-title{
+    top: 28.9vh;
+    &__logo-title {
       position: absolute;
       font-size: 11.5vh;
       font-weight: 100;
     }
-    &__logo-img{
+    &__logo-img {
       position: absolute;
       width: 39.4vw;
       height: 7.9vh;
       top: 8vh;
     }
-    &__signup-btn{
+    &__signup-btn {
       position: absolute;
       background-color: black;
       color: white;
