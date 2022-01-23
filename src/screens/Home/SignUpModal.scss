@@ -12,6 +12,15 @@
     &__id-input{
       margin-bottom: 3.9vh;
     }
+    //fix__
+    &__id-duplication-check{
+      position: relative;
+      text-align: end;
+      right: 1vw;
+      bottom: 6.8vh;
+      font-size:1.5vh;
+      color: #1472FF;
+    }
     &__password-auth-input{
       margin-bottom: 0.5vh;
     }

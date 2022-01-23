@@ -11,6 +11,7 @@ const SignUpModal = (props: any) => {
           className="modal-container__id-input"
           placeholder="아이디"
         />
+        <div className="modal-container__id-duplication-check">중복 확인</div>
         <input
           type="password"
           className="modal-container__password-input"

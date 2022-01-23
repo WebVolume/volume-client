@@ -20,7 +20,7 @@ function Home() {
       {signInModalVisible && <SignInModal handleSignInModalVisible={handleSignInModalVisible} />}
       {signUpModalVisible && <SignUpModal handleSignUpModalVisible={handleSignUpModalVisible} />}
       <header className="header-container">
-        <div className="header-container__logo-title">Volume</div>
+        <p className="header-container__logo-title">Volume</p>
         <button className="header-container__signup-btn btn" onClick={handleSignUpModalVisible}>Sign up</button>
         <button className="header-container__signin-btn btn" onClick={handleSignInModalVisible}>Sign in</button>
       </header>

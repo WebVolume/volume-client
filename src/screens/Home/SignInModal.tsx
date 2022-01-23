@@ -5,7 +5,7 @@ const SignInModal = (props: any) => {
   return (
     <div className="signin-dimmer" onClick={props.handleSignInModalVisible}>
       <div className="modal-container" onClick={e => e.stopPropagation()}>
-        <h1 className="modal-container__login-title ">Login</h1>
+        <p className="modal-container__login-title ">Login</p>
         <div className="login-form">
           <input
             type="text"
@@ -17,14 +17,14 @@ const SignInModal = (props: any) => {
             className="login-form__password-input"
             placeholder=" 비밀번호를 입력해주세요."
           />
-          <div className="login-form__message">아이디 또는 비밀번호가 달라요.</div>
+          <p className="login-form__message">아이디 또는 비밀번호가 달라요.</p>
           <button className="login-form__continue-btn modal-container__continue-btn">
             계속
           </button>
         </div>
-        <div className="signup-wrapper">
-          <button className="signup-wrapper__find-account-btn">이메일,비밀번호찾기</button>
-          <button className="signup-wrapper__signup-btn ">회원가입하기</button>
+        <div className="find-and-signup-container">
+          <button className="find-and-signup-container__find-account-btn">이메일,비밀번호찾기</button>
+          <button className="find-and-signup-container__signup-btn ">회원가입하기</button>
         </div>
         <p className="modal-container__or">또는</p>
         <div className="simple-login-form">
