@@ -1,38 +1,35 @@
 @import url("./Modal.scss");
-.signup-dimmer{
+.signup-dimmer {
   .modal-container {
-    &__signup-title{
+    &__signup-title {
       margin-bottom: 1.7vh;
     }
-    &__sub-title{
+    &__sub-title {
       font-size: 1.7vh;
       color: #969696;
       margin-bottom: 3.6vh;
     }
-    &__id-input{
+    &__id-input {
       margin-bottom: 3.9vh;
     }
-<<<<<<< HEAD
     //fix__
-    &__id-duplication-check{
+    &__id-duplication-check {
       position: relative;
       text-align: end;
       right: 1vw;
       bottom: 6.8vh;
-      font-size:1.5vh;
-      color: #1472FF;
+      font-size: 1.5vh;
+      color: #1472ff;
     }
-=======
->>>>>>> ca9cd1eb5a8ec1675f0cbe88048fdc4478fb94a3
-    &__password-auth-input{
+    &__password-auth-input {
       margin-bottom: 0.5vh;
     }
-    &__password-comment{
+    &__password-comment {
       font-size: 1.3vh;
       color: #969696;
       margin-bottom: 1.3vh;
     }
-    &__email-input{
+    &__email-input {
       margin-bottom: 4.6vh;
     }
   }
