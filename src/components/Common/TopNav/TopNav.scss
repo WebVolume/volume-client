@@ -1,0 +1,36 @@
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: $RIGHT_ASIDE_WIDTH;
+  height: $TOP_BAR_HEIGHT;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: $LAYOUT_LEFT_PADDING;
+  padding-right: vw(29px);
+
+  background-color: black;
+
+  .logo {
+    color: #fff;
+  }
+
+  //
+  .nav-list {
+    &--item {
+      & + .nav-list--item {
+        margin-left: vw(31px);
+      }
+
+      &_ico {
+        width: vw(22.59px);
+      }
+    }
+  }
+}
+
+.empty-top-bar {
+  height: $TOP_BAR_HEIGHT;
+}
