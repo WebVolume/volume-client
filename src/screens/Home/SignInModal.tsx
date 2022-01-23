@@ -23,8 +23,12 @@ const SignInModal = (props: any) => {
           </button>
         </div>
         <div className="find-and-signup-container">
-          <button className="find-and-signup-container__find-account-btn">이메일,비밀번호찾기</button>
-          <button className="find-and-signup-container__signup-btn ">회원가입하기</button>
+          <button className="find-and-signup-container__find-account-btn">
+            이메일,비밀번호찾기
+          </button>
+          <button className="find-and-signup-container__signup-btn ">
+            회원가입하기
+          </button>
         </div>
         <p className="modal-container__or">또는</p>
         <div className="simple-login-form">
@@ -37,7 +41,7 @@ const SignInModal = (props: any) => {
           </button>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 

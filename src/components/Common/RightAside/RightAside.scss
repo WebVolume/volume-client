@@ -1,0 +1,19 @@
+.right-aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: $RIGHT_ASIDE_WIDTH;
+  height: 100%;
+
+  background-color: $BLACK_18B;
+
+  padding: vw(85px) vw(18px) vw(18px);
+  overflow: scroll;
+
+  &-title-wrapper {
+    &--play-icon {
+      width: vw(19px);
+      margin-right: vw(5px);
+    }
+  }
+}

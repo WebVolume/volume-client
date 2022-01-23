@@ -1,4 +1,5 @@
 import Home from "./Home";
-import Search from "./Search";
-import Profile from "./Profile/Profile"
-export { Home, Search, Profile };
+import * as Main from "./Main";
+import Profile from "./Profile/Profile";
+
+export { Home, Profile, Main };

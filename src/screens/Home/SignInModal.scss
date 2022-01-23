@@ -1,7 +1,15 @@
 @import url("./Modal.scss");
 .signin-dimmer{
   .modal-container {
+<<<<<<< HEAD
 
+=======
+    &__login-title{
+      font-size: 3.2vh;
+      margin-bottom: 4vh;
+      font-family: Montserrat Alternates;
+    }
+>>>>>>> ca9cd1eb5a8ec1675f0cbe88048fdc4478fb94a3
     .login-form{
       &__password-input{
         margin-bottom: 1vh;
@@ -12,7 +20,11 @@
         margin-bottom: 1.4vh;
       }
     }
+<<<<<<< HEAD
     .find-and-signup-container{
+=======
+    .signup-wrapper{
+>>>>>>> ca9cd1eb5a8ec1675f0cbe88048fdc4478fb94a3
       display: flex;
       background: none;
       height: 5vh;
