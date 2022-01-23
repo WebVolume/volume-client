@@ -9,6 +9,6 @@ $vh-viewport: 1080;
 
 @function vh($size) {
   $vh-context: $vh-viewport * 0.01 * 1px;
-  @return calc($size / $vh-context * 1vw);
+  @return calc($size / $vh-context * 1vh);
   @return $size;
 }
