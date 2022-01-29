@@ -1,0 +1,24 @@
+@import url("../Modal.scss");
+.signup-dimmer {
+  .modal-container {
+    width: vw(541px);
+    height: vh(491px);
+    &__signup-title {
+      margin-bottom: vh(13px);
+    }
+    &__sub-title {
+      font-size: 1.7vh;
+      color: #969696;
+      margin-bottom: vh(46px);
+    }
+    &__id-input {
+      margin-bottom: vh(43px);
+    }
+    &__name-input {
+      margin-bottom: vh(18px);
+    }
+    &__email-input {
+      margin-bottom: vh(50px);
+    }
+  }
+}
