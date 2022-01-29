@@ -3,25 +3,23 @@
   .modal-container {
     &__login-title {
       font-size: 3.2vh;
-      margin-bottom: 4vh;
-      font-family: Montserrat Alternates;
+      margin-bottom: vh(61px);
     }
     .login-form {
       &__password-input {
-        margin-bottom: 1vh;
+        margin-bottom: vh(11px);
       }
       &__message {
         font-size: 1.3vh;
         color: #ff1d1d;
-        margin-bottom: 1.4vh;
+        margin-bottom: vh(15px);
       }
     }
     .find-and-signup-container {
       display: flex;
       background: none;
-      height: 5vh;
       @mixin signup-btn {
-        padding: 1vh 0vw 2.1vh 0vw;
+        padding: vh(10px) 0vw vh(26px) 0vw;
         margin: 0;
         color: #969696;
         font-size: 1.7vh;
@@ -41,8 +39,7 @@
       align-items: center;
       color: black;
       font-size: 1.7vh;
-      height: 1vh;
-      margin-bottom: 4.4vh;
+      margin-bottom: vh(47px);
     }
 
     &__or::before,
@@ -51,13 +48,13 @@
       flex-grow: 1;
       background: black;
       height: 0.1vh;
-      margin: 0vh 0.3vw;
+      margin: 0vh vw(5px);
     }
 
     .simple-login-form {
       font-size: 1.7vh;
       &__google-login-btn {
-        margin-top: 1vh;
+        margin-top: vh(9px);
         border: 0.1vh solid #c2c2c2;
       }
       &__kakao-login-btn {

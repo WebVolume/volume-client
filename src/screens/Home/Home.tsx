@@ -1,8 +1,7 @@
 import "./Home.scss";
 import logoImg from "../../assets/images/volume.png";
 import { useState } from "react";
-import SignInModal from "./SignInModal";
-import SignUpModal from "./SignUpModal";
+import { SignInModal, SignUpModal } from "@components/SignModal";
 
 function Home() {
   const [signInModalVisible, setsingInModalVisible] = useState(false);
