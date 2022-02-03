@@ -10,6 +10,7 @@ const RootRouter = () => {
         <Route path="search/:query" element={<Screens.Main.Search />} />
         <Route path="library" element={<Screens.Main.Library />} />
       </Route>
+      <Route path="profile" element={<Screens.Profile />} />
     </Routes>
   );
 };
