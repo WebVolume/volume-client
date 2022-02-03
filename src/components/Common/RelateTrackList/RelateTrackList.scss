@@ -1,0 +1,19 @@
+.relate-track-list {
+  width: vw(429px);
+  margin-top: vh(28px);
+  margin-left: vw(28px);
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: vh(36px);
+  }
+  &__title {
+    font-size: vh(18px);
+    margin-right: vw(234px);
+  }
+  &__detail-btn {
+    background: none;
+    border: none;
+    font-size: vh(14px);
+  }
+}
