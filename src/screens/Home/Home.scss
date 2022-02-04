@@ -21,7 +21,7 @@
   .header-container {
     display: flex;
     flex-direction: row;
-    padding: 4vh 19.5vw;
+    padding: vh(44px) vw(373px);
     &__logo-title {
       font-size: 3.3vh;
       flex: 8;
@@ -37,8 +37,10 @@
 
   .main-container {
     position: relative;
-    left: 45.9vw;
-    top: 28.9vh;
+    width: 0;
+    height: 0;
+    left: vw(880px);
+    top: vh(270px);
     &__logo-title {
       position: absolute;
       font-size: 11.5vh;
@@ -46,9 +48,9 @@
     }
     &__logo-img {
       position: absolute;
-      width: 39.4vw;
-      height: 7.9vh;
-      top: 8vh;
+      width: vw(757px);
+      height: vh(86px);
+      top: vh(90px);
     }
     &__signup-btn {
       position: absolute;
@@ -57,10 +59,36 @@
       border-radius: 1vmin;
       border: 0.3rem solid white;
       font-size: 3.2vh;
-      top: 15vh;
-      width: 17.6vw;
-      height: 6.2vh;
+      top: vh(175px);
+      width: vw(339px);
+      height: vh(67px);
       font-family: Montserrat Alternates;
+    }
+  }
+}
+.home-wrapper {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: Montserrat Alternates;
+  button {
+    background: none;
+    border: none;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    padding: vh(44px) vw(373px);
+    &__logo-title {
+      font-size: 3.3vh;
+      flex: 8;
+    }
+    &__signup-btn,
+    &__signin-btn {
+      font-family: Montserrat Alternates;
+      font-size: 2.2vh;
+      flex: 1;
+      color: white;
     }
   }
 }
