@@ -1,0 +1,30 @@
+.inline-play-list {
+  width: vw(872px);
+  height: vh(297px);
+  margin-bottom: vh(40px);
+  &__album-img {
+    width: vw(200px);
+    height: vh(200px);
+    margin-right: vw(30px);
+  }
+  &__info {
+    flex: 1;
+    margin-right: vw(16px);
+  }
+  &__uploader {
+    opacity: 0.5;
+  }
+  &__icons-container {
+    margin-left: auto;
+  }
+  &__icon-item {
+    margin-left: vw(26px);
+  }
+  &__icon-img {
+    width: vw(30px); //fix
+    height: vh(30px); //fix
+  }
+  &__name {
+    margin-bottom: vh(15px);
+  }
+}

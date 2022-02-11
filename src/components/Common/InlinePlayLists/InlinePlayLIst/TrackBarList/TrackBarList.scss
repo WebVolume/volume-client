@@ -1,0 +1,37 @@
+.track-bar-list {
+  .track-bar {
+    width: vw(626px);
+    height: vh(39px);
+    background-color: #262626;
+    border-radius: vw(8px);
+    margin-bottom: vh(6px);
+    &__singer {
+      opacity: 0.5;
+      margin-left: vw(17px);
+    }
+    &__title {
+      margin-left: vw(5px);
+    }
+    &__play-btn {
+      width: vw(12px);
+      height: vh(13px);
+      background: none;
+      border: none;
+      margin-left: auto;
+    }
+    &__play-btn-img {
+      width: vw(12px);
+      height: vh(13px);
+    }
+    &__listen-count {
+      margin-left: vw(11px);
+      margin-right: vw(39px);
+    }
+    &__more-track-bar {
+      opacity: 0.8;
+    }
+  }
+  .more-track-bar {
+    background-color: #1d1d1d;
+  }
+}
