@@ -4,11 +4,14 @@ import { RelateTrackList } from "./RelateTrackList";
 import { MiniPlayList } from "./MiniPlayList";
 import { MiniTrack } from "./MiniTrack";
 import { InPlayList } from "./InPlayLIst";
+import { InlineTrackList } from "./InlineTrackList";
+
 export {
   RightAside,
   TopNav,
   RelateTrackList,
   MiniPlayList,
   MiniTrack,
-  InPlayList
+  InPlayList,
+  InlineTrackList
 };

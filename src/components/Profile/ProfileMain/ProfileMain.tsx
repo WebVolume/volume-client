@@ -1,6 +1,10 @@
 import React from "react";
 import { UserStats } from "@components/Profile";
-import { RelateTrackList, InPlayList } from "@components/Common";
+import {
+  RelateTrackList,
+  InPlayList,
+  InlineTrackList
+} from "@components/Common";
 
 import "./ProfileMain.scss";
 
@@ -18,7 +22,7 @@ const ProfileMain = () => {
       </div>
       <div className="profile-main-grid-container">
         <div className="profile-main-grid-container__music-list">
-          여기에 뮤직리스트
+          <InlineTrackList />
         </div>
         <UserStats />
         <div className="profile-main-grid-container__right-container">

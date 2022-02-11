@@ -5,7 +5,7 @@ import emptyHeartIcon from "@ico/empty-heart.png";
 import plusIcon from "@ico/plus.png";
 import etcIcon from "@ico/etc.png";
 import playIcon from "@ico/play.png";
-import "./LikesTrack.scss";
+import "./InlineTrack.scss";
 
 const LikesTrack = () => {
   return (
