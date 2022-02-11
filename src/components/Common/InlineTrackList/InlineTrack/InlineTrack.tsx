@@ -1,10 +1,10 @@
 import React from "react";
 import testImg from "@images/background.png";
 import addFolerIcon from "@ico/add-folder.png";
-import emptyHeartIcon from "@ico/empty-heart.png";
-import plusIcon from "@ico/plus.png";
-import etcIcon from "@ico/etc.png";
-import playIcon from "@ico/play.png";
+import heartIcon from "@ico/heart.svg";
+import plusIcon from "@ico/plus.svg";
+import etcIcon from "@ico/etc.svg";
+import playFillIcon from "@ico/play-fill.svg";
 import "./InlineTrack.scss";
 
 const LikesTrack = () => {
@@ -16,7 +16,7 @@ const LikesTrack = () => {
           <p className="likes-track__uploader">Upload : Losa</p>
           <ul className="likes-track__icons-container flex row align-center">
             <li className="likes-track__icon-item">
-              <img src={emptyHeartIcon} alt="하트버튼" />
+              <img src={heartIcon} alt="하트버튼" />
             </li>
             <li className="likes-track__icon-item">
               <img src={addFolerIcon} alt="폴더버튼" />
@@ -39,7 +39,7 @@ const LikesTrack = () => {
           <button className="likes-track-main__play-btn flex justify-center align-center">
             <img
               className="likes-track-main__play-btn-img"
-              src={playIcon}
+              src={playFillIcon}
               alt="재생버튼"
             />
           </button>

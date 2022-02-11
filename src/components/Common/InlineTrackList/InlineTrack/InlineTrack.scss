@@ -22,6 +22,7 @@
   &__icon-item {
     margin-left: vw(31px);
   }
+
   .likes-track-title {
     &__name {
       margin-right: vw(59px);
@@ -41,8 +42,8 @@
       margin-left: vw(15px);
     }
     &__play-btn-img {
-      width: vw(28px);
-      height: vh(28px);
+      width: vw(20px); // fix
+      height: vh(20px); // fix
     }
     &__lyrics {
       width: vw(336px);
