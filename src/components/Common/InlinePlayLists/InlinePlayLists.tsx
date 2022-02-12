@@ -1,5 +1,5 @@
 import React from "react";
-import { InlinePlayList } from "./InlinePlayLIst";
+import InlinePlayList from "./InlinePlayLIst";
 import "./InlinePlayLists.scss";
 const InlinePlayLists = () => {
   return (

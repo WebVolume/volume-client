@@ -1,3 +1,3 @@
 import InlinePlayLists from "./InlinePlayLists";
 
-export { InlinePlayLists };
+export default InlinePlayLists;

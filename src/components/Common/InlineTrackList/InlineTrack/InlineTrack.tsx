@@ -16,16 +16,24 @@ const LikesTrack = () => {
           <p className="likes-track__uploader">Upload : Losa</p>
           <ul className="likes-track__icons-container flex row align-center">
             <li className="likes-track__icon-item">
-              <img src={heartIcon} alt="하트버튼" />
+              <a href="" className="likes-track__heart-btn">
+                <img src={heartIcon} alt="하트버튼" />
+              </a>
             </li>
             <li className="likes-track__icon-item">
-              <img src={addFolerIcon} alt="폴더버튼" />
+              <a href="" className="likes-track__add-folder-btn">
+                <img src={addFolerIcon} alt="폴더버튼" />
+              </a>
             </li>
             <li className="likes-track__icon-item">
-              <img src={plusIcon} alt="추가버튼" />
+              <a href="" className="likes-track__plus-btn">
+                <img src={plusIcon} alt="추가버튼" />
+              </a>
             </li>
             <li className="likes-track__icon-item">
-              <img src={etcIcon} alt="그외버튼" />
+              <a href="" className="likes-track__etc-btn">
+                <img src={etcIcon} alt="그외버튼" />
+              </a>
             </li>
           </ul>
         </div>

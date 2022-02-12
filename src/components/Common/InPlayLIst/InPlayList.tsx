@@ -1,6 +1,6 @@
 import React from "react";
 import "./InPlayList.scss";
-import { MiniPlayList } from "@components/Common/MiniPlayList";
+import MiniPlayList from "@components/Common/MiniPlayList";
 const InPlayList = () => {
   return (
     <div className="in-play-list">

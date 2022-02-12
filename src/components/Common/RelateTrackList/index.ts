@@ -1,3 +1,3 @@
 import RelateTrackList from "./RelateTrackList";
 
-export { RelateTrackList };
+export default RelateTrackList;

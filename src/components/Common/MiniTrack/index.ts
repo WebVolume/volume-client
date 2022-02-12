@@ -1,3 +1,3 @@
 import MiniTrack from "./MiniTrack";
 
-export { MiniTrack };
+export default MiniTrack;

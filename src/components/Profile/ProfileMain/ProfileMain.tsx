@@ -3,7 +3,8 @@ import { UserStats } from "@components/Profile";
 import {
   RelateTrackList,
   InPlayList,
-  InlineTrackList
+  InlineTrackList,
+  InlinePlayLists
 } from "@components/Common";
 
 import "./ProfileMain.scss";
@@ -23,6 +24,7 @@ const ProfileMain = () => {
       <div className="profile-main-grid-container">
         <div className="profile-main-grid-container__music-list">
           <InlineTrackList />
+          <InlinePlayLists />
         </div>
         <UserStats />
         <div className="profile-main-grid-container__right-container">

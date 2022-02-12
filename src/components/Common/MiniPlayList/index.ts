@@ -1,3 +1,3 @@
 import MiniPlayList from "./MiniPlayList";
 
-export { MiniPlayList };
+export default MiniPlayList;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./InlineTrackList.scss";
-import { InlineTrack } from "./InlineTrack";
+import InlineTrack from "./InlineTrack";
 
 const InlineTrackList = () => {
   return (

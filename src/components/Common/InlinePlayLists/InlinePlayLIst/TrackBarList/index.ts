@@ -1,3 +1,3 @@
 import TrackBarList from "./TrackBarList";
 
-export { TrackBarList };
+export default TrackBarList;

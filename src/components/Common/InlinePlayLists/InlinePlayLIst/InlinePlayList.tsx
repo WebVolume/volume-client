@@ -1,7 +1,7 @@
 import React from "react";
 import "./InlinePlayList.scss";
 import testImg from "@images/background.png";
-import { TrackBarList } from "./TrackBarList";
+import TrackBarList from "./TrackBarList";
 import heartIcon from "@ico/heart.svg";
 import addPlaylistIcon from "@ico/add-playlist.svg";
 import addRepostIcon from "@ico/add-repost.svg";
@@ -18,7 +18,7 @@ const InlinePlayList = () => {
       <div className="inline-play-list__info">
         <div className="inline-play-list__header flex align-center">
           <p className="inline-play-list__uploader fs-18">Upload : Losa</p>
-          <ul className="inline-play-list__icons-container flex row align-center">
+          <ul className="inline-play-list__icons-container flex align-center">
             <li className="inline-play-list__icon-item">
               <img
                 src={heartIcon}

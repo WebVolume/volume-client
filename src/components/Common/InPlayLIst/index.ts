@@ -1,3 +1,3 @@
 import InPlayList from "./InPlayList";
 
-export { InPlayList };
+export default InPlayList;

@@ -1,3 +1,3 @@
 import InlineTrackList from "./InlineTrackList";
 
-export { InlineTrackList };
+export default InlineTrackList;
