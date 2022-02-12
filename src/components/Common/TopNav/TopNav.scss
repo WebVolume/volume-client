@@ -7,6 +7,7 @@
 
   background-color: $BLACK_17;
   border-bottom: 1px solid $BORDER_COLOR;
+  z-index: $TOP;
 
   &-container {
     width: $MAIN_GRID_WIDTH;
