@@ -1,61 +1,55 @@
 .profile-header {
   background: #1b1b1b;
   width: vw(1320px);
-  height: vh(321px);
-  margin-bottom: vh(48px);
-  * {
-    position: relative;
-    display: block;
-  }
+  height: vw(321px);
+  margin-bottom: vw(48px);
   @mixin userBox {
     width: vw(207px);
     left: vw(334px);
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: vh(169px);
+    background: $BLACK_00;
+    top: vw(169px);
   }
   @mixin uploadBtn {
-    border: none;
-    background: rgba(0, 0, 0, 0.6);
+    background: $BLACK_00;
+    opacity: 0.8;
     // filter: blur(66px);
-    font-size: vh(14px);
   }
   &__user-name {
     @include userBox();
-    height: vh(55px);
-    font-size: 2.2vh;
-    font-weight: 600;
-    margin-bottom: vh(7px);
+    height: vw(55px);
+    margin-bottom: vw(7px);
   }
   &__user-id {
     @include userBox();
-    height: vh(44px);
-    font-size: 1.8vh;
+    height: vw(44px);
   }
   &__header-img-upload-btn {
     @include uploadBtn();
     left: vw(1082px);
-    top: vh(-80px);
+    top: vw(-80px);
     width: vw(209px);
-    height: vh(33px);
+    height: vw(33px);
   }
   &__user-img {
     width: vw(212px);
     height: vw(212px);
-    background: #2b2b2b;
+    background: $BLACK_0B;
     border: 0.4vh solid rgba(255, 255, 255, 0.49);
     border-radius: 50%;
-    box-shadow: inset vw(12px) vh(10px) vw(25px) rgba(0, 0, 0, 0.72);
+    box-shadow: inset vw(12px) vw(10px) vw(25px) rgba(0, 0, 0, 0.72);
     left: vw(49px);
-    bottom: vh(90px);
+    bottom: vw(90px);
   }
   &__user-img-upload-btn {
     @include uploadBtn();
     width: vw(161px);
-    height: vh(33px);
+    height: vw(33px);
     left: vw(74px);
-    bottom: vh(109px);
+    bottom: vw(109px);
+  }
+  &__img-icon {
+    height: vw(24px);
+    width: vw(24px);
+    margin-right: vw(14px);
   }
 }

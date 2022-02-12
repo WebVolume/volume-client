@@ -1,3 +1,3 @@
 import ProfileMain from "./ProfileMain";
 
-export { ProfileMain };
+export default ProfileMain;
