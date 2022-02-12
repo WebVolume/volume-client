@@ -30,3 +30,14 @@
 .fc-white {
   color: #fff;
 }
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .fs-30 {
+    font-size: vw-t(30px);
+  }
+
+  .fs-14 {
+    font-size: vw-t(14px);
+    line-height: vw-t(20.27px);
+  }
+}

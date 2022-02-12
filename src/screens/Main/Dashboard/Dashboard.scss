@@ -1,3 +1,18 @@
 .dashboard-screen {
+  display: flex;
+  justify-content: space-between;
+
   color: white;
+
+  border-left: 1px solid $BORDER_COLOR;
+}
+
+@media screen and (max-width: 764px) {
+  .dashboard-screen {
+    justify-content: center;
+
+    &-container {
+      width: 100%;
+    }
+  }
 }

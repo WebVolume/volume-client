@@ -40,3 +40,30 @@
 .empty-top-bar {
   height: $TOP_BAR_HEIGHT;
 }
+
+@media screen and (max-width: 764px) {
+  .top-nav {
+    height: $TOP_BAR_HEIGHT_TABLET;
+
+    &-container {
+      width: 100%;
+      padding-left: vw-t(72px);
+      padding-right: vw-t(40px);
+    }
+
+    .nav-list {
+      &--item {
+        & + .nav-list--item {
+          margin-left: vw-t(27px);
+        }
+
+        &_ico {
+          width: vw-t(22.59px);
+        }
+      }
+    }
+  }
+  .empty-top-bar {
+    height: $TOP_BAR_HEIGHT_TABLET;
+  }
+}

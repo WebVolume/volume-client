@@ -6,4 +6,10 @@
     width: $MAIN_GRID_WIDTH;
     margin: 0 auto;
   }
+
+  @media screen and (max-width: 764px) {
+    .main-container {
+      width: 100%;
+    }
+  }
 }

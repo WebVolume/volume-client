@@ -10,6 +10,8 @@
   background-color: $BLACK_18B;
 
   padding: vw(85px) vw(18px) vw(18px);
+  border-right: 1px solid $BORDER_COLOR;
+  border-left: 1px solid $BORDER_COLOR;
 
   &-title-wrapper {
     &--play-icon {
@@ -22,4 +24,10 @@
 .empty-aside {
   width: $RIGHT_ASIDE_WIDTH;
   height: 100vh;
+}
+
+@media screen and (max-width: 764px) {
+  .desktop {
+    display: none;
+  }
 }

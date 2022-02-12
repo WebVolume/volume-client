@@ -5,7 +5,7 @@ import RecentPlayList from "./RecentPlayList";
 function RightAside() {
   return (
     <>
-      <aside className="right-aside">
+      <aside className="right-aside desktop">
         <div className="right-aside-title-wrapper flex align-center">
           <img
             className="right-aside-title-wrapper--play-icon"
@@ -18,7 +18,7 @@ function RightAside() {
         {/*  */}
         <RecentPlayList />
       </aside>
-      <div className="empty-aside"></div>
+      <div className="empty-aside desktop"></div>
     </>
   );
 }

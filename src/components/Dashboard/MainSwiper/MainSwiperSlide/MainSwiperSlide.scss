@@ -16,12 +16,6 @@
     right: 0;
     bottom: 0;
 
-    .play-button-wrapper {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
     .play-button {
       width: vw(142px);
     }
@@ -29,9 +23,13 @@
     .title-info {
       // margin-top: vw(25px);
     }
+  }
 
-    .singer-info {
-      margin: vw(15px) 0 vw(73px);
+  @media screen and (max-width: $TABLET_CRITERIA) {
+    .music-info-container {
+      .play-button {
+        width: vw-t(68.19px);
+      }
     }
   }
 }

@@ -4,8 +4,8 @@ import * as Common from "@components/Common";
 
 function Dashboard() {
   return (
-    <div className="dashboard-screen flex justify-space-between">
-      <main>
+    <div className="dashboard-screen">
+      <main className="dashboard-screen-container">
         <MainSwiper />
       </main>
       <Common.RightAside />

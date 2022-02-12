@@ -10,4 +10,14 @@
   .search-icon {
     width: vw(22.59px);
   }
+
+  @media screen and (max-width: $TABLET_CRITERIA) {
+    .input-wrapper {
+      margin-right: vw-t(14.41px);
+    }
+
+    .search-icon {
+      width: vw-t(22.59px);
+    }
+  }
 }
