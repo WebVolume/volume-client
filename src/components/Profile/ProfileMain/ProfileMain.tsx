@@ -12,17 +12,51 @@ import "./ProfileMain.scss";
 const ProfileMain = () => {
   return (
     <div className="profile-main fc-white">
-      <div className="profile-main-header mont">
-        <a className="profile-main-header__left-btn fs-24 w-600 btn--active">
-          All
-        </a>
-        <a className="profile-main-header__left-btn fs-24 w-600">Likse</a>
-        <a className="profile-main-header__left-btn fs-24 w-600">Tracks</a>
-        <a className="profile-main-header__left-btn fs-24 w-600">Playlists</a>
-        <a className="profile-main-header__left-btn fs-24 w-600">Reposts</a>
-        <a className="profile-main-header__right-btn fs-18">Edit</a>
-        <a className="profile-main-header__right-btn fs-18">Share</a>
+      <div className="profile-main-header flex">
+        <ul className="profile-main-left-header mont flex">
+          <li>
+            <a
+              href="#"
+              className="profile-main-left-header__btn fs-24 w-600 btn--active"
+            >
+              All
+            </a>
+          </li>
+          <li>
+            <a href="#" className="profile-main-left-header__btn fs-24 w-600">
+              Likes
+            </a>
+          </li>
+          <li>
+            <a href="#" className="profile-main-left-header__btn fs-24 w-600">
+              Tracks
+            </a>
+          </li>
+          <li>
+            <a href="#" className="profile-main-left-header__btn fs-24 w-600">
+              Playlists
+            </a>
+          </li>
+          <li>
+            <a href="#" className="profile-main-left-header__btn fs-24 w-600">
+              Reposts
+            </a>
+          </li>
+        </ul>
+        <ul className="profile-main-right-header mont flex">
+          <li>
+            <a href="#" className="profile-main-right-header__btn fs-18">
+              Share
+            </a>
+          </li>
+          <li>
+            <a href="#" className="profile-main-right-header__btn fs-18">
+              Edit
+            </a>
+          </li>
+        </ul>
       </div>
+
       <div className="profile-main-grid-container">
         <div className="profile-main-grid-container__music-list">
           <InlineTrackList />

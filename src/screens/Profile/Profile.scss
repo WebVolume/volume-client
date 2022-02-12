@@ -1,14 +1,10 @@
 .profile-screen {
   width: 100vw;
   overflow: scroll;
-  background: black;
+  background: $BLACK_17;
   .profile-container {
     position: relative;
     width: vw(1320px);
     left: vw(300px);
-    * {
-      color: #ffffff;
-      font-family: Montserrat;
-    }
   }
 }
