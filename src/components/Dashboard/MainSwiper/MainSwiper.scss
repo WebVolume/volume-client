@@ -1,0 +1,17 @@
+.main-swiper {
+  padding: 30px 0 50px;
+
+  .swiper-container {
+    width: vw(1048px);
+    aspect-ratio: calc(1048 / 572);
+    margin: 0 vw(48px);
+    .swiper {
+      height: 100%;
+    }
+  }
+  .custom-navigation {
+    &--image {
+      width: vw(80px);
+    }
+  }
+}

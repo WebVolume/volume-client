@@ -3,6 +3,26 @@
    License: none (public domain)
 */
 
+/* custom reset start */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  background-color: inherit;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* custom reset end  */
 html,
 body,
 div,

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Noto Sans CJK KR";
+  src: url("./fonts/NotoSansKR-Light.otf") format("truetype"),
+       url("./fonts/NotoSansKR-Light.woff") format("woff"),
+       url("./fonts/NotoSansKR-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans CJK KR";
+  src: url("./fonts/NotoSansKR-Thin.otf") format("truetype"),
+       url("./fonts/NotoSansKR-Thin.woff") format("woff"),
+       url("./fonts/NotoSansKR-Thin.woff2") format("woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Noto Sans CJK KR";
+  src: url("./fonts/NotoSansKR-Bold.otf") format("truetype"),
+       url("./fonts/NotoSansKR-Bold.woff") format("woff"),
+       url("./fonts/NotoSansKR-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("./fonts/MontserratAlternates-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("./fonts/MontserratAlternates-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("./fonts/MontserratAlternates-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}

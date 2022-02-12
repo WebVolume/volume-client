@@ -1,3 +1,94 @@
-.home-container {
+.home-wrapper {
+  background: url(../../assets/images/background.png) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: white;
   height: 100vh;
+  font-family: Montserrat Alternates;
+  button {
+    background: none;
+    border: none;
+  }
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    padding: vh(44px) vw(373px);
+    &__logo-title {
+      font-size: 3.3vh;
+      flex: 8;
+    }
+    &__signup-btn,
+    &__signin-btn {
+      font-family: Montserrat Alternates;
+      font-size: 2.2vh;
+      flex: 1;
+      color: white;
+    }
+  }
+
+  .main-container {
+    position: relative;
+    width: 0;
+    height: 0;
+    left: vw(880px);
+    top: vh(270px);
+    &__logo-title {
+      position: absolute;
+      font-size: 11.5vh;
+      font-weight: 100;
+    }
+    &__logo-img {
+      position: absolute;
+      width: vw(757px);
+      height: vh(86px);
+      top: vh(90px);
+    }
+    &__signup-btn {
+      position: absolute;
+      background-color: black;
+      color: white;
+      border-radius: 1vmin;
+      border: 0.3rem solid white;
+      font-size: 3.2vh;
+      top: vh(175px);
+      width: vw(339px);
+      height: vh(67px);
+      font-family: Montserrat Alternates;
+    }
+  }
+}
+.home-wrapper {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: Montserrat Alternates;
+  button {
+    background: none;
+    border: none;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    padding: vh(44px) vw(373px);
+    &__logo-title {
+      font-size: 3.3vh;
+      flex: 8;
+    }
+    &__signup-btn,
+    &__signin-btn {
+      font-family: Montserrat Alternates;
+      font-size: 2.2vh;
+      flex: 1;
+      color: white;
+    }
+  }
 }
