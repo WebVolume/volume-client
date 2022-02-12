@@ -1,20 +1,12 @@
 .in-play-list {
   width: vw(429px);
-  margin-top: vh(28px);
+  margin-top: vw(28px);
   margin-left: vw(28px);
   &__header {
-    display: flex;
-    align-items: center;
-    margin-bottom: vh(36px);
+    margin-bottom: vw(36px);
   }
   &__title {
-    font-size: vh(18px);
     margin-right: vw(140px);
     white-space: nowrap;
-  }
-  &__detail-btn {
-    background: none;
-    border: none;
-    font-size: vh(14px);
   }
 }
