@@ -20,32 +20,40 @@ const InlinePlayList = () => {
           <p className="inline-play-list__uploader fs-18">Upload : Losa</p>
           <ul className="inline-play-list__icons-container flex align-center">
             <li className="inline-play-list__icon-item">
-              <img
-                src={heartIcon}
-                alt="하트버튼"
-                className="inline-play-list__icon-img"
-              />
+              <a href="">
+                <img
+                  src={heartIcon}
+                  alt="하트버튼"
+                  className="inline-play-list__icon-img"
+                />
+              </a>
             </li>
             <li className="inline-play-list__icon-item">
-              <img
-                src={addPlaylistIcon}
-                alt="플레이리스트에추가버튼"
-                className="inline-play-list__icon-img"
-              />
+              <a href="">
+                <img
+                  src={addPlaylistIcon}
+                  alt="플레이리스트에추가버튼"
+                  className="inline-play-list__icon-img"
+                />
+              </a>
             </li>
             <li className="inline-play-list__icon-item">
-              <img
-                src={addRepostIcon}
-                alt="리포스트버튼"
-                className="inline-play-list__icon-img"
-              />
+              <a href="">
+                <img
+                  src={addRepostIcon}
+                  alt="리포스트버튼"
+                  className="inline-play-list__icon-img"
+                />
+              </a>
             </li>
             <li className="inline-play-list__icon-item">
-              <img
-                src={etcIcon}
-                alt="그외버튼"
-                className="inline-play-list__icon-img"
-              />
+              <a href="">
+                <img
+                  src={etcIcon}
+                  alt="그외버튼"
+                  className="inline-play-list__icon-img"
+                />
+              </a>
             </li>
           </ul>
         </div>

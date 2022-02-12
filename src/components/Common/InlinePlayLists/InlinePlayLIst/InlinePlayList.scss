@@ -1,10 +1,10 @@
 .inline-play-list {
   width: vw(872px);
-  height: vh(297px);
-  margin-bottom: vh(40px);
+  height: vw(297px);
+  margin-bottom: vw(40px);
   &__album-img {
-    width: vw(200px);
-    height: vh(200px);
+    width: vw(206px);
+    height: vw(194px);
     margin-right: vw(30px);
   }
   &__info {
@@ -21,10 +21,10 @@
     margin-left: vw(26px);
   }
   &__icon-img {
-    width: vw(30px); //fix
-    height: vh(30px); //fix
+    width: vw(32px);
+    height: vw(32px);
   }
   &__name {
-    margin-bottom: vh(15px);
+    margin-bottom: vw(15px);
   }
 }

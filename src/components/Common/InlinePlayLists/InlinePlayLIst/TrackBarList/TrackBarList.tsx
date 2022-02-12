@@ -4,19 +4,20 @@ import "./TrackBarList.scss";
 
 const TrackBarList = () => {
   return (
-    <div className="track-bar-list">
-      <ul className="track-bar-container flex column">
-        <TrackBar />
-        <TrackBar />
-        <TrackBar />
-        <TrackBar />
-        <li className="track-bar more-track-bar flex align-center justify-center">
-          <a href="#" className="track-bar__more-track-bar fs-18">
-            View 35 tracks
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ul className="track-bar-list flex column">
+      {[1, 2, 3, 4].map(() => {
+        return (
+          <li>
+            <TrackBar />
+          </li>
+        );
+      })}
+      <li className="track-bar more-track-bar flex align-center justify-center">
+        <a href="#" className="more-track-bar__content fs-18">
+          View 35 tracks
+        </a>
+      </li>
+    </ul>
   );
 };
 
