@@ -1,8 +1,9 @@
 .main-screen {
-  background-color: $MAIN_BLACK;
+  background-color: $BLACK_17;
   min-height: 100vh;
 
   .main-container {
-    margin-right: $RIGHT_ASIDE_WIDTH;
+    width: $MAIN_GRID_WIDTH;
+    margin: 0 auto;
   }
 }
