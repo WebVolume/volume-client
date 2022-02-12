@@ -2,25 +2,14 @@
   border-bottom: 1px solid white;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
-  display: flex;
-  align-items: center;
   .user-stats-ul {
     margin-left: vw(32px);
-    display: flex;
     &__li {
       width: vw(88px);
       margin-right: vw(50px);
     }
     &__title {
-      display: flex;
-      justify-content: center;
-      font-size: vh(18px);
-      margin-bottom: vh(15px);
-    }
-    &__number {
-      display: flex;
-      justify-content: center;
-      font-size: vh(24px);
+      margin-bottom: vw(15px);
     }
   }
 }

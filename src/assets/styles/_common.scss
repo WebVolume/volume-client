@@ -6,15 +6,20 @@ body {
 .inline-block {
   display: inline-block;
 }
+
+.block {
+  display: block;
+}
+
+.relative {
+  position: relative;
+}
+
 .flex {
   display: flex;
 
   &.column {
     flex-direction: column;
-  }
-
-  &.row {
-    flex-direction: row;
   }
 
   &.align-center {

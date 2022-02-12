@@ -1,3 +1,3 @@
 import UserStats from "./UserStats";
 
-export { UserStats };
+export default UserStats;

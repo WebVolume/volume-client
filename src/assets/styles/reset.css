@@ -22,6 +22,12 @@ input:focus {
   outline: none;
 }
 
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /* custom reset end  */
 html,
 body,
