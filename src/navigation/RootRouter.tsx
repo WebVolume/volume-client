@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import * as Screens from "../screens";
+// import * as Components from "../components";
 
 const RootRouter = () => {
   return (
@@ -10,8 +11,12 @@ const RootRouter = () => {
         <Route path="search/:query" element={<Screens.Main.Search />} />
         <Route path="library" element={<Screens.Main.Library />} />
       </Route>
-      <Route path="profile" element={<Screens.Profile />}>
-        {/* <Route index element */}
+      <Route path="profile/*" element={<Screens.Profile.Profile />}>
+        <Route index element={<Screens.Profile.All />} />
+        <Route path="likes" element={<Screens.Profile.Likes />} />
+        <Route path="tracks" element={<Screens.Profile.Tracks />} />
+        <Route path="playlists" element={<Screens.Profile.PlayLists />} />
+        <Route path="reposts" element={<Screens.Profile.Reposts />} />
       </Route>
     </Routes>
   );

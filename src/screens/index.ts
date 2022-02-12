@@ -1,5 +1,5 @@
 import Home from "./Home";
 import * as Main from "./Main";
-import Profile from "./Profile/Profile";
+import * as Profile from "./Profile";
 
 export { Home, Main, Profile };
