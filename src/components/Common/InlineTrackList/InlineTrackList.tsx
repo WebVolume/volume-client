@@ -4,14 +4,15 @@ import InlineTrack from "./InlineTrack";
 
 const InlineTrackList = () => {
   return (
-    <div className="likes-track-list">
-      <InlineTrack />
-      <InlineTrack />
-      <InlineTrack />
-      <InlineTrack />
-      <InlineTrack />
-      <InlineTrack />
-    </div>
+    <ul className="likes-track-list">
+      {[1, 2, 3, 4, 5].map(() => {
+        return (
+          <li>
+            <InlineTrack />
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 

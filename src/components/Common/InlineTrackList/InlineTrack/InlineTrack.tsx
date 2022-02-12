@@ -7,13 +7,13 @@ import etcIcon from "@ico/etc.svg";
 import playFillIcon from "@ico/play-fill.svg";
 import "./InlineTrack.scss";
 
-const LikesTrack = () => {
+const InlineTrack = () => {
   return (
     <div className="likes-track flex mont-alt">
       <img src={testImg} alt="앨범커버" className="likes-track__album-img" />
       <div className="likes-track__info">
         <div className="likes-track__header flex align-center">
-          <p className="likes-track__uploader">Upload : Losa</p>
+          <p className="likes-track__uploader fs-18">Upload : Losa</p>
           <ul className="likes-track__icons-container flex row align-center">
             <li className="likes-track__icon-item">
               <a href="" className="likes-track__heart-btn">
@@ -38,10 +38,12 @@ const LikesTrack = () => {
           </ul>
         </div>
         <div className="likes-track-title">
-          <p className="likes-track-title__name w-600 inline-block">
+          <p className="likes-track-title__name fs-24 w-600 inline-block">
             12:45(Stripped)
           </p>
-          <p className="likes-track-title__singer w-600 inline-block">ethan</p>
+          <p className="likes-track-title__singer fs-20 w-600 inline-block">
+            ethan
+          </p>
         </div>
         <div className="likes-track-main flex row align-center">
           <button className="likes-track-main__play-btn flex justify-center align-center">
@@ -63,4 +65,4 @@ I'm just getting off my face tonight.`}
   );
 };
 
-export default LikesTrack;
+export default InlineTrack;

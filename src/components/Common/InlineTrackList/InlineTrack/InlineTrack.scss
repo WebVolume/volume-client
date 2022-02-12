@@ -1,13 +1,13 @@
 .likes-track {
   width: vw(877px);
-  height: vh(194px);
-  margin-bottom: vh(30px);
+  height: vw(194px);
+  margin-bottom: vw(30px);
   &__header {
-    margin-bottom: vh(5px);
+    margin-bottom: vw(5px);
   }
   &__album-img {
-    width: vw(194px);
-    height: vh(194px);
+    width: vw(206px);
+    height: vw(194px);
     margin-right: vw(34px);
   }
   &__info {
@@ -22,33 +22,29 @@
   &__icon-item {
     margin-left: vw(31px);
   }
-
   .likes-track-title {
     &__name {
       margin-right: vw(59px);
     }
-    margin-bottom: vh(34px);
+    margin-bottom: vw(34px);
   }
   .likes-track-main {
-    height: vh(85px);
-    width: 100%;
+    height: vw(85px);
     &__play-btn {
       width: vw(52px);
-      height: vh(52px);
+      height: vw(52px);
       border-radius: 50%;
-      background-color: #2a66ff;
-      border: 0;
+      background-color: $BLUE_2A6F;
       margin-right: vw(70px);
       margin-left: vw(15px);
     }
     &__play-btn-img {
       width: vw(20px); // fix
-      height: vh(20px); // fix
+      height: vw(20px); // fix
     }
     &__lyrics {
-      width: vw(336px);
-      height: vh(85px); // fix__
-      line-height: vh(30px); //22+8
+      height: vw(85px); // fix__
+      line-height: vw(30px); //22+8
       white-space: pre-line;
       overflow: hidden;
     }
