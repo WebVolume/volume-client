@@ -3,6 +3,11 @@ import "./ProfileNav.scss";
 import { NavLink } from "react-router-dom";
 
 const ProfileNav = () => {
+  const activeTabClassName = (active: boolean) => {
+    const prefix = "profile-nav-left__btn fs-24 w-600 btn--";
+
+    return active ? prefix + "active" : prefix + "unactive";
+  };
   return (
     <div className="profile-nav flex">
       <ul className="profile-nav-left mont flex">
@@ -10,10 +15,7 @@ const ProfileNav = () => {
           <NavLink
             to="/profile"
             end
-            className={({ isActive }) =>
-              "profile-nav-left__btn fs-24 w-600" +
-              (isActive ? " btn--active" : "btn--unactive")
-            }
+            className={({ isActive }) => activeTabClassName(isActive)}
           >
             All
           </NavLink>
@@ -21,10 +23,7 @@ const ProfileNav = () => {
         <li>
           <NavLink
             to="/profile/likes"
-            className={({ isActive }) =>
-              "profile-nav-left__btn fs-24 w-600" +
-              (isActive ? " btn--active" : "btn--unactive")
-            }
+            className={({ isActive }) => activeTabClassName(isActive)}
           >
             Likes
           </NavLink>
@@ -32,10 +31,7 @@ const ProfileNav = () => {
         <li>
           <NavLink
             to="/profile/tracks"
-            className={({ isActive }) =>
-              "profile-nav-left__btn fs-24 w-600" +
-              (isActive ? " btn--active" : "btn--unactive")
-            }
+            className={({ isActive }) => activeTabClassName(isActive)}
           >
             Tracks
           </NavLink>
@@ -43,10 +39,7 @@ const ProfileNav = () => {
         <li>
           <NavLink
             to="/profile/playlists"
-            className={({ isActive }) =>
-              "profile-nav-left__btn fs-24 w-600" +
-              (isActive ? " btn--active" : "btn--unactive")
-            }
+            className={({ isActive }) => activeTabClassName(isActive)}
           >
             Playlists
           </NavLink>
@@ -54,10 +47,7 @@ const ProfileNav = () => {
         <li>
           <NavLink
             to="/profile/reposts"
-            className={({ isActive }) =>
-              "profile-nav-left__btn fs-24 w-600" +
-              (isActive ? " btn--active" : "btn--unactive")
-            }
+            className={({ isActive }) => activeTabClassName(isActive)}
           >
             Reposts
           </NavLink>
