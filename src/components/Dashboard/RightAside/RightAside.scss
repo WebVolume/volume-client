@@ -3,20 +3,34 @@
 
   top: $TOP_BAR_HEIGHT;
   right: calc((100% - $MAIN_GRID_WIDTH) / 2);
+  bottom: 0;
 
   width: $RIGHT_ASIDE_WIDTH;
-  // height: 100%;
 
-  background-color: $BLACK_18B;
-
-  padding: vw(85px) vw(18px) vw(18px);
   border-right: 1px solid $BORDER_COLOR;
   border-left: 1px solid $BORDER_COLOR;
 
   &-title-wrapper {
+    padding-top: vw(23px);
+    padding: vw(23px) vw(14px) vw(0px) vw(21px);
+
     &--play-icon {
       width: vw(19px);
-      margin-right: vw(5px);
+      margin-right: vw(14px);
+    }
+    .view-all {
+      color: $M_GRAY;
+    }
+  }
+
+  &-container--bottom {
+    padding-bottom: vw(10px);
+    .volume-logo {
+      width: vw(112px);
+    }
+    .volume-title {
+      color: $DARK_GRAY;
+      margin-left: vw(18px);
     }
   }
 }
