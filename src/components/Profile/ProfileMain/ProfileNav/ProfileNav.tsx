@@ -13,7 +13,7 @@ const ProfileNav = () => {
       <ul className="profile-nav-left mont flex">
         <li>
           <NavLink
-            to="/profile"
+            to="/main/profile"
             end
             className={({ isActive }) => activeTabClassName(isActive)}
           >
@@ -22,7 +22,7 @@ const ProfileNav = () => {
         </li>
         <li>
           <NavLink
-            to="/profile/likes"
+            to="/main/profile/likes"
             className={({ isActive }) => activeTabClassName(isActive)}
           >
             Likes
@@ -30,7 +30,7 @@ const ProfileNav = () => {
         </li>
         <li>
           <NavLink
-            to="/profile/tracks"
+            to="/main/profile/tracks"
             className={({ isActive }) => activeTabClassName(isActive)}
           >
             Tracks
@@ -38,7 +38,7 @@ const ProfileNav = () => {
         </li>
         <li>
           <NavLink
-            to="/profile/playlists"
+            to="/main/profile/playlists"
             className={({ isActive }) => activeTabClassName(isActive)}
           >
             Playlists
@@ -46,7 +46,7 @@ const ProfileNav = () => {
         </li>
         <li>
           <NavLink
-            to="/profile/reposts"
+            to="/main/profile/reposts"
             className={({ isActive }) => activeTabClassName(isActive)}
           >
             Reposts

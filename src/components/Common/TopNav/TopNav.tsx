@@ -9,7 +9,7 @@ function TopNav() {
     <>
       <nav className="top-nav">
         <div className="top-nav-container">
-          <a href="/" className="logo mont w-600 fs-30">
+          <a href="/main" className="logo mont w-600 fs-30">
             Volume
           </a>
 
@@ -30,13 +30,13 @@ function TopNav() {
             </li>
 
             <li className="nav-list--item">
-              <a href="/some">
+              <Link to="/main/profile">
                 <img
                   className="nav-list--item_ico"
                   src={MypageIcoSrc}
                   alt="사람 아이콘 이미지"
                 />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -10,13 +10,14 @@ const RootRouter = () => {
         <Route index element={<Screens.Main.Dashboard />} />
         <Route path="search/:query" element={<Screens.Main.Search />} />
         <Route path="library" element={<Screens.Main.Library />} />
-      </Route>
-      <Route path="profile/*" element={<Screens.Profile.Profile />}>
-        <Route index element={<Screens.Profile.All />} />
-        <Route path="likes" element={<Screens.Profile.Likes />} />
-        <Route path="tracks" element={<Screens.Profile.Tracks />} />
-        <Route path="playlists" element={<Screens.Profile.PlayLists />} />
-        <Route path="reposts" element={<Screens.Profile.Reposts />} />
+
+        <Route path="profile/*" element={<Screens.Profile.Profile />}>
+          <Route index element={<Screens.Profile.All />} />
+          <Route path="likes" element={<Screens.Profile.Likes />} />
+          <Route path="tracks" element={<Screens.Profile.Tracks />} />
+          <Route path="playlists" element={<Screens.Profile.PlayLists />} />
+          <Route path="reposts" element={<Screens.Profile.Reposts />} />
+        </Route>
       </Route>
     </Routes>
   );

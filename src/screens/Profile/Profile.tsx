@@ -6,11 +6,8 @@ import { ProfileHeader, ProfileMain } from "@components/Profile";
 const Profile = () => {
   return (
     <div className="profile-screen">
-      <Common.TopNav />
-      <div className="profile-container">
-        <ProfileHeader />
-        <ProfileMain />
-      </div>
+      <ProfileHeader />
+      <ProfileMain />
     </div>
   );
 };
