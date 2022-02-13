@@ -5,6 +5,7 @@ import {
   RecommendationList,
   PopularVolumerList
 } from "@components/Dashboard";
+import RecommendationPlaylist from "@components/Dashboard/RecommendationPlaylist";
 
 function Dashboard() {
   return (
@@ -15,6 +16,9 @@ function Dashboard() {
         <RecommendationList />
         {/* 인기상승 volumer */}
         <PopularVolumerList />
+
+        {/* 추천 플레이리스트 */}
+        <RecommendationPlaylist />
       </main>
       <RightAside />
     </div>
