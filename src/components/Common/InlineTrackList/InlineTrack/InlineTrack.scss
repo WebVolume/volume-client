@@ -1,0 +1,57 @@
+.likes-track {
+  width: vw(877px);
+  height: vw(194px);
+  margin-bottom: vw(30px);
+  &__header {
+    margin-bottom: vw(5px);
+  }
+  &__album-img {
+    width: vw(206px);
+    height: vw(194px);
+    margin-right: vw(34px);
+  }
+  &__info {
+    flex: 1;
+  }
+  &__uploader {
+    opacity: 0.5;
+  }
+  &__icons-container {
+    margin-left: auto;
+  }
+  &__icon-item {
+    margin-left: vw(31px);
+  }
+  .likes-track-title {
+    &__name {
+      margin-right: vw(59px);
+    }
+    margin-bottom: vw(34px);
+  }
+  .likes-track-main {
+    height: vw(85px);
+    &__play-btn {
+      width: vw(52px);
+      height: vw(52px);
+      border-radius: 50%;
+      background-color: $BLUE_2A6F;
+      margin-right: vw(70px);
+      margin-left: vw(15px);
+    }
+    &__play-btn-img {
+      width: vw(20px); // fix
+      height: vw(20px); // fix
+    }
+    &__lyrics {
+      height: vw(85px); // fix__
+      line-height: vw(30px); //22+8
+      white-space: pre-line;
+      overflow: hidden;
+    }
+    &__date {
+      margin-top: auto;
+      margin-left: auto;
+      opacity: 0.5;
+    }
+  }
+}
