@@ -1,0 +1,26 @@
+.recommendation-list {
+  width: 100%;
+  margin-top: vw(119px);
+
+  &--title {
+    margin-bottom: vw(31px);
+  }
+
+  .list-conatiner {
+    width: 100%;
+    overflow: scroll;
+    .list-item {
+    }
+  }
+
+  @media screen and (max-width: $TABLET_CRITERIA) {
+    &--title {
+      padding-left: vw-t(40px);
+    }
+
+    .tablet-start-padding {
+      display: block;
+      margin-left: vw-t(40px);
+    }
+  }
+}

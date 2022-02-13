@@ -40,8 +40,8 @@
   height: 100vh;
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: $TABLET_CRITERIA) {
   .desktop {
-    display: none;
+    display: none !important;
   }
 }

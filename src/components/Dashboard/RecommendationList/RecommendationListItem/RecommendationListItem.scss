@@ -1,0 +1,40 @@
+.recommendation-list-item {
+  .album-art {
+    width: vw(227px);
+    margin-bottom: vw(12px);
+  }
+
+  .album-info {
+    text-align: center;
+    &--title {
+      margin-bottom: vw(5px);
+
+      font-size: vw(22px);
+      line-height: vw(27px);
+    }
+
+    &--artist {
+      line-height: vw(22px);
+    }
+  }
+
+  @media screen and (max-width: $TABLET_CRITERIA) {
+    .album-art {
+      width: vw-t(189.38px);
+      margin-bottom: vw-t(11px);
+    }
+
+    .album-info {
+      &--title {
+        margin-bottom: vw-t(4.17px);
+
+        font-size: vw-t(18.34px);
+        line-height: vw-t(22.53px);
+      }
+
+      &--artist {
+        line-height: vw-t(18.35px);
+      }
+    }
+  }
+}
