@@ -1,0 +1,12 @@
+.in-play-list {
+  width: vw(429px);
+  margin-top: vw(28px);
+  margin-left: vw(28px);
+  &__header {
+    margin-bottom: vw(36px);
+  }
+  &__title {
+    margin-right: vw(140px);
+    white-space: nowrap;
+  }
+}

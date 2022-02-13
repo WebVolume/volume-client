@@ -3,6 +3,18 @@ body {
   background-color: $MAIN_BLACK;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.relative {
+  position: relative;
+}
+
 .flex {
   display: flex;
 

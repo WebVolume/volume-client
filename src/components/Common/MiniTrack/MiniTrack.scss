@@ -1,0 +1,44 @@
+.mini-track {
+  width: vw(394px); //78+368+48
+  height: vw(78px);
+  margin-bottom: vw(32px);
+  &__img {
+    width: vw(78px);
+    height: vw(78px);
+    margin-right: vw(10px);
+  }
+  .mini-track-info {
+    &__singer {
+      margin-bottom: vw(5px);
+      opacity: 0.5;
+    }
+    &__icon-container {
+      white-space: nowrap;
+      margin-top: vw(15px);
+    }
+    &__icon-item {
+      margin-right: vw(18px);
+    }
+    &__icon-btn {
+      padding: 0;
+    }
+    &__icon {
+      width: vw(24px);
+      height: vw(24px);
+      margin-right: vw(10px);
+      padding: 0;
+    }
+  }
+  &__play-btn {
+    width: vw(48px);
+    height: vw(48px);
+    border-radius: 50%;
+    background: $BLACK_2F;
+    margin-left: auto;
+    margin-right: vw(15px);
+  }
+  &__play-icon {
+    width: vw(20px);
+    height: vw(20px);
+  }
+}
