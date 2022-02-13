@@ -8,7 +8,7 @@ function RecommendationListItem() {
 
       <div className="album-info">
         <p className="album-info--title mont-alt w-500">Dummy Title</p>
-        <p className="album-info--artist mont-alt w-400">Dummy Artist</p>
+        <p className="album-info--artist fs-14 mont-alt w-400">Dummy Artist</p>
       </div>
     </div>
   );

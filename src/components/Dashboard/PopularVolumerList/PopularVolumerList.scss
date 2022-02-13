@@ -1,14 +1,17 @@
-.recommendation-list {
-  width: 100%;
-  margin-top: vw(119px);
+.popular-volumer-list {
+  margin-top: vw(198px);
 
   &--title {
-    margin-bottom: vw(31px);
+    margin-bottom: vw(32px);
   }
 
-  .list-conatiner {
+  .volumer-list {
     overflow: scroll;
-    .list-item {
+
+    &-item {
+      & + .volumer-list-item {
+        margin-left: vw(17px);
+      }
     }
   }
 

@@ -41,4 +41,8 @@ body {
   &.justify-space-between {
     justify-content: space-between;
   }
+
+  .f-one {
+    flex: 1;
+  }
 }

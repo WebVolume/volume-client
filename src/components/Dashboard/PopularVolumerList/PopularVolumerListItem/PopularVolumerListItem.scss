@@ -1,0 +1,64 @@
+.popular-volumer-list-item {
+  width: vw(318px);
+  min-height: vw(590px);
+
+  padding: vw(32px) 0 vw(37px);
+
+  border-radius: vw(11.96px);
+  background-color: $BORDER_COLOR;
+
+  .volumer-info {
+    margin-bottom: vw(50.73px);
+
+    &--name {
+      margin-bottom: vw(13.79px);
+    }
+
+    &--profile {
+      width: vw(128.16px);
+      height: vw(128.16px);
+      border-radius: vw(21.35px);
+
+      margin-bottom: vw(15px);
+    }
+
+    &--detail {
+      margin-bottom: vw(9.64px);
+
+      .detail-item-wrapper {
+        .detail-item-icon {
+          width: vw(24px);
+          margin-right: vw(8.5px);
+        }
+
+        .detail-item-number {
+          font-family: "Montserrat";
+          font-weight: 500;
+          font-size: vw(15px);
+        }
+
+        & + .detail-item-wrapper {
+          margin-left: vw(11px);
+        }
+      }
+    }
+
+    .follow-button {
+      width: vw(118.76px);
+      height: vw(35px);
+
+      border-radius: vw(5.12px);
+      background-color: $DARK_GRAY;
+
+      &.active {
+        background-color: $BLUE_2461;
+      }
+
+      &--ico {
+        margin-right: vw(7px);
+
+        width: vw(24px);
+      }
+    }
+  }
+}
