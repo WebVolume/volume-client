@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import * as Screens from "../screens";
+// import * as Components from "../components";
 
 const RootRouter = () => {
   const { Profile, Search, Library, Dashboard, Main } = Screens.Main;
@@ -22,6 +23,13 @@ const RootRouter = () => {
           <Route path="playlists" element={<Profile.PlayLists />} />
           <Route path="reposts" element={<Profile.Reposts />} />
         </Route>
+      </Route>
+      <Route path="profile/*" element={<Screens.Profile.Profile />}>
+        <Route index element={<Screens.Profile.All />} />
+        <Route path="likes" element={<Screens.Profile.Likes />} />
+        <Route path="tracks" element={<Screens.Profile.Tracks />} />
+        <Route path="playlists" element={<Screens.Profile.PlayLists />} />
+        <Route path="reposts" element={<Screens.Profile.Reposts />} />
       </Route>
     </Routes>
   );
