@@ -1,6 +1,5 @@
 import "./Dashboard.scss";
-import { MainSwiper } from "@components/Dashboard";
-import * as Common from "@components/Common";
+import { MainSwiper, RightAside } from "@components/Dashboard";
 
 function Dashboard() {
   return (
@@ -8,7 +7,7 @@ function Dashboard() {
       <main className="dashboard-screen-container">
         <MainSwiper />
       </main>
-      <Common.RightAside />
+      <RightAside />
     </div>
   );
 }
