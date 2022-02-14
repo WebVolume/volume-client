@@ -34,7 +34,7 @@ function PopularVolumerListItem() {
               src={PeopleSvg}
               alt="팔로워 수 아이콘"
             />
-            <span className="detail-item-number">999+</span>
+            <span className="detail-item-number mont w-500">999+</span>
           </div>
 
           <div className="detail-item-wrapper flex align-center">
@@ -43,7 +43,7 @@ function PopularVolumerListItem() {
               src={PeopleSvg}
               alt="음악 아이콘"
             />
-            <span className="detail-item-number">999+</span>
+            <span className="detail-item-number mont w-500">999+</span>
           </div>
         </div>
 
