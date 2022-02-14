@@ -2,7 +2,8 @@
   .input-wrapper {
     border-bottom: 2px solid #fff;
     margin-right: vw(14.41px);
-    input {
+    .input-item {
+      width: vw(278px);
       caret-color: white;
       color: #fff;
     }
