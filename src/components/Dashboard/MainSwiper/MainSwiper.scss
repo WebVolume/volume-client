@@ -1,17 +1,51 @@
 .main-swiper {
-  padding: 30px 0 50px;
-
+  width: vw(986px);
+  height: vw(566px);
   .swiper-container {
-    width: vw(1048px);
-    aspect-ratio: calc(1048 / 572);
-    margin: 0 vw(48px);
+    position: relative;
+    aspect-ratio: calc(986 / 566);
     .swiper {
       height: 100%;
     }
+    .custom-navigation {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      &--image {
+        width: vw(60px);
+      }
+
+      &.prev {
+        left: vw(27px);
+      }
+
+      &.next {
+        right: vw(27px);
+      }
+    }
   }
-  .custom-navigation {
-    &--image {
-      width: vw(80px);
+
+  @media screen and (max-width: $TABLET_CRITERIA) {
+    width: 100%;
+    height: vw-t(438.56px);
+    .swiper-container {
+      width: 100%;
+      aspect-ratio: calc(764 / 438.56);
+
+      .custom-navigation {
+        &--image {
+          width: vw-t(60px);
+        }
+
+        &.prev {
+          left: vw-t(27px);
+        }
+
+        &.next {
+          right: vw-t(27px);
+        }
+      }
     }
   }
 }

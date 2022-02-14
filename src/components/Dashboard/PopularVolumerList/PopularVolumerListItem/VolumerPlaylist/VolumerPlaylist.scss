@@ -1,0 +1,27 @@
+.volumer-play-list {
+  width: 100%;
+
+  padding-left: vw(12.96px);
+  padding-right: vw(20.53px);
+
+  &-item {
+    &--container {
+      .album-art {
+        width: vw(31.61px);
+        height: vw(31.61px);
+
+        margin-right: vw(10.25px);
+
+        border-radius: vw(3.41px);
+      }
+
+      .play-btn {
+        width: vw(13.67px);
+      }
+    }
+
+    & + .volumer-play-list-item {
+      margin-top: vw(16.39px);
+    }
+  }
+}

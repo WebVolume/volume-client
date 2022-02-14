@@ -12,16 +12,19 @@ import NavRightIcoSrc from "@ico/nav-right.png";
 function MainSwiper() {
   return (
     <div className="main-swiper flex justify-center">
-      <div className="custom-navigation flex align-center">
-        <a className="prev" href="#">
-          <img
-            className="custom-navigation--image"
-            src={NavLeftIcoSrc}
-            alt="왼쪽 화살표 이미지"
-          />
-        </a>
-      </div>
       <div className="swiper-container">
+        {/*  */}
+        <div className="custom-navigation prev flex align-center">
+          <a className="prev" href="#">
+            <img
+              className="custom-navigation--image"
+              src={NavLeftIcoSrc}
+              alt="왼쪽 화살표 이미지"
+            />
+          </a>
+        </div>
+
+        {/*  */}
         <Swiper
           modules={[Navigation]}
           slidesPerView={1}
@@ -36,15 +39,17 @@ function MainSwiper() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
-      <div className="custom-navigation  flex align-center">
-        <a className="next" href="#">
-          <img
-            className="custom-navigation--image"
-            src={NavRightIcoSrc}
-            alt="왼쪽 화살표 이미지"
-          />
-        </a>
+
+        {/*  */}
+        <div className="custom-navigation next flex align-center">
+          <a className="next" href="#">
+            <img
+              className="custom-navigation--image"
+              src={NavRightIcoSrc}
+              alt="왼쪽 화살표 이미지"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

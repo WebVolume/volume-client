@@ -1,3 +1,22 @@
 .dashboard-screen {
+  display: flex;
+  justify-content: space-between;
+
   color: white;
+
+  border-left: 1px solid $BORDER_COLOR;
+
+  &-container {
+    width: vw(1002px);
+  }
+}
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .dashboard-screen {
+    justify-content: center;
+
+    &-container {
+      width: 100%;
+    }
+  }
 }
