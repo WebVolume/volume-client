@@ -1,11 +1,11 @@
 .search-bar {
   .input-wrapper {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $WHITE_FF;
     margin-right: vw(14.41px);
     .input-item {
       width: vw(278px);
-      caret-color: white;
-      color: #fff;
+      caret-color: $WHITE_FF;
+      color: $WHITE_FF;
     }
   }
   .search-icon {
