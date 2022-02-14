@@ -1,0 +1,15 @@
+.user-stats {
+  border-bottom: 1px solid white;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  .user-stats-ul {
+    margin-left: vw(32px);
+    &__li {
+      width: vw(88px);
+      margin-right: vw(50px);
+    }
+    &__title {
+      margin-bottom: vw(15px);
+    }
+  }
+}

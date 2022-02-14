@@ -3,8 +3,34 @@
 // colors
 $MAIN_BLACK: #0b0b0b;
 $BLACK_18B: #18181b;
+$BLACK_17: #171717;
+$BLACK_00: #000000;
+$BLACK_2B: #2b2b2b;
+$BLACK_0B: #0b0b0b;
+$BLACK_26: #262626;
+$BLACK_1D: #1d1d1d;
+$BLACK_2F: #2f2f2f;
 
+$DARK_GRAY: #4a4954;
+$M_GRAY: #6c6a78;
+
+$BORDER_COLOR: #232323;
+
+$BLUE_2A6F: #2a66ff;
+$BLUE_2461: #2461ff;
+
+$WHITE_FF: #ffffff;
+
+$BLUE_2A6F: #2a66ff;
 // loyout
+$TABLET_CRITERIA: 764px;
+
+$MAIN_GRID_WIDTH: 68.75%;
+
 $RIGHT_ASIDE_WIDTH: vw(300px);
 $TOP_BAR_HEIGHT: vw(119px);
 $LAYOUT_LEFT_PADDING: vw(325px);
+
+$TOP_BAR_HEIGHT_TABLET: vw-t(79px);
+// z-index
+$TOP: 999;

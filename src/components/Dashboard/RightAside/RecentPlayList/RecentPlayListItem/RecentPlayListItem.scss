@@ -1,0 +1,13 @@
+.recent-play-list-item {
+  padding: vw(22.74px) vw(21px);
+
+  .album-img {
+    width: vw(49px);
+    border-radius: 50%;
+    margin-right: vw(20.55px);
+  }
+
+  & + .recent-play-list-item {
+    border: 1px solid $BORDER_COLOR;
+  }
+}

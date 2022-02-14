@@ -63,6 +63,35 @@
       width: vw(339px);
       height: vh(67px);
       font-family: Montserrat Alternates;
+      font-size: 2.2vh;
+      flex: 1;
+      color: white;
+    }
+  }
+}
+.home-wrapper {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: Montserrat Alternates;
+  button {
+    background: none;
+    border: none;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    padding: vh(44px) vw(373px);
+    &__logo-title {
+      font-size: 3.3vh;
+      flex: 8;
+    }
+    &__signup-btn,
+    &__signin-btn {
+      font-family: Montserrat Alternates;
+      font-size: 2.2vh;
+      flex: 1;
+      color: white;
     }
   }
 }

@@ -9,7 +9,7 @@ function MainSwiperSlide() {
         src="https://user-images.githubusercontent.com/57122180/150649419-798d4877-69f3-4000-864c-3c171f1e79ff.png"
         alt="앨범 아트"
       />
-      <div className="music-info-container flex column align-center justify-end">
+      <div className="music-info-container flex column align-center justify-center">
         <a className="play-button-wrapper" href="#">
           <img className="play-button" src={PlayButtonSrc} alt="재생 버튼" />
         </a>

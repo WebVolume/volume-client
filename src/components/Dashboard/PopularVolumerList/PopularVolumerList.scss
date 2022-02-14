@@ -1,0 +1,28 @@
+.popular-volumer-list {
+  margin-top: vw(198px);
+
+  &--title {
+    margin-bottom: vw(32px);
+  }
+
+  .volumer-list {
+    overflow: scroll;
+
+    &-item {
+      & + .volumer-list-item {
+        margin-left: vw(17px);
+      }
+    }
+  }
+
+  @media screen and (max-width: $TABLET_CRITERIA) {
+    &--title {
+      padding-left: vw-t(40px);
+    }
+
+    .tablet-start-padding {
+      display: block;
+      margin-left: vw-t(40px);
+    }
+  }
+}

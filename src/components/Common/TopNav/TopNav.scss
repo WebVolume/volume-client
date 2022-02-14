@@ -2,19 +2,23 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: $RIGHT_ASIDE_WIDTH;
+  right: 0;
   height: $TOP_BAR_HEIGHT;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: $LAYOUT_LEFT_PADDING;
-  padding-right: vw(29px);
+  background-color: $BLACK_17;
+  border-bottom: 1px solid $BORDER_COLOR;
+  z-index: $TOP;
 
-  background-color: black;
+  &-container {
+    width: $MAIN_GRID_WIDTH;
+    height: 100%;
+
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 
   .logo {
-    color: #fff;
+    color: $WHITE_FF;
   }
 
   //
@@ -33,4 +37,31 @@
 
 .empty-top-bar {
   height: $TOP_BAR_HEIGHT;
+}
+
+@media screen and (max-width: 764px) {
+  .top-nav {
+    height: $TOP_BAR_HEIGHT_TABLET;
+
+    &-container {
+      width: 100%;
+      padding-left: vw-t(72px);
+      padding-right: vw-t(40px);
+    }
+
+    .nav-list {
+      &--item {
+        & + .nav-list--item {
+          margin-left: vw-t(27px);
+        }
+
+        &_ico {
+          width: vw-t(22.59px);
+        }
+      }
+    }
+  }
+  .empty-top-bar {
+    height: $TOP_BAR_HEIGHT_TABLET;
+  }
 }
