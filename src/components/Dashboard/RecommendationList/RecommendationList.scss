@@ -9,6 +9,9 @@
   .list-conatiner {
     overflow: scroll;
     .list-item {
+      & + .list-item {
+        margin-left: vw(11px);
+      }
     }
   }
 

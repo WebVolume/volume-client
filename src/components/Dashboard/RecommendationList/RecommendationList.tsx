@@ -12,7 +12,7 @@ function RecommendationList() {
       <ul className="list-conatiner flex">
         <li className="tablet-start-padding hidden"></li>
         {[1.2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
-          <li key={uuidv4()} className={"list-item first"}>
+          <li key={uuidv4()} className="list-item first">
             <RecommendationListItem />
           </li>
         ))}
