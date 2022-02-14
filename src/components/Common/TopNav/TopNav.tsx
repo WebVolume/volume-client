@@ -8,7 +8,7 @@ function TopNav() {
   return (
     <>
       <nav className="top-nav">
-        <div className="top-nav-container">
+        <div className="top-nav-container flex align-center justify-space-between">
           <a href="/main" className="logo mont w-600 fs-30">
             Volume
           </a>
