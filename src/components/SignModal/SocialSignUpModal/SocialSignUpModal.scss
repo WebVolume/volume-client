@@ -2,23 +2,23 @@
 .signup-dimmer {
   .social-modal-container {
     width: vw(541px);
-    height: vh(491px);
+    height: vw(491px);
+    padding: vw(46px) vw(46px);
     &__signup-title {
-      margin-bottom: vh(13px);
+      margin-bottom: vw(13px);
     }
     &__sub-title {
-      font-size: 1.7vh;
-      color: #969696;
-      margin-bottom: vh(46px);
+      color: $GRAY_96;
+      margin-bottom: vw(46px);
     }
     &__id-input {
-      margin-bottom: vh(43px);
+      margin-bottom: vw(43px);
     }
     &__name-input {
-      margin-bottom: vh(18px);
+      margin-bottom: vw(18px);
     }
     &__email-input {
-      margin-bottom: vh(50px);
+      margin-bottom: vw(50px);
     }
   }
 }

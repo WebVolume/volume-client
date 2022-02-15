@@ -1,36 +1,32 @@
 @import url("../Modal.scss");
 .signup-dimmer {
   .modal-container {
+    padding: vw(36px) vw(47px);
     &__signup-title {
-      margin-bottom: vh(13px);
+      margin-bottom: vw(66px);
     }
-    &__sub-title {
-      font-size: 1.7vh;
-      color: #969696;
-      margin-bottom: vh(33px);
-    }
-    &__id-input {
-      margin-bottom: vh(42px);
-    }
-    //fix__
     &__id-duplication-check {
       position: relative;
       text-align: end;
       right: vw(32px);
-      bottom: vh(74px);
-      font-size: 1.5vh;
-      color: #1472ff;
+      top: vw(30px);
+      color: $BLUE_1472;
     }
     &__password-auth-input {
-      margin-bottom: vh(6px);
+      margin-bottom: vw(6px);
     }
-    &__password-comment {
-      font-size: 1.3vh;
-      color: #969696;
-      margin-bottom: vh(15px);
+    &__name-input {
+      margin-top: vw(23px);
+      margin-bottom: vw(19px);
     }
     &__email-input {
-      margin-bottom: vh(50px);
+      margin-bottom: vw(50px);
+    }
+    &__waring-comment {
+      color: $RED_FF1D;
+      height: vw(30px);
+      padding: vw(5px) vw(2px);
+      margin-bottom: vw(2px);
     }
   }
 }

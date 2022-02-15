@@ -1,64 +1,54 @@
 @import url("../Modal.scss");
 .signin-dimmer {
   .modal-container {
+    padding: vw(38px) vw(47px);
     &__login-title {
-      font-size: 3.2vh;
-      margin-bottom: vh(61px);
+      margin-bottom: vw(61px);
     }
     .login-form {
+      &__email-input {
+        margin-bottom: vw(23px);
+      }
       &__password-input {
-        margin-bottom: vh(11px);
+        margin-bottom: vw(11px);
       }
       &__message {
-        font-size: 1.3vh;
-        color: #ff1d1d;
-        margin-bottom: vh(15px);
+        color: $RED_FF1D;
+        margin-bottom: vw(15px);
       }
     }
     .find-and-signup-container {
-      display: flex;
-      background: none;
-      @mixin signup-btn {
-        padding: vh(10px) 0vw vh(26px) 0vw;
-        margin: 0;
-        color: #969696;
-        font-size: 1.7vh;
-      }
       &__find-account-btn {
-        @include signup-btn();
+        color: $GRAY_96;
         text-align: start;
       }
       &__signup-btn {
-        @include signup-btn();
+        color: $GRAY_96;
         text-align: end;
       }
     }
 
     &__or {
-      display: flex;
-      align-items: center;
-      color: black;
-      font-size: 1.7vh;
-      margin-bottom: vh(47px);
+      margin-bottom: vw(47px);
     }
 
     &__or::before,
     &__or::after {
       content: "";
       flex-grow: 1;
-      background: black;
-      height: 0.1vh;
-      margin: 0vh vw(5px);
+      background: $BLACK_00;
+      height: 0.05vw;
+      margin: 0vw vw(5px);
     }
 
     .simple-login-form {
-      font-size: 1.7vh;
       &__google-login-btn {
-        margin-top: vh(9px);
-        border: 0.1vh solid #c2c2c2;
+        margin-top: vw(9px);
+        border: 0.1vw solid $GRAY_C2;
+        margin-bottom: vw(20px);
       }
       &__kakao-login-btn {
-        background: #ffc93e;
+        background: $YELLOW_FFC9;
       }
     }
   }

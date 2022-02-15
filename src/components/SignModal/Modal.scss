@@ -5,48 +5,30 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background: #00000050;
+  background: $DIMMBER_BACK;
   background-size: cover;
   z-index: 200;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
-  color: black;
-  font-family: Noto Sans CJK KR;
-  button,
-  input {
-    font-size: 1.7vh;
-    margin-bottom: vh(23px);
-    height: vh(45px);
-    border-radius: 4px;
+  .modal-box {
+    height: vw(45px);
+    border-radius: vw(4px);
     width: vw(446px);
-    font-family: Noto Sans CJK KR;
   }
   input {
     text-indent: 0.8rem;
-    border: 1px solid black;
+    border: 1px solid $BLACK_00;
   }
   .modal-container {
     width: vw(541px);
-    height: vh(652px);
-    display: flex;
-    flex-direction: column;
+    height: vw(652px);
     position: relative;
     z-index: 201;
-    background: white;
-    border-radius: 1.1vh;
-    box-shadow: vw(14px) vh(23px) 11px rgba(0, 0, 0, 0.25);
-    padding: 3.5vh 2.5vw;
+    background: $WHITE_FF;
+    border-radius: 1.1vw;
+    box-shadow: vw(14px) vw(23px) 11px rgba(0, 0, 0, 0.25);
     &__continue-btn {
-      margin-bottom: 0vh;
+      margin-bottom: 0vw;
       background: #1472ff;
-      color: white;
-    }
-    &__login-title,
-    &__signup-title {
-      font-size: 3.2vh;
-      font-family: Montserrat Alternates;
     }
   }
 }
