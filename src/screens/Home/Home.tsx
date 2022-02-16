@@ -2,11 +2,7 @@ import "./Home.scss";
 import logoImg from "../../assets/images/volume.png";
 import hamburgerIcon from "@ico/hamburger.svg";
 import { useState } from "react";
-import {
-  SignInModal,
-  SignUpModal,
-  SocialSignUpModal
-} from "@components/SignModal";
+import { SignInModal, SignUpModal } from "@components/SignModal";
 
 function Home() {
   const [signInModalVisible, setsingInModalVisible] = useState(false);
@@ -23,9 +19,7 @@ function Home() {
         <SignInModal handleSignInModalVisible={handleSignInModalVisible} />
       )}
       {signUpModalVisible && (
-        <SocialSignUpModal
-          handleSignUpModalVisible={handleSignUpModalVisible}
-        />
+        <SignUpModal handleSignUpModalVisible={handleSignUpModalVisible} />
       )}
       <header className="header-container flex align-center">
         <p className="header-container__logo-title fs-36">Volume</p>
