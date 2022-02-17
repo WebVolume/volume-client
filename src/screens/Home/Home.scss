@@ -5,7 +5,9 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+  .phone {
+    display: none;
+  }
   width: 100vw;
   height: 100vh;
 
@@ -18,17 +20,6 @@
     padding: vw(44px) vw(373px);
     &__logo-title {
       flex: 8;
-    }
-    &__hamburger-btn {
-      width: vw-p(44px);
-      height: vw-p(43px);
-      border: vw-p(1px) solid $WHITE_FF;
-      border-radius: vw-p(4px);
-      display: none;
-    }
-    &__hamburger-icon {
-      width: vw-p(28px);
-      height: vw-p(23px);
     }
     &__signup-btn,
     &__signin-btn {
@@ -57,6 +48,81 @@
       top: vw(175px);
       width: vw(339px);
       height: vw(67px);
+    }
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .home-wrapper {
+    .header-container {
+      padding: vw-t(40px);
+      &__signup-btn,
+      &__signin-btn {
+        flex: 2;
+      }
+    }
+
+    .main-container {
+      left: vw-t(287px);
+      top: 35%;
+      &__logo-title {
+        font-size: vw-t(72px);
+      }
+      &__logo-img {
+        width: vw-t(444px);
+        height: vw-t(49px);
+        top: vw-t(55px);
+      }
+      &__signup-btn {
+        top: vw-t(124px);
+        width: vw-t(339px);
+        height: vw-t(67px);
+        border: vw-t(2px) solid $WHITE_FF;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .home-wrapper {
+    .desktopTablet {
+      display: none;
+    }
+    .phone {
+      display: block;
+    }
+    .header-container {
+      padding: vw-p(40px) vw-p(20px);
+      &__hamburger-btn {
+        width: vw-p(44px);
+        height: vw-p(43px);
+        border: vw-p(1px) solid $WHITE_FF;
+        border-radius: vw-p(4px);
+      }
+      &__hamburger-icon {
+        width: vw-p(28px);
+        height: vw-p(23px);
+      }
+    }
+
+    .main-container {
+      left: vw-p(73px);
+      top: vw-p(270px);
+      &__logo-title {
+        font-size: vw-p(50px);
+      }
+      &__logo-img {
+        width: vw-p(300px);
+        height: vw-p(33px);
+        top: vw-p(40px);
+      }
+      &__signup-btn {
+        top: vw-p(90px);
+        width: vw-p(231px);
+        height: vw-p(45px);
+        border: vw-p(2px) solid $WHITE_FF;
+        font-size: vw-p(23px);
+      }
     }
   }
 }

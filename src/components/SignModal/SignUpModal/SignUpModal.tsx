@@ -49,7 +49,7 @@ const SignUpModal = (props: any) => {
           className="modal-container__email-input fs-16 modal-box"
           placeholder="이메일"
         />
-        <button className="modal-container__continue-btn modal-box">
+        <button className="modal-container__continue-btn fs-16 modal-box">
           회원가입 완료
         </button>
       </div>

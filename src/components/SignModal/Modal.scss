@@ -32,3 +32,34 @@
     }
   }
 }
+
+@media screen and (max-width: 764px) {
+  .signin-dimmer,
+  .signup-dimmer {
+    .modal-box {
+      height: vw-t(45px);
+      border-radius: vw-t(4px);
+      width: vw-t(342px);
+    }
+    .modal-container {
+      width: vw-t(415px);
+      height: vw-t(652px);
+    }
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .signin-dimmer,
+  .signup-dimmer {
+    .modal-box {
+      height: vw-p(35px);
+      border-radius: vw-p(4px);
+      width: vw-p(255px);
+    }
+    .modal-container {
+      width: vw-p(306px);
+      height: vw-p(508px);
+      border-radius: vw-p(12px);
+    }
+  }
+}

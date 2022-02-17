@@ -31,13 +31,13 @@ function Home() {
           />
         </button>
         <button
-          className="header-container__signup-btn fs-24 "
+          className="header-container__signup-btn fs-24 desktopTablet"
           onClick={handleSignUpModalVisible}
         >
           Sign up
         </button>
         <button
-          className="header-container__signin-btn fs-24"
+          className="header-container__signin-btn fs-24 desktopTablet"
           onClick={handleSignInModalVisible}
         >
           Login

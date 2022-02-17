@@ -20,13 +20,70 @@
       margin-bottom: vw(19px);
     }
     &__email-input {
-      margin-bottom: vw(50px);
+      margin-bottom: vw(42px);
     }
     &__waring-comment {
       color: $RED_FF1D;
       height: vw(30px);
       padding: vw(5px) vw(2px);
       margin-bottom: vw(2px);
+    }
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .signup-dimmer {
+    .modal-container {
+      padding: vw-t(45px) vw-t(33px);
+      &__signup-title {
+        margin-bottom: vw-t(66px);
+      }
+      &__id-duplication-check {
+        right: vw-t(32px);
+        top: vw-t(30px);
+      }
+      &__password-auth-input {
+        margin-bottom: vw-t(6px);
+      }
+      &__name-input {
+        margin-bottom: vw-t(19px);
+      }
+      &__email-input {
+        margin-bottom: vw-t(50px);
+      }
+      &__waring-comment {
+        height: vw-t(30px);
+        padding: vw-t(5px) vw-t(2px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .signup-dimmer {
+    .modal-container {
+      padding: vw-p(19px) vw-p(24px);
+      &__signup-title {
+        font-size: vw-p(28px);
+      }
+      &__id-duplication-check {
+        top: vw-p(23px);
+        font-size: vw-p(12px);
+      }
+      &__password-auth-input {
+        margin-bottom: vw-p(6px);
+      }
+      &__name-input {
+        margin-bottom: vw-p(15px);
+      }
+      &__email-input {
+        margin-bottom: vw-p(40px);
+      }
+      &__waring-comment {
+        height: vw-p(30px);
+        padding: vw-p(5px) vw-p(2px);
+        margin-bottom: vw-p(2px);
+      }
     }
   }
 }

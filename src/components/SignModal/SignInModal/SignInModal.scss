@@ -44,11 +44,115 @@
     .simple-login-form {
       &__google-login-btn {
         margin-top: vw(9px);
-        border: 0.1vw solid $GRAY_C2;
+        border: vw(1px) solid $GRAY_C2;
         margin-bottom: vw(20px);
       }
       &__kakao-login-btn {
         background: $YELLOW_FFC9;
+      }
+    }
+  }
+}
+@media screen and (max-width: 764px) {
+  .signin-dimmer {
+    .modal-container {
+      padding: vw-t(38px) vw-t(36px);
+      &__login-title {
+        margin-bottom: vw-t(61px);
+      }
+      .login-form {
+        &__email-input {
+          margin-bottom: vw-t(23px);
+        }
+        &__password-input {
+          margin-bottom: vw-t(11px);
+        }
+        &__message {
+          margin-bottom: vw-t(15px);
+        }
+      }
+      .find-and-signup-container {
+        &__find-account-btn,
+        &__signup-btn {
+          font-size: vw-t(14px);
+        }
+      }
+
+      &__or {
+        margin-bottom: vw-t(47px);
+      }
+
+      &__or::before,
+      &__or::after {
+        margin: 0vw vw-t(5px);
+      }
+
+      .simple-login-form {
+        &__google-login-btn {
+          margin-top: vw-t(9px);
+          margin-bottom: vw-t(20px);
+          border: vw-t(1px) solid $GRAY_C2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .signin-dimmer {
+    .modal-container {
+      padding: vw-p(30px) vw-p(27px);
+      &__login-title {
+        margin-bottom: vw-p(40px);
+        font-size: vw-p(28px);
+      }
+      .login-form {
+        &__email-input {
+          margin-bottom: vw-p(18px);
+          font-size: vw-p(12px);
+        }
+        &__password-input {
+          margin-bottom: vw-p(11px);
+          font-size: vw-p(12px);
+        }
+        &__message {
+          margin-bottom: vw-p(15px);
+          font-size: vw-p(12px);
+        }
+      }
+      &__continue-btn {
+        font-size: vw-p(14px);
+      }
+      .find-and-signup-container {
+        &__find-account-btn,
+        &__signup-btn {
+          font-size: vw-p(12px);
+        }
+      }
+
+      &__or {
+        margin-bottom: vw-p(34px);
+        font-size: vw-p(12px);
+      }
+
+      &__or::before,
+      &__or::after {
+        margin: 0vw vw-p(5px);
+      }
+
+      .simple-login-form {
+        &__title {
+          font-size: vw-p(14px);
+          margin-bottom: vw-p(6px);
+        }
+        &__google-login-btn {
+          margin-top: vw-p(9px);
+          margin-bottom: vw-p(20px);
+          font-size: vw-p(12px);
+        }
+        &__kakao-login-btn {
+          font-size: vw-p(12px);
+        }
       }
     }
   }
