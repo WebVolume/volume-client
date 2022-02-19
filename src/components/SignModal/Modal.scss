@@ -5,48 +5,58 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background: #00000050;
+  background: $DIMMBER_BACK;
   background-size: cover;
   z-index: 200;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
-  color: black;
-  font-family: Noto Sans CJK KR;
-  button,
-  input {
-    font-size: 1.7vh;
-    margin-bottom: vh(23px);
-    height: vh(45px);
+  .modal-box {
+    height: vw(45px);
     border-radius: 4px;
     width: vw(446px);
-    font-family: Noto Sans CJK KR;
   }
   input {
     text-indent: 0.8rem;
-    border: 1px solid black;
+    border: 1px solid $BLACK_00;
   }
   .modal-container {
     width: vw(541px);
-    height: vh(652px);
-    display: flex;
-    flex-direction: column;
+    height: vw(652px);
     position: relative;
     z-index: 201;
-    background: white;
-    border-radius: 1.1vh;
-    box-shadow: vw(14px) vh(23px) 11px rgba(0, 0, 0, 0.25);
-    padding: 3.5vh 2.5vw;
+    background: $WHITE_FF;
+    border-radius: 12px;
+    box-shadow: vw(14px) vw(23px) 11px rgba(0, 0, 0, 0.25);
     &__continue-btn {
-      margin-bottom: 0vh;
+      margin-bottom: 0;
       background: #1472ff;
-      color: white;
     }
-    &__login-title,
-    &__signup-title {
-      font-size: 3.2vh;
-      font-family: Montserrat Alternates;
+  }
+}
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .signin-dimmer,
+  .signup-dimmer {
+    .modal-box {
+      height: vw-t(45px);
+      width: vw-t(342px);
+    }
+    .modal-container {
+      width: vw-t(415px);
+      height: vw-t(652px);
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .signin-dimmer,
+  .signup-dimmer {
+    .modal-box {
+      height: vw-p(35px);
+      width: vw-p(255px);
+    }
+    .modal-container {
+      width: vw-p(306px);
+      height: vw-p(508px);
     }
   }
 }

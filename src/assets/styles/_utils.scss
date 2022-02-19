@@ -18,3 +18,9 @@ $vh-viewport: 1080;
   @return calc($size / $vw-context * 1vw);
   @return $size;
 }
+
+@function vw-p($size) {
+  $vw-context: $PHONE_CRITERIA * 0.01;
+  @return calc($size / $vw-context * 1vw);
+  @return $size;
+}
