@@ -39,6 +39,20 @@
   font-size: vw(12px);
 }
 
+.fs-36 {
+  font-size: vw(36px);
+}
+
+.fs-125 {
+  font-size: vw(125px);
+}
+
+.fs-35 {
+  font-size: vw(35px);
+}
+.fs-28 {
+  font-size: vw(28px);
+}
 .mont {
   font-family: "Montserrat";
 }
@@ -55,6 +69,9 @@
   color: $WHITE_FF;
 }
 
+.fc-black {
+  color: $BLACK_00;
+}
 @media screen and (max-width: $TABLET_CRITERIA) {
   .fs-30 {
     font-size: vw-t(30px);
@@ -68,5 +85,38 @@
   .fs-18 {
     font-size: vw-t(18px);
     line-height: vw-t(26px);
+  }
+
+  .fs-35 {
+    font-size: vw-t(35px);
+  }
+
+  .fs-36 {
+    font-size: vw-t(36px);
+  }
+
+  .fs-24 {
+    font-size: vw-t(24px);
+  }
+
+  .fs-28 {
+    font-size: vw-t(28px);
+  }
+
+  .fs-16 {
+    font-size: vw-t(16px);
+  }
+
+  .fs-18 {
+    font-size: vw-t(18px);
+  }
+
+  .fs-28 {
+    font-size: vw-t(28px);
+  }
+}
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .fs-36 {
+    font-size: vw-p(35px);
   }
 }

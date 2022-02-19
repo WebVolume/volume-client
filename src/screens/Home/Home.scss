@@ -5,93 +5,153 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-  color: white;
-  height: 100vh;
-  font-family: Montserrat Alternates;
-  button {
-    background: none;
-    border: none;
+  .phone {
+    display: none;
   }
+  width: 100vw;
+  height: 100vh;
+
   button:hover {
     cursor: pointer;
     transform: scale(1.03);
   }
 
   .header-container {
-    display: flex;
-    flex-direction: row;
-    padding: vh(44px) vw(373px);
+    padding: vw(44px) vw(373px);
     &__logo-title {
-      font-size: 3.3vh;
       flex: 8;
     }
-    &__signup-btn,
-    &__signin-btn {
-      font-family: Montserrat Alternates;
-      font-size: 2.2vh;
-      flex: 1;
-      color: white;
+    .home-sign-container {
+      flex: 2;
+      justify-content: space-between;
     }
   }
 
   .main-container {
     position: relative;
     width: 0;
-    height: 0;
     left: vw(880px);
-    top: vh(270px);
-    &__logo-title {
-      position: absolute;
-      font-size: 11.5vh;
-      font-weight: 100;
-    }
+    top: 40%;
+    transform: translateY(vw(-124px));
+
     &__logo-img {
       position: absolute;
       width: vw(757px);
-      height: vh(86px);
-      top: vh(90px);
+      height: vw(86px);
+      top: vw(90px);
     }
     &__signup-btn {
       position: absolute;
-      background-color: black;
-      color: white;
-      border-radius: 1vmin;
-      border: 0.3rem solid white;
-      font-size: 3.2vh;
-      top: vh(175px);
+      background-color: $BLACK_00;
+      border-radius: 6px;
+      border: 2px solid $WHITE_FF;
+      top: vw(175px);
       width: vw(339px);
-      height: vh(67px);
-      font-family: Montserrat Alternates;
-      font-size: 2.2vh;
-      flex: 1;
-      color: white;
+      height: vw(67px);
     }
   }
 }
-.home-wrapper {
-  height: 100vh;
-  width: 100vw;
-  color: white;
-  font-family: Montserrat Alternates;
-  button {
-    background: none;
-    border: none;
-  }
-  .header-container {
-    display: flex;
-    flex-direction: row;
-    padding: vh(44px) vw(373px);
-    &__logo-title {
-      font-size: 3.3vh;
-      flex: 8;
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .home-wrapper {
+    .header-container {
+      padding: vw-t(40px);
+      .home-sign-container {
+        flex: 4;
+      }
     }
-    &__signup-btn,
-    &__signin-btn {
-      font-family: Montserrat Alternates;
-      font-size: 2.2vh;
-      flex: 1;
-      color: white;
+
+    .main-container {
+      left: vw-t(287px);
+      top: 35%;
+      &__logo-title {
+        font-size: vw-t(72px);
+      }
+      &__logo-img {
+        width: vw-t(444px);
+        height: vw-t(49px);
+        top: vw-t(55px);
+      }
+      &__signup-btn {
+        top: vw-t(124px);
+        width: vw-t(339px);
+        height: vw-t(67px);
+        border: vw-t(2px) solid $WHITE_FF;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .home-wrapper {
+    .home-aside-tap--hidden {
+      display: none;
+    }
+    .home-aside-tap--visible {
+      display: flex;
+    }
+    .phone {
+      display: block;
+    }
+    .header-container {
+      padding: vw-p(40px) vw-p(20px);
+      .home-sign-container {
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        position: fixed;
+        z-index: 90; //fix___
+        right: 0;
+        top: 0;
+        width: vw-p(277px);
+        height: 100%;
+        background-color: $BLACK_17;
+        border-radius: 8px 0 0 8px;
+        &__tap-btn {
+          margin-left: vw-p(19px);
+          margin-top: vw-p(25px);
+        }
+        &__arrow-icon {
+          width: vw-p(9px);
+          height: vw-p(18px);
+        }
+        &__signup-btn,
+        &__signin-btn {
+          font-size: vw-p(24px);
+          margin-left: vw-p(39px);
+          margin-top: vw-p(49px);
+        }
+      }
+      &__hamburger-btn {
+        width: vw-p(44px);
+        height: vw-p(43px);
+        border: 1px solid $WHITE_FF;
+        border-radius: 4px;
+      }
+      &__hamburger-icon {
+        width: vw-p(28px);
+        height: vw-p(23px);
+      }
+    }
+
+    .main-container {
+      left: vw-p(73px);
+      top: vw-p(270px);
+      &__logo-title {
+        font-size: vw-p(50px);
+      }
+      &__logo-img {
+        width: vw-p(300px);
+        height: vw-p(33px);
+        top: vw-p(40px);
+      }
+      &__signup-btn {
+        top: vw-p(90px);
+        width: vw-p(231px);
+        height: vw-p(45px);
+        border: 1.4px solid $WHITE_FF;
+        font-size: vw-p(23px);
+      }
     }
   }
 }
