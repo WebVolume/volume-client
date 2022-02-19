@@ -6,7 +6,6 @@ function Main() {
   return (
     <div className="main-screen">
       <Common.TopNav />
-      <Common.RightAside />
 
       <main className="main-container">
         <Outlet />

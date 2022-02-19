@@ -10,6 +10,7 @@ function SearchBar() {
     <div className="search-bar flex">
       <div className="input-wrapper">
         <input
+          className="input-item"
           type="text"
           onChange={({ target }) => setInputText(target.value)}
         />

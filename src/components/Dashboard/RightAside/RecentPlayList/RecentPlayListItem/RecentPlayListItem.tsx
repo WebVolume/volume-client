@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import "./RecentPlayListItem.scss";
+import DummyImage from "@images/dummys/dummy-album-art.png";
 
 function RecentPlayListItem() {
   const playMusicHandler = useCallback(() => {
@@ -17,7 +18,7 @@ function RecentPlayListItem() {
     >
       <img
         className="album-img"
-        src="http://placehold.it/49x49.png"
+        src={DummyImage}
         alt="플레이 리스트 앨범 아트"
       />
 

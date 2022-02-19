@@ -1,13 +1,24 @@
 .search-bar {
   .input-wrapper {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $WHITE_FF;
     margin-right: vw(14.41px);
-    input {
-      caret-color: white;
-      color: #fff;
+    .input-item {
+      width: vw(278px);
+      caret-color: $WHITE_FF;
+      color: $WHITE_FF;
     }
   }
   .search-icon {
     width: vw(22.59px);
+  }
+
+  @media screen and (max-width: $TABLET_CRITERIA) {
+    .input-wrapper {
+      margin-right: vw-t(14.41px);
+    }
+
+    .search-icon {
+      width: vw-t(22.59px);
+    }
   }
 }

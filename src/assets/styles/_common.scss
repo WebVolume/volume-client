@@ -15,6 +15,16 @@ body {
   position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .flex {
   display: flex;
 
@@ -32,5 +42,13 @@ body {
 
   &.justify-center {
     justify-content: center;
+  }
+
+  &.justify-space-between {
+    justify-content: space-between;
+  }
+
+  .f-one {
+    flex: 1;
   }
 }

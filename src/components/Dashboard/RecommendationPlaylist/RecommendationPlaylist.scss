@@ -1,0 +1,30 @@
+.recommendation-playlist {
+  margin-top: vw(213px);
+
+  &--title {
+    margin-bottom: vw(41.7px);
+  }
+
+  .playlist-list {
+    overflow: scroll;
+
+    &--item {
+      &-cover {
+        width: vw(316px);
+        height: vw(142px);
+        border-radius: vw(12px);
+      }
+
+      &-title {
+        max-width: vw(316px);
+        margin-top: vw(8.26px);
+
+        font-weight: 350;
+      }
+
+      & + .playlist-list--item {
+        margin-left: vw(18.37px);
+      }
+    }
+  }
+}
