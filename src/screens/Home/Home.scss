@@ -21,9 +21,9 @@
     &__logo-title {
       flex: 8;
     }
-    &__signup-btn,
-    &__signin-btn {
-      flex: 1;
+    .home-sign-container {
+      flex: 2;
+      justify-content: space-between;
     }
   }
 
@@ -56,9 +56,8 @@
   .home-wrapper {
     .header-container {
       padding: vw-t(40px);
-      &__signup-btn,
-      &__signin-btn {
-        flex: 2;
+      .home-sign-container {
+        flex: 4;
       }
     }
 
@@ -85,14 +84,44 @@
 
 @media screen and (max-width: 391px) {
   .home-wrapper {
-    .desktopTablet {
+    .home-aside-tap--hidden {
       display: none;
+    }
+    .home-aside-tap--visible {
+      display: flex;
     }
     .phone {
       display: block;
     }
     .header-container {
       padding: vw-p(40px) vw-p(20px);
+      .home-sign-container {
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        position: fixed;
+        z-index: 90; //fix___
+        right: 0;
+        top: 0;
+        width: vw-p(277px);
+        height: 100%;
+        background-color: $BLACK_17;
+        border-radius: vw-p(8px) 0 0 vw-p(8px);
+        &__tap-btn {
+          margin-left: vw-p(19px);
+          margin-top: vw-p(25px);
+        }
+        &__arrow-icon {
+          width: vw-p(9px);
+          height: vw-p(18px);
+        }
+        &__signup-btn,
+        &__signin-btn {
+          font-size: vw-p(24px);
+          margin-left: vw-p(39px);
+          margin-top: vw-p(49px);
+        }
+      }
       &__hamburger-btn {
         width: vw-p(44px);
         height: vw-p(43px);

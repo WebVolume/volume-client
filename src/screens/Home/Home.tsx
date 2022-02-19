@@ -1,17 +1,22 @@
 import "./Home.scss";
 import logoImg from "../../assets/images/volume.png";
 import hamburgerIcon from "@ico/hamburger.svg";
+import rightArrowIcon from "@ico/rightArrow.svg";
 import { useState } from "react";
 import { SignInModal, SignUpModal } from "@components/SignModal";
 
 function Home() {
   const [signInModalVisible, setsingInModalVisible] = useState(false);
   const [signUpModalVisible, setsingUpModalVisible] = useState(false);
+  const [asideTapVisible, setAsideTapVisible] = useState(false);
   const handleSignInModalVisible = () => {
     setsingInModalVisible(!signInModalVisible);
   };
   const handleSignUpModalVisible = () => {
     setsingUpModalVisible(!signUpModalVisible);
+  };
+  const handleAsideTapVisible = () => {
+    setAsideTapVisible(!asideTapVisible);
   };
   return (
     <div className="home-wrapper fc-white mont-alt">
@@ -28,20 +33,40 @@ function Home() {
             src={hamburgerIcon}
             className="header-container__hamburger-icon"
             alt="햄버거아이콘"
+            onClick={handleAsideTapVisible}
           />
         </button>
-        <button
-          className="header-container__signup-btn fs-24 desktopTablet"
-          onClick={handleSignUpModalVisible}
+        <div
+          className={
+            "home-sign-container flex " +
+            (asideTapVisible
+              ? "home-aside-tap--visible"
+              : "home-aside-tap--hidden")
+          }
         >
-          Sign up
-        </button>
-        <button
-          className="header-container__signin-btn fs-24 desktopTablet"
-          onClick={handleSignInModalVisible}
-        >
-          Login
-        </button>
+          <button
+            className="home-sign-container__tap-btn phone"
+            onClick={handleAsideTapVisible}
+          >
+            <img
+              src={rightArrowIcon}
+              className="home-sign-container__arrow-icon"
+              alt="탭 숨기기 버튼"
+            />
+          </button>
+          <button
+            className="home-sign-container__signup-btn fs-24"
+            onClick={handleSignUpModalVisible}
+          >
+            Sign up
+          </button>
+          <button
+            className="home-sign-container__signin-btn fs-24"
+            onClick={handleSignInModalVisible}
+          >
+            Login
+          </button>
+        </div>
       </header>
       <main className="main-container">
         <p className="main-container__logo-title fs-125">Volume</p>
