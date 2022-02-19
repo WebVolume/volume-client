@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: $TABLET_CRITERIA) {
   .signup-dimmer {
     .modal-container {
       padding: vw-t(45px) vw-t(33px);
@@ -59,7 +59,7 @@
   }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: $PHONE_CRITERIA) {
   .signup-dimmer {
     .modal-container {
       padding: vw-p(19px) vw-p(24px);

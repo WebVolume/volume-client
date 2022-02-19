@@ -37,14 +37,14 @@
       content: "";
       flex-grow: 1;
       background: $BLACK_00;
-      height: 0.05vw;
-      margin: 0vw vw(5px);
+      height: 1px;
+      margin: 0 vw(5px);
     }
 
     .simple-login-form {
       &__google-login-btn {
         margin-top: vw(9px);
-        border: vw(1px) solid $GRAY_C2;
+        border: 1px solid $GRAY_C2;
         margin-bottom: vw(20px);
       }
       &__kakao-login-btn {
@@ -53,7 +53,7 @@
     }
   }
 }
-@media screen and (max-width: 764px) {
+@media screen and (max-width: $TABLET_CRITERIA) {
   .signin-dimmer {
     .modal-container {
       padding: vw-t(38px) vw-t(36px);
@@ -84,21 +84,21 @@
 
       &__or::before,
       &__or::after {
-        margin: 0vw vw-t(5px);
+        margin: 0 vw-t(5px);
       }
 
       .simple-login-form {
         &__google-login-btn {
           margin-top: vw-t(9px);
           margin-bottom: vw-t(20px);
-          border: vw-t(1px) solid $GRAY_C2;
+          border: 1px solid $GRAY_C2;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: $PHONE_CRITERIA) {
   .signin-dimmer {
     .modal-container {
       padding: vw-p(30px) vw-p(27px);
@@ -137,7 +137,7 @@
 
       &__or::before,
       &__or::after {
-        margin: 0vw vw-p(5px);
+        margin: 0 vw-p(5px);
       }
 
       .simple-login-form {

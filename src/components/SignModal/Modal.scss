@@ -11,7 +11,7 @@
   overflow: hidden;
   .modal-box {
     height: vw(45px);
-    border-radius: vw(4px);
+    border-radius: 4px;
     width: vw(446px);
   }
   input {
@@ -24,21 +24,20 @@
     position: relative;
     z-index: 201;
     background: $WHITE_FF;
-    border-radius: 1.1vw;
+    border-radius: 12px;
     box-shadow: vw(14px) vw(23px) 11px rgba(0, 0, 0, 0.25);
     &__continue-btn {
-      margin-bottom: 0vw;
+      margin-bottom: 0;
       background: #1472ff;
     }
   }
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: $TABLET_CRITERIA) {
   .signin-dimmer,
   .signup-dimmer {
     .modal-box {
       height: vw-t(45px);
-      border-radius: vw-t(4px);
       width: vw-t(342px);
     }
     .modal-container {
@@ -48,18 +47,16 @@
   }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: $PHONE_CRITERIA) {
   .signin-dimmer,
   .signup-dimmer {
     .modal-box {
       height: vw-p(35px);
-      border-radius: vw-p(4px);
       width: vw-p(255px);
     }
     .modal-container {
       width: vw-p(306px);
       height: vw-p(508px);
-      border-radius: vw-p(12px);
     }
   }
 }

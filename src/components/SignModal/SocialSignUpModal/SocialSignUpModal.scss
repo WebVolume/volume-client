@@ -23,7 +23,7 @@
   }
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: $TABLET_CRITERIA) {
   .signup-dimmer {
     .social-modal-container {
       width: vw-t(415px);
@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: $PHONE_CRITERIA) {
   .signup-dimmer {
     .social-modal-container {
       width: vw-p(306px);
