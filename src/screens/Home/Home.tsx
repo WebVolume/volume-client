@@ -11,9 +11,11 @@ function Home() {
   const [asideTapVisible, setAsideTapVisible] = useState(false);
   const handleSignInModalVisible = () => {
     setsingInModalVisible(!signInModalVisible);
+    setAsideTapVisible(false);
   };
   const handleSignUpModalVisible = () => {
     setsingUpModalVisible(!signUpModalVisible);
+    setAsideTapVisible(false);
   };
   const handleAsideTapVisible = () => {
     setAsideTapVisible(!asideTapVisible);
@@ -56,7 +58,7 @@ function Home() {
           </button>
           <button
             className="home-sign-container__signup-btn fs-24"
-            onClick={handleSignUpModalVisible}
+            onClick={handleSignInModalVisible}
           >
             Sign up
           </button>
