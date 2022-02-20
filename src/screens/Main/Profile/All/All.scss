@@ -1,0 +1,11 @@
+.all-track-list {
+  &__upload-btn {
+    width: vw(239px);
+    height: vw(69px);
+
+    margin-top: vw(132px);
+
+    background: $BLUE_1472;
+    border-radius: 7px;
+  }
+}

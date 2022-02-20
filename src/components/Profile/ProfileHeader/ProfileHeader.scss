@@ -1,6 +1,5 @@
 .profile-header {
-  background: #1b1b1b;
-  width: vw(1320px);
+  background: $BLACK_1B;
   height: vw(321px);
   margin-bottom: vw(48px);
   @mixin userBox {
@@ -34,7 +33,7 @@
     width: vw(212px);
     height: vw(212px);
     background: $BLACK_0B;
-    border: 0.4vh solid rgba(255, 255, 255, 0.49);
+    border: 4px solid rgba(255, 255, 255, 0.49);
     border-radius: 50%;
     box-shadow: inset vw(12px) vw(10px) vw(25px) rgba(0, 0, 0, 0.72);
     left: vw(49px);
