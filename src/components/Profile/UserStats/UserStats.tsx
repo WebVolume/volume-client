@@ -2,7 +2,7 @@ import React from "react";
 import "./UserStats.scss";
 const UserStats = () => {
   return (
-    <div className="user-stats flex align-center fc-white mont">
+    <div className="user-stats flex justify-center align-center fc-white mont">
       <ul className="user-stats-ul flex">
         <li className="user-stats-ul__li">
           <p className="user-stats-ul__title fs-18 flex justify-center">

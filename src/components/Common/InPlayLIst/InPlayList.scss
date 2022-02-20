@@ -9,3 +9,14 @@
     white-space: nowrap;
   }
 }
+@media screen and(max-width:$TABLET_CRITERIA) {
+  .in-play-list {
+    margin: vw-t(28px) vw-t(41px);
+    &__header {
+      margin-bottom: vw-t(36px);
+    }
+    &__title {
+      margin-right: vw-t(440px);
+    }
+  }
+}

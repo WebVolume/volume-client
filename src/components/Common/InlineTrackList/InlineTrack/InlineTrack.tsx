@@ -53,7 +53,7 @@ const InlineTrack = () => {
               alt="재생버튼"
             />
           </button>
-          <p className="likes-track-main__lyrics">
+          <p className="likes-track-main__lyrics fs-16">
             {`It's 12:45 on a Tuesday.
 and I don't really care what you say
 I'm just getting off my face tonight.`}

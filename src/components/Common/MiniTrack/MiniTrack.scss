@@ -42,3 +42,40 @@
     height: vw(20px);
   }
 }
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .mini-track {
+    width: 100%;
+    height: vw-t(78px);
+    margin-bottom: vw-t(32px);
+    &__img {
+      width: vw-t(78px);
+      height: vw-t(78px);
+      margin-right: vw-t(10px);
+    }
+    .mini-track-info {
+      &__singer {
+        margin-bottom: vw-t(5px);
+      }
+      &__icon-container {
+        margin-top: vw-t(15px);
+      }
+      &__icon-item {
+        margin-right: vw-t(18px);
+      }
+      &__icon {
+        width: vw-t(24px);
+        height: vw-t(24px);
+        margin-right: vw-t(10px);
+      }
+    }
+    &__play-btn {
+      width: vw-t(48px);
+      height: vw-t(48px);
+      margin-right: vw-t(15px);
+    }
+    &__play-icon {
+      width: vw-t(20px);
+      height: vw-t(20px);
+    }
+  }
+}

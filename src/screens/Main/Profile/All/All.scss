@@ -9,3 +9,12 @@
     border-radius: 7px;
   }
 }
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .all-track-list {
+    &__upload-btn {
+      width: vw-t(169px);
+      height: vw-t(48px);
+      margin: vw-t(170px) 0;
+    }
+  }
+}

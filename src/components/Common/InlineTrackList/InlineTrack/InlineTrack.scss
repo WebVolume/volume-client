@@ -43,7 +43,7 @@
       height: vw(20px); // fix
     }
     &__lyrics {
-      height: vw(85px); // fix__
+      height: 100%;
       line-height: vw(30px); //22+8
       white-space: pre-line;
       overflow: hidden;
@@ -52,6 +52,48 @@
       margin-top: auto;
       margin-left: auto;
       opacity: 0.5;
+    }
+  }
+}
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .likes-track {
+    padding: vw-t(40px);
+    width: 100%;
+    height: vw-t(141px);
+    margin-bottom: vw-t(30px);
+    &__header {
+      margin-bottom: vw-t(3px);
+    }
+    &__album-img {
+      width: vw-t(150px);
+      height: vw-t(141px);
+      margin-right: vw-t(25px);
+    }
+    &__icon-item {
+      margin-left: vw-t(26px);
+    }
+    .likes-track-title {
+      &__name {
+        margin-right: vw-t(16px);
+      }
+      margin-bottom: vw-t(19px);
+    }
+    .likes-track-main {
+      height: vw-t(60px);
+      &__play-btn {
+        width: vw-t(37px);
+        height: vw-t(37px);
+        margin-right: vw-t(23px);
+        margin-left: vw-t(15px);
+      }
+      &__play-btn-img {
+        width: vw-t(15px); // fix
+        height: vw-t(15px); // fix
+      }
+      &__lyrics {
+        height: 100%;
+        line-height: vw-t(20px);
+      }
     }
   }
 }

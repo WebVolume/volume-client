@@ -2,7 +2,7 @@
   width: vw(626px);
   height: vw(39px);
   background-color: $BLACK_26;
-  border-radius: vw(8px);
+  border-radius: 8px;
   margin-bottom: vw(6px);
   &__singer {
     opacity: 0.5;
@@ -26,5 +26,30 @@
   }
   &__more-track-bar {
     opacity: 0.8;
+  }
+}
+@media screen and(max-width:$TABLET_CRITERIA) {
+  .track-bar {
+    width: 100%;
+    height: vw-t(39px);
+    margin-bottom: vw-t(8px);
+    &__singer {
+      margin-left: vw-t(11px);
+    }
+    &__title {
+      margin-left: vw-t(5px);
+    }
+    &__play-btn {
+      width: vw-t(12px);
+      height: vw-t(13px);
+    }
+    &__play-btn-img {
+      width: vw-t(12px);
+      height: vw-t(13px);
+    }
+    &__listen-count {
+      margin-left: vw-t(11px);
+      margin-right: vw-t(16px);
+    }
   }
 }

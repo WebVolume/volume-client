@@ -3,7 +3,6 @@
   grid-column: 1 / 3;
   border-bottom: 1px solid $WHITE_FF;
   .profile-nav-left {
-    margin-bottom: vh(15px);
     margin-left: vw(10px);
     &__btn {
       margin-right: vw(65px);
@@ -19,5 +18,25 @@
   }
   .btn--active {
     opacity: 1;
+  }
+}
+@media screen and(max-width :$TABLET_CRITERIA) {
+  .profile-nav {
+    grid-row: 2 / 3;
+    padding-top: vw-t(33px);
+    .profile-nav-left {
+      margin-left: vw-t(21px);
+      &__btn {
+        margin-right: vw-t(40px);
+        font-size: vw-t(16px);
+      }
+    }
+    .profile-nav-right {
+      margin-left: auto;
+      margin-right: vw-t(29px);
+      &__btn {
+        margin-bottom: vw-t(15px);
+      }
+    }
   }
 }
