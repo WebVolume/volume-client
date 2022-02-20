@@ -2,9 +2,6 @@
   width: vw(877px);
   height: vw(194px);
   margin-bottom: vw(30px);
-  &__header {
-    margin-bottom: vw(5px);
-  }
   &__album-img {
     width: vw(206px);
     height: vw(194px);
@@ -12,16 +9,20 @@
   }
   &__info {
     flex: 1;
+    .likes-track-header {
+      margin-bottom: vw(5px);
+      &__uploader {
+        opacity: 0.5;
+      }
+      &__icons-container {
+        margin-left: auto;
+      }
+      &__icon-item {
+        margin-left: vw(31px);
+      }
+    }
   }
-  &__uploader {
-    opacity: 0.5;
-  }
-  &__icons-container {
-    margin-left: auto;
-  }
-  &__icon-item {
-    margin-left: vw(31px);
-  }
+
   .likes-track-title {
     &__name {
       margin-right: vw(59px);
@@ -57,24 +58,24 @@
 }
 @media screen and (max-width: $TABLET_CRITERIA) {
   .likes-track {
-    padding: vw-t(40px);
-    width: 100%;
+    margin: vw-t(40px);
+    width: vw-t(684px);
     height: vw-t(141px);
-    margin-bottom: vw-t(30px);
-    &__header {
-      margin-bottom: vw-t(3px);
-    }
     &__album-img {
       width: vw-t(150px);
       height: vw-t(141px);
       margin-right: vw-t(25px);
     }
-    &__icon-item {
-      margin-left: vw-t(26px);
+    .likes-track-header {
+      margin-bottom: vw-t(3px);
+      &__icon-item {
+        margin-left: vw-t(26px);
+      }
     }
     .likes-track-title {
       &__name {
         margin-right: vw-t(16px);
+        font-size: vw-t(18px);
       }
       margin-bottom: vw-t(19px);
     }
@@ -91,8 +92,51 @@
         height: vw-t(15px); // fix
       }
       &__lyrics {
-        height: 100%;
         line-height: vw-t(20px);
+      }
+    }
+  }
+}
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .likes-track {
+    margin: vw-p(30px) vw-p(22px);
+    height: vw-p(104px);
+    &__album-img {
+      width: vw-p(104px);
+      height: vw-p(97px);
+      margin-right: vw-p(17px);
+    }
+    .likes-track-header {
+      margin-bottom: 0;
+      &__uploader {
+        font-size: vw-p(11px);
+      }
+      &__icon-item {
+        width: vw-p(24px);
+        height: vw-p(24px);
+        margin-left: vw-p(15px);
+      }
+      &__heart-btn-img {
+        width: vw-p(24px);
+        height: vw-p(24px);
+      }
+    }
+    .likes-track-title {
+      transform: translateY(vw(-60px));
+      &__name {
+        margin-right: vw-p(8px);
+      }
+      margin-bottom: vw-p(5px);
+    }
+    .likes-track-main {
+      &__play-btn {
+        width: vw-p(33px);
+        height: vw-p(33px);
+        margin: 0;
+      }
+      &__play-btn-img {
+        width: vw-p(15px); // fix
+        height: vw-p(15px); // fix
       }
     }
   }

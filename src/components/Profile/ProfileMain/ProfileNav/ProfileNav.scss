@@ -23,7 +23,7 @@
 @media screen and(max-width :$TABLET_CRITERIA) {
   .profile-nav {
     grid-row: 2 / 3;
-    padding-top: vw-t(33px);
+    margin-top: vw-t(33px);
     .profile-nav-left {
       margin-left: vw-t(21px);
       &__btn {
@@ -36,6 +36,25 @@
       margin-right: vw-t(29px);
       &__btn {
         margin-bottom: vw-t(15px);
+      }
+    }
+  }
+}
+
+@media screen and(max-width :$PHONE_CRITERIA) {
+  .profile-nav {
+    margin-top: vw-p(13px);
+    .profile-nav-left {
+      margin-left: vw-p(20px);
+      &__btn {
+        margin-right: vw-p(14px);
+        font-size: vw-p(11px);
+      }
+    }
+    .profile-nav-right {
+      margin-right: vw-p(20px);
+      &__btn {
+        font-size: vw-p(11px);
       }
     }
   }

@@ -20,3 +20,15 @@
     }
   }
 }
+
+@media screen and(max-width:$PHONE_CRITERIA) {
+  .in-play-list {
+    margin: vw-p(28px) vw-p(20px);
+    &__header {
+      margin-bottom: vw-p(20px);
+    }
+    &__title {
+      margin-right: 0;
+    }
+  }
+}

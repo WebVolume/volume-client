@@ -12,26 +12,30 @@ const InlineTrack = () => {
     <div className="likes-track flex mont-alt">
       <img src={testImg} alt="앨범커버" className="likes-track__album-img" />
       <div className="likes-track__info">
-        <div className="likes-track__header flex align-center">
-          <p className="likes-track__uploader fs-18">Upload : Losa</p>
-          <ul className="likes-track__icons-container flex row align-center">
-            <li className="likes-track__icon-item">
-              <a href="" className="likes-track__heart-btn">
-                <img src={heartIcon} alt="하트버튼" />
+        <div className="likes-track-header flex align-center">
+          <p className="likes-track-header__uploader fs-18">Upload : Losa</p>
+          <ul className="likes-track-header__icons-container flex row align-center">
+            <li className="likes-track-header__icon-item">
+              <a href="" className="likes-track-header__heart-btn">
+                <img
+                  src={heartIcon}
+                  className="likes-track-header__heart-btn-img"
+                  alt="하트버튼"
+                />
               </a>
             </li>
-            <li className="likes-track__icon-item">
-              <a href="" className="likes-track__add-folder-btn">
+            <li className="likes-track-header__icon-item  desktopTablet">
+              <a href="" className="likes-track-header__add-folder-btn">
                 <img src={addFolerIcon} alt="폴더버튼" />
               </a>
             </li>
-            <li className="likes-track__icon-item">
-              <a href="" className="likes-track__plus-btn">
+            <li className="likes-track-header__icon-item  desktopTablet">
+              <a href="" className="likes-track-header__plus-btn">
                 <img src={plusIcon} alt="추가버튼" />
               </a>
             </li>
-            <li className="likes-track__icon-item">
-              <a href="" className="likes-track__etc-btn">
+            <li className="likes-track-header__icon-item">
+              <a href="" className="likes-track-header__etc-btn">
                 <img src={etcIcon} alt="그외버튼" />
               </a>
             </li>
@@ -53,7 +57,7 @@ const InlineTrack = () => {
               alt="재생버튼"
             />
           </button>
-          <p className="likes-track-main__lyrics fs-16">
+          <p className="likes-track-main__lyrics fs-16  desktopTablet">
             {`It's 12:45 on a Tuesday.
 and I don't really care what you say
 I'm just getting off my face tonight.`}

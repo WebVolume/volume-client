@@ -56,3 +56,32 @@
     }
   }
 }
+
+@media screen and(max-width:$PHONE_CRITERIA) {
+  .mini-play-list {
+    height: vw-p(76px);
+    margin-bottom: vw-p(43px);
+    .mini-play-list-info {
+      &__singer {
+        margin-bottom: vw-p(5px);
+        font-size: vw-p(12px);
+      }
+      &__title {
+        max-width: vw-p(113px);
+        margin-bottom: vw-p(9px);
+        font-size: vw-p(14px);
+      }
+      &__icon-wrapper {
+        margin-right: vw-p(18px);
+      }
+      &__icon {
+        width: vw-p(24px);
+        height: vw-p(24px);
+        margin-right: vw-p(8px);
+      }
+      &__likes-count {
+        font-size: vw-p(14px);
+      }
+    }
+  }
+}

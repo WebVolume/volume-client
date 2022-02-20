@@ -15,49 +15,49 @@ const InlinePlayList = () => {
         alt="앨범커버"
         className="inline-play-list__album-img"
       ></img>
-      <div className="inline-play-list__info">
-        <div className="inline-play-list__header flex align-center">
-          <p className="inline-play-list__uploader fs-18">Upload : Losa</p>
-          <ul className="inline-play-list__icons-container flex align-center">
-            <li className="inline-play-list__icon-item">
+      <div className="inline-play-list-info">
+        <div className="inline-play-list-info__header flex align-center">
+          <p className="inline-play-list-info__uploader fs-18">Upload : Losa</p>
+          <ul className="inline-play-list-info__icons-container flex align-center">
+            <li className="inline-play-list-info__icon-item">
               <a href="">
                 <img
                   src={heartIcon}
                   alt="하트버튼"
-                  className="inline-play-list__icon-img"
+                  className="inline-play-list-info__icon-img"
                 />
               </a>
             </li>
-            <li className="inline-play-list__icon-item">
+            <li className="inline-play-list-info__icon-item desktopTablet">
               <a href="">
                 <img
                   src={addPlaylistIcon}
                   alt="플레이리스트에추가버튼"
-                  className="inline-play-list__icon-img"
+                  className="inline-play-list-info__icon-img"
                 />
               </a>
             </li>
-            <li className="inline-play-list__icon-item">
+            <li className="inline-play-list-info__icon-item desktopTablet">
               <a href="">
                 <img
                   src={addRepostIcon}
                   alt="리포스트버튼"
-                  className="inline-play-list__icon-img"
+                  className="inline-play-list-info__icon-img"
                 />
               </a>
             </li>
-            <li className="inline-play-list__icon-item">
+            <li className="inline-play-list-info__icon-item">
               <a href="">
                 <img
                   src={etcIcon}
                   alt="그외버튼"
-                  className="inline-play-list__icon-img"
+                  className="inline-play-list-info__icon-img"
                 />
               </a>
             </li>
           </ul>
         </div>
-        <p className="inline-play-list__name w-600 fs-24">플리제목</p>
+        <p className="inline-play-list-info__name w-600 fs-24">플리제목</p>
         <TrackBarList />
       </div>
     </div>

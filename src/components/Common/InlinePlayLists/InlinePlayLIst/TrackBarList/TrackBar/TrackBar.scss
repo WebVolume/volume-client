@@ -1,55 +1,88 @@
 .track-bar {
-  width: vw(626px);
-  height: vw(39px);
-  background-color: $BLACK_26;
-  border-radius: 8px;
-  margin-bottom: vw(6px);
-  &__singer {
-    opacity: 0.5;
-    margin-left: vw(17px);
-  }
-  &__title {
-    margin-left: vw(5px);
-  }
-  &__play-btn {
-    width: vw(12px);
-    height: vw(13px);
-    margin-left: auto;
-  }
-  &__play-btn-img {
-    width: vw(12px);
-    height: vw(13px);
-  }
-  &__listen-count {
-    margin-left: vw(11px);
-    margin-right: vw(39px);
-  }
-  &__more-track-bar {
-    opacity: 0.8;
-  }
-}
-@media screen and(max-width:$TABLET_CRITERIA) {
-  .track-bar {
-    width: 100%;
-    height: vw-t(39px);
-    margin-bottom: vw-t(8px);
+  .track-bar-info {
+    width: vw(626px);
+    height: vw(39px);
+    background-color: $BLACK_26;
+    border-radius: 8px;
+    margin-bottom: vw(6px);
     &__singer {
-      margin-left: vw-t(11px);
+      opacity: 0.5;
+      margin-left: vw(17px);
     }
     &__title {
-      margin-left: vw-t(5px);
+      margin-left: vw(5px);
     }
     &__play-btn {
-      width: vw-t(12px);
-      height: vw-t(13px);
+      width: vw(12px);
+      height: vw(13px);
+      margin-left: auto;
     }
     &__play-btn-img {
-      width: vw-t(12px);
-      height: vw-t(13px);
+      width: vw(12px);
+      height: vw(13px);
     }
     &__listen-count {
-      margin-left: vw-t(11px);
-      margin-right: vw-t(16px);
+      margin-left: vw(11px);
+      margin-right: vw(39px);
+    }
+    &__more-track-bar-info {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media screen and(max-width:$TABLET_CRITERIA) {
+  .track-bar {
+    .track-bar-info {
+      width: 100%;
+      height: vw-t(39px);
+      margin-bottom: vw-t(8px);
+      &__singer {
+        margin-left: vw-t(11px);
+      }
+      &__title {
+        margin-left: vw-t(5px);
+      }
+      &__play-btn {
+        width: vw-t(12px);
+        height: vw-t(13px);
+      }
+      &__play-btn-img {
+        width: vw-t(12px);
+        height: vw-t(13px);
+      }
+      &__listen-count {
+        margin-left: vw-t(11px);
+        margin-right: vw-t(16px);
+      }
+    }
+  }
+}
+@media screen and(max-width:$PHONE_CRITERIA) {
+  .track-bar {
+    .track-bar-info {
+      height: vw-p(28px);
+      margin-bottom: vw-p(6px);
+      &__singer {
+        margin-left: vw-p(8px);
+        font-size: vw-p(12px);
+      }
+      &__title {
+        margin-left: vw-p(3px);
+        font-size: vw-p(12px);
+      }
+      &__play-btn {
+        width: vw-p(16px);
+        height: vw-p(16px);
+      }
+      &__play-btn-img {
+        width: vw-p(9px);
+        height: vw-p(10px);
+      }
+      &__listen-count {
+        margin-left: vw-p(11px);
+        margin-right: vw-p(11px);
+      }
     }
   }
 }

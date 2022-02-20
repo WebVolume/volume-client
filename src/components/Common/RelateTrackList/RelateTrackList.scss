@@ -2,22 +2,36 @@
   margin-top: vw(28px);
   margin-left: vw(28px);
   margin-bottom: vw(49px);
-  &__header {
+  &-header {
     margin-bottom: vw(36px);
-  }
-  &__title {
-    margin-right: vw(234px);
+    &__title {
+      margin-right: vw(234px);
+      white-space: nowrap;
+    }
   }
 }
 
 @media screen and (max-width: $TABLET_CRITERIA) {
   .relate-track-list {
     margin: vw-t(73px) vw-t(41px);
-    &__header {
+    &-header {
       margin-bottom: vw-t(36px);
+      &__title {
+        margin-right: vw-t(538px);
+      }
     }
-    &__title {
-      margin-right: vw-t(538px);
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .relate-track-list {
+    margin: vw-p(50px) vw-p(20px);
+    &-header {
+      margin-bottom: vw-p(20px);
+      &__title {
+        margin-right: vw-p(218px);
+        font-size: vw-p(16px);
+      }
     }
   }
 }

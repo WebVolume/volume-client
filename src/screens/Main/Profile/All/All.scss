@@ -18,3 +18,13 @@
     }
   }
 }
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .all-track-list {
+    &__upload-btn {
+      width: vw-p(135px);
+      height: vw-p(42px);
+      margin: vw-p(172px) 0;
+    }
+  }
+}

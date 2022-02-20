@@ -1,7 +1,7 @@
 .profile-main {
   display: grid;
   grid-template-columns: 1fr vw(429px);
-  grid-template-rows: vw(40px) vw(143px) 1fr;
+  grid-template-rows: vw(40px) vw(143px) minmax(vw(353px), 1fr);
   &__music-list {
     padding-top: vw(36px);
     border-right: 1px solid $WHITE_FF;
@@ -17,7 +17,7 @@
 @media screen and(max-width :$TABLET_CRITERIA) {
   .profile-main {
     grid-template-columns: 1fr;
-    grid-template-rows: vw-t(135px) vw-t(63px) min-content 1fr;
+    grid-template-rows: vw-t(135px) vw-t(64px) min-content 1fr;
     &__music-list {
       padding-top: 0;
       padding-bottom: vw-t(52px);
@@ -28,6 +28,16 @@
     &__right-container {
       grid-row: 4/ 5;
       grid-column: 1/1;
+    }
+  }
+}
+
+@media screen and(max-width :$PHONE_CRITERIA) {
+  .profile-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: vw-p(69px) vw-p(39px) min-content 1fr;
+    &__music-list {
+      padding-bottom: vw-p(52px);
     }
   }
 }

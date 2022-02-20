@@ -30,3 +30,19 @@
     }
   }
 }
+
+@media screen and(max-width :$PHONE_CRITERIA) {
+  .user-stats {
+    .user-stats-ul {
+      margin-left: vw-p(34px);
+      &__li {
+        width: vw-p(59px);
+        margin-right: vw-p(34px);
+      }
+      &__title {
+        margin-bottom: vw-p(15px);
+        font-size: vw-p(12px);
+      }
+    }
+  }
+}

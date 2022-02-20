@@ -79,3 +79,43 @@
     }
   }
 }
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .mini-track {
+    // width: 100%;
+    height: vw-p(78px);
+    margin-bottom: vw-p(32px);
+    &__img {
+      width: vw-p(78px);
+      height: vw-p(78px);
+      margin-right: vw-p(10px);
+    }
+    .mini-track-info {
+      &__singer {
+        margin-bottom: vw-p(5px);
+        font-size: vw-p(12px);
+      }
+      &__title {
+        font-size: vw-p(14px);
+      }
+      &__icon-container {
+        margin-top: vw-p(9px);
+      }
+      &__icon-item {
+        margin-right: vw-p(18px);
+      }
+      &__icon {
+        width: vw-p(24px);
+        height: vw-p(24px);
+        margin-right: vw-p(8px);
+      }
+    }
+    &__play-btn {
+      width: vw-p(32px);
+      height: vw-p(32px);
+    }
+    &__play-icon {
+      width: vw-p(17px);
+      height: vw-p(17px);
+    }
+  }
+}

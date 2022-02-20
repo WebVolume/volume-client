@@ -8,7 +8,7 @@ const TrackBarList = () => {
       {[1, 2, 3, 4].map(() => (
         <TrackBar />
       ))}
-      <li className="track-bar more-track-bar flex align-center justify-center">
+      <li className="more-track-bar flex align-center justify-center">
         <a href="#" className="more-track-bar__content fs-18">
           View 35 tracks
         </a>

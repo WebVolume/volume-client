@@ -95,3 +95,53 @@
     }
   }
 }
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .profile-header {
+    .desktopTablet {
+      display: none;
+    }
+    height: vw-p(229px);
+    @mixin userBox {
+      width: vw-p(148px);
+      left: vw-p(222px);
+      top: vw-p(120px);
+    }
+    &__user-name {
+      @include userBox();
+      height: vw-p(39px);
+      margin-bottom: vw-p(5px);
+    }
+    &__user-id {
+      @include userBox();
+      height: vw-p(32px);
+    }
+    &__header-img-upload-btn {
+      left: vw-p(342px);
+      top: vw-p(-60px);
+      width: vw-p(27px);
+      height: vw-p(23px);
+    }
+    &__user-img {
+      width: vw-p(151px);
+      height: vw-p(151px);
+      left: vw-p(19px);
+      bottom: vw-p(70px);
+    }
+    &__user-img-upload-btn {
+      width: vw-p(115px);
+      height: vw-p(23px);
+      left: vw-p(36px);
+      bottom: vw-p(85px);
+      white-space: nowrap;
+    }
+    &__img-icon {
+      height: vw-p(17px);
+      width: vw-p(17px);
+      margin-right: 0;
+      & + p {
+        margin-left: vw-p(15px);
+      }
+    }
+  }
+}
