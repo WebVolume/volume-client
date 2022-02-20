@@ -10,15 +10,13 @@ const ProfileMain = () => {
   return (
     <div className="profile-main fc-white">
       <ProfileNav />
-      <div className="profile-main-grid-container">
-        <div className="profile-main-grid-container__music-list">
-          <Outlet />
-        </div>
-        <UserStats />
-        <div className="profile-main-grid-container__right-container">
-          <RelateTrackList />
-          <InPlayList />
-        </div>
+      <div className="profile-main__music-list">
+        <Outlet />
+      </div>
+      <UserStats />
+      <div className="profile-main__right-container">
+        <RelateTrackList />
+        <InPlayList />
       </div>
     </div>
   );
