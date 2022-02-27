@@ -1,21 +1,18 @@
 .likes-track {
   width: vw(877px);
-  height: vw(194px);
+  height: vw(206px);
   margin-bottom: vw(30px);
   &__album-img {
     width: vw(206px);
-    height: vw(194px);
+    height: vw(206px);
     margin-right: vw(34px);
   }
   &__info {
-    flex: 1;
+    max-height: vw(206px);
     .likes-track-header {
       margin-bottom: vw(5px);
       &__uploader {
         opacity: 0.5;
-      }
-      &__icons-container {
-        margin-left: auto;
       }
       &__icon {
         margin-left: vw(31px);
@@ -31,30 +28,26 @@
     &__name {
       margin-right: vw(59px);
     }
-    margin-bottom: vw(34px);
   }
   .likes-track-main {
-    height: vw(80px);
     &__play-btn {
       width: vw(52px);
       height: vw(52px);
       border-radius: 50%;
       background-color: $BLUE_2A6F;
-      margin-right: vw(70px);
-      margin-left: vw(15px);
+      margin-right: vw(60px);
+      margin-left: vw(10px);
     }
     &__play-btn-img {
       width: vw(20px); // fix
       height: vw(20px); // fix
     }
     &__lyrics {
-      height: 100%;
       line-height: vw(30px); //22+8
       white-space: pre-line;
-      overflow: hidden;
     }
     &__date {
-      margin-top: auto;
+      margin-top: 10%;
       margin-left: auto;
       opacity: 0.5;
       white-space: nowrap;
@@ -65,10 +58,10 @@
   .likes-track {
     margin: vw-t(40px);
     width: vw-t(684px);
-    height: vw-t(141px);
+    height: vw-t(150px);
     &__album-img {
       width: vw-t(150px);
-      height: vw-t(141px);
+      height: vw-t(150px);
       margin-right: vw-t(25px);
     }
     .likes-track-header {

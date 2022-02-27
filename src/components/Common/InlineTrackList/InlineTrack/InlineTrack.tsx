@@ -16,8 +16,8 @@ const InlineTrack = () => {
         title="이미지"
         className="likes-track__album-img"
       />
-      <div className="likes-track__info">
-        <div className="likes-track-header flex align-center">
+      <div className="likes-track__info flex f-one column">
+        <div className="likes-track-header flex align-center justify-space-between">
           <p className="likes-track-header__uploader fs-18">Upload : Losa</p>
           <ul className="likes-track-header__icons-container flex row align-center">
             <li className="likes-track-header__icon">
@@ -70,7 +70,7 @@ const InlineTrack = () => {
             ethan
           </p>
         </div>
-        <div className="likes-track-main flex row align-center">
+        <div className="likes-track-main flex f-one align-center justify-space-between">
           <button className="likes-track-main__play-btn flex justify-center align-center">
             <img
               className="likes-track-main__play-btn-img"
@@ -78,7 +78,7 @@ const InlineTrack = () => {
               alt="재생버튼"
             />
           </button>
-          <p className="likes-track-main__lyrics fs-16  desktopTablet">
+          <p className="likes-track-main__lyrics f-one fs-16  desktopTablet">
             {`It's 12:45 on a Tuesday.
 and I don't really care what you say
 I'm just getting off my face tonight.`}
