@@ -11,6 +11,9 @@
   @mixin uploadBtn {
     background: $BLACK_00;
     opacity: 0.8;
+    p {
+      white-space: nowrap;
+    }
     // filter: blur(66px);
   }
   &__user-name {
