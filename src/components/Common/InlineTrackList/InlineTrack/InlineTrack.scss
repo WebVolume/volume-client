@@ -17,8 +17,12 @@
       &__icons-container {
         margin-left: auto;
       }
-      &__icon-item {
+      &__icon {
         margin-left: vw(31px);
+        &-btn-img {
+          width: vw(24px);
+          height: vw(24px);
+        }
       }
     }
   }
@@ -68,8 +72,12 @@
     }
     .likes-track-header {
       margin-bottom: vw-t(3px);
-      &__icon-item {
+      &__icon {
         margin-left: vw-t(26px);
+        &-btn-img {
+          width: vw-t(32px);
+          height: vw-t(32px);
+        }
       }
     }
     .likes-track-title {
@@ -111,14 +119,12 @@
       &__uploader {
         font-size: vw-p(11px);
       }
-      &__icon-item {
-        width: vw-p(24px);
-        height: vw-p(24px);
+      &__icon {
         margin-left: vw-p(15px);
-      }
-      &__heart-btn-img {
-        width: vw-p(24px);
-        height: vw-p(24px);
+        &-btn-img {
+          width: vw-p(24px);
+          height: vw-p(24px);
+        }
       }
     }
     .likes-track-title {
@@ -137,6 +143,9 @@
       &__play-btn-img {
         width: vw-p(15px); // fix
         height: vw-p(15px); // fix
+      }
+      &__date {
+        font-size: vw-p(9.7px);
       }
     }
   }
