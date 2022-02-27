@@ -1,6 +1,6 @@
 .user-stats {
-  border-bottom: 1px solid white;
-  grid-row: 1 / 2;
+  border-bottom: 1px solid $WHITE_FF;
+  grid-row: 2 / 3;
   grid-column: 2 / 3;
   .user-stats-ul {
     margin-left: vw(32px);
@@ -10,6 +10,39 @@
     }
     &__title {
       margin-bottom: vw(15px);
+    }
+  }
+}
+@media screen and(max-width :$TABLET_CRITERIA) {
+  .user-stats {
+    border-top: 1px solid $WHITE_FF;
+    grid-row: 1 / 2;
+    grid-column: 1 / 1;
+    .user-stats-ul {
+      margin-left: vw-t(32px);
+      &__li {
+        width: vw-t(88px);
+        margin-right: vw-t(50px);
+      }
+      &__title {
+        margin-bottom: vw-t(15px);
+      }
+    }
+  }
+}
+
+@media screen and(max-width :$PHONE_CRITERIA) {
+  .user-stats {
+    .user-stats-ul {
+      margin-left: vw-p(34px);
+      &__li {
+        width: vw-p(59px);
+        margin-right: vw-p(34px);
+      }
+      &__title {
+        margin-bottom: vw-p(15px);
+        font-size: vw-p(12px);
+      }
     }
   }
 }

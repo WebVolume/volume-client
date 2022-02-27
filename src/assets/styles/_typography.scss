@@ -114,9 +114,19 @@
   .fs-28 {
     font-size: vw-t(28px);
   }
+
+  .fs-20 {
+    font-size: vw-t(20px);
+  }
 }
 @media screen and (max-width: $PHONE_CRITERIA) {
+  .desktopTablet {
+    display: none;
+  }
   .fs-36 {
     font-size: vw-p(35px);
+  }
+  .fs-18 {
+    font-size: vw-p(18px);
   }
 }

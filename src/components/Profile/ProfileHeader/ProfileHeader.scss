@@ -1,6 +1,5 @@
 .profile-header {
-  background: #1b1b1b;
-  width: vw(1320px);
+  background: $BLACK_1B;
   height: vw(321px);
   margin-bottom: vw(48px);
   @mixin userBox {
@@ -34,7 +33,7 @@
     width: vw(212px);
     height: vw(212px);
     background: $BLACK_0B;
-    border: 0.4vh solid rgba(255, 255, 255, 0.49);
+    border: 4px solid rgba(255, 255, 255, 0.49);
     border-radius: 50%;
     box-shadow: inset vw(12px) vw(10px) vw(25px) rgba(0, 0, 0, 0.72);
     left: vw(49px);
@@ -51,5 +50,98 @@
     height: vw(24px);
     width: vw(24px);
     margin-right: vw(14px);
+  }
+}
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .profile-header {
+    height: vw-t(321px);
+    margin-bottom: 0;
+    @mixin userBox {
+      width: vw-t(207px);
+      left: vw-t(334px);
+      top: vw-t(169px);
+    }
+    &__user-name {
+      @include userBox();
+      height: vw-t(55px);
+      margin-bottom: vw-t(7px);
+    }
+    &__user-id {
+      @include userBox();
+      height: vw-t(44px);
+    }
+    &__header-img-upload-btn {
+      left: vw-t(526px);
+      top: vw-t(-80px);
+      width: vw-t(209px);
+      height: vw-t(33px);
+    }
+    &__user-img {
+      width: vw-t(212px);
+      height: vw-t(212px);
+      left: vw-t(49px);
+      bottom: vw-t(90px);
+    }
+    &__user-img-upload-btn {
+      width: vw-t(161px);
+      height: vw-t(33px);
+      left: vw-t(74px);
+      bottom: vw-t(109px);
+    }
+    &__img-icon {
+      height: vw-t(24px);
+      width: vw-t(24px);
+      margin-right: vw-t(14px);
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .profile-header {
+    .desktopTablet {
+      display: none;
+    }
+    height: vw-p(229px);
+    @mixin userBox {
+      width: vw-p(148px);
+      left: vw-p(222px);
+      top: vw-p(120px);
+    }
+    &__user-name {
+      @include userBox();
+      height: vw-p(39px);
+      margin-bottom: vw-p(5px);
+    }
+    &__user-id {
+      @include userBox();
+      height: vw-p(32px);
+    }
+    &__header-img-upload-btn {
+      left: vw-p(342px);
+      top: vw-p(-60px);
+      width: vw-p(27px);
+      height: vw-p(23px);
+    }
+    &__user-img {
+      width: vw-p(151px);
+      height: vw-p(151px);
+      left: vw-p(19px);
+      bottom: vw-p(70px);
+    }
+    &__user-img-upload-btn {
+      width: vw-p(115px);
+      height: vw-p(23px);
+      left: vw-p(36px);
+      bottom: vw-p(85px);
+      white-space: nowrap;
+    }
+    &__img-icon {
+      height: vw-p(17px);
+      width: vw-p(17px);
+      margin-right: 0;
+      & + p {
+        margin-left: vw-p(15px);
+      }
+    }
   }
 }

@@ -42,3 +42,80 @@
     height: vw(20px);
   }
 }
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .mini-track {
+    width: 100%;
+    height: vw-t(78px);
+    margin-bottom: vw-t(32px);
+    &__img {
+      width: vw-t(78px);
+      height: vw-t(78px);
+      margin-right: vw-t(10px);
+    }
+    .mini-track-info {
+      &__singer {
+        margin-bottom: vw-t(5px);
+      }
+      &__icon-container {
+        margin-top: vw-t(15px);
+      }
+      &__icon-item {
+        margin-right: vw-t(18px);
+      }
+      &__icon {
+        width: vw-t(24px);
+        height: vw-t(24px);
+        margin-right: vw-t(10px);
+      }
+    }
+    &__play-btn {
+      width: vw-t(48px);
+      height: vw-t(48px);
+      margin-right: vw-t(15px);
+    }
+    &__play-icon {
+      width: vw-t(20px);
+      height: vw-t(20px);
+    }
+  }
+}
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .mini-track {
+    // width: 100%;
+    height: vw-p(78px);
+    margin-bottom: vw-p(32px);
+    &__img {
+      width: vw-p(78px);
+      height: vw-p(78px);
+      margin-right: vw-p(10px);
+    }
+    .mini-track-info {
+      &__singer {
+        margin-bottom: vw-p(5px);
+        font-size: vw-p(12px);
+      }
+      &__title {
+        font-size: vw-p(14px);
+      }
+      &__icon-container {
+        margin-top: vw-p(9px);
+      }
+      &__icon-item {
+        margin-right: vw-p(18px);
+      }
+      &__icon {
+        width: vw-p(24px);
+        height: vw-p(24px);
+        margin-right: vw-p(8px);
+      }
+    }
+    &__play-btn {
+      width: vw-p(32px);
+      height: vw-p(32px);
+    }
+    &__play-icon {
+      width: vw-p(17px);
+      height: vw-p(17px);
+    }
+  }
+}

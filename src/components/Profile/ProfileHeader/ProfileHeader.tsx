@@ -17,7 +17,7 @@ const ProfileHeader = () => {
           alt="이미지업로드아이콘"
           className="profile-header__img-icon"
         />
-        <p className="fs-14 fc-white mont">Upload header image</p>
+        <p className="fs-14 fc-white mont desktopTablet">Upload header image</p>
       </button>
       <div className="profile-header__user-img relative"></div>
       <button className="profile-header__user-img-upload-btn flex align-center justify-center relative">

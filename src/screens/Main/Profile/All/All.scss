@@ -1,0 +1,30 @@
+.all-track-list {
+  &__upload-btn {
+    width: vw(239px);
+    height: vw(69px);
+
+    margin-top: vw(132px);
+
+    background: $BLUE_1472;
+    border-radius: 7px;
+  }
+}
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .all-track-list {
+    &__upload-btn {
+      width: vw-t(169px);
+      height: vw-t(48px);
+      margin: vw-t(170px) 0;
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .all-track-list {
+    &__upload-btn {
+      width: vw-p(135px);
+      height: vw-p(42px);
+      margin: vw-p(172px) 0;
+    }
+  }
+}
