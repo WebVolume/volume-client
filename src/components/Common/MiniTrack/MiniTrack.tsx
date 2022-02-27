@@ -11,31 +11,37 @@ const MiniTrack = () => {
       <a href="">
         <img src={testImg} alt="trackImg" className="mini-track__img" />
       </a>
-      <div className="mini-track-info">
+      <div className="mini-track-info flex column justify-space-between f-one">
         <p className="mini-track-info__singer fs-14">Lora</p>
         <a href="" className="mini-track-info__title fs-16">
           BTS 힙한 팝송 노래
         </a>
         <ul className="mini-track-info__icon-container flex">
           <li className="mini-track-info__icon-item flex align-center">
-            <button type="button" className="mini-track-info__icon-btn">
+            <button
+              type="button"
+              className="mini-track-info__icon-btn flex align-center"
+            >
               <img
                 src={emptyHeartIcon}
                 alt="emptyHeartIcon"
                 className="mini-track-info__icon"
               />
             </button>
-            <p className="mini-track-info__likes-count">102</p>
+            <p className="mini-track-info__likes-count fs-14">102</p>
           </li>
           <li className="mini-track-info__icon-item flex align-center">
-            <button type="button" className="mini-track-info__icon-btn">
+            <button
+              type="button"
+              className="mini-track-info__icon-btn flex align-center"
+            >
               <img
                 src={emptyPlayIcon}
                 alt="emptyPlayIcon"
                 className="mini-track-info__icon"
               />
             </button>
-            <p className="mini-track-info__play-count">102</p>
+            <p className="mini-track-info__play-count fs-14">102</p>
           </li>
         </ul>
       </div>

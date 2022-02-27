@@ -1,11 +1,13 @@
 .in-play-list {
-  margin-top: vw(28px);
-  margin-left: vw(28px);
+  margin: vw(28px);
   &__header {
     margin-bottom: vw(36px);
   }
   &__title {
-    margin-right: vw(140px);
+    white-space: nowrap;
+  }
+  &__detail-btn {
+    margin-left: auto;
     white-space: nowrap;
   }
 }
@@ -15,9 +17,6 @@
     &__header {
       margin-bottom: vw-t(36px);
     }
-    &__title {
-      margin-right: vw-t(440px);
-    }
   }
 }
 
@@ -26,9 +25,6 @@
     margin: vw-p(28px) vw-p(20px);
     &__header {
       margin-bottom: vw-p(20px);
-    }
-    &__title {
-      margin-right: 0;
     }
   }
 }
