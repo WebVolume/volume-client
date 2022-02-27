@@ -1,8 +1,8 @@
 import React from "react";
 import testImg from "@images/background.png";
-import addFolerIcon from "@ico/add-folder.png";
+import addPalyListIcon from "@ico/add-playlist.svg";
 import heartIcon from "@ico/heart.svg";
-import plusIcon from "@ico/plus.svg";
+import repostIcon from "@ico/repost.svg";
 import etcIcon from "@ico/etc.svg";
 import playFillIcon from "@ico/play-fill.svg";
 import "./InlineTrack.scss";
@@ -10,7 +10,12 @@ import "./InlineTrack.scss";
 const InlineTrack = () => {
   return (
     <div className="likes-track flex mont-alt">
-      <img src={testImg} alt="앨범커버" className="likes-track__album-img" />
+      <img
+        src={testImg}
+        alt="앨범커버"
+        title="이미지"
+        className="likes-track__album-img"
+      />
       <div className="likes-track__info">
         <div className="likes-track-header flex align-center">
           <p className="likes-track-header__uploader fs-18">Upload : Losa</p>
@@ -21,24 +26,27 @@ const InlineTrack = () => {
                   src={heartIcon}
                   className="likes-track-header__icon-btn-img"
                   alt="하트버튼"
+                  title="좋아요"
                 />
               </a>
             </li>
             <li className="likes-track-header__icon  desktopTablet">
               <a href="" className="likes-track-header__icon-btn">
                 <img
-                  src={addFolerIcon}
+                  src={addPalyListIcon}
                   className="likes-track-header__icon-btn-img"
                   alt="폴더버튼"
+                  title="플레이리스트에 추가"
                 />
               </a>
             </li>
             <li className="likes-track-header__icon  desktopTablet">
               <a href="" className="likes-track-header__icon-btn">
                 <img
-                  src={plusIcon}
+                  src={repostIcon}
                   className="likes-track-header__icon-btn-img"
                   alt="추가버튼"
+                  title="리포스트 하기"
                 />
               </a>
             </li>
@@ -48,6 +56,7 @@ const InlineTrack = () => {
                   src={etcIcon}
                   className="likes-track-header__icon-btn-img"
                   alt="그외버튼"
+                  title="희윤님께 버튼"
                 />
               </a>
             </li>
