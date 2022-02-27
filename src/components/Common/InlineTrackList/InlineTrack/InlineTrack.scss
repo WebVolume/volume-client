@@ -34,7 +34,7 @@
     margin-bottom: vw(34px);
   }
   .likes-track-main {
-    height: vw(85px);
+    height: vw(80px);
     &__play-btn {
       width: vw(52px);
       height: vw(52px);
@@ -57,6 +57,7 @@
       margin-top: auto;
       margin-left: auto;
       opacity: 0.5;
+      white-space: nowrap;
     }
   }
 }
