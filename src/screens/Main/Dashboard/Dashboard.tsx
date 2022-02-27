@@ -6,6 +6,8 @@ import {
   PopularVolumerList
 } from "@components/Dashboard";
 import RecommendationPlaylist from "@components/Dashboard/RecommendationPlaylist";
+import CategoryList from "@components/Dashboard/CategoryList";
+import { v4 as uuidv4 } from "uuid";
 
 function Dashboard() {
   return (
@@ -19,6 +21,11 @@ function Dashboard() {
 
         {/* 추천 플레이리스트 */}
         <RecommendationPlaylist />
+
+        {/* 카테고리 */}
+        {[1, 2, 3, 4].map(() => (
+          <CategoryList key={uuidv4()} />
+        ))}
       </main>
       <RightAside />
     </div>

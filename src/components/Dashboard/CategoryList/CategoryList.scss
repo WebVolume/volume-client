@@ -1,0 +1,20 @@
+.category-list {
+  &--title {
+    max-width: vw(670px);
+
+    margin-bottom: vw(40px);
+  }
+
+  .list-wrapper {
+    overflow: scroll;
+    .list-item {
+      & + .list-item {
+        margin-left: vw(58.25px);
+      }
+    }
+  }
+
+  & + .category-list {
+    margin-top: vw(154px);
+  }
+}
