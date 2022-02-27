@@ -32,13 +32,13 @@ function CategoryListItem() {
         {/*  */}
         <div className="playlist-info-detail flex align-center justify-space-between">
           <div className="info-wrapper">
-            <p className="play-list--title ellipsis w-600">
+            <p className="play-list--title ellipsis w-600 mont-alt">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
             </p>
 
             <ul className="hashtag-list flex">
               {[1, 2].map(() => (
-                <li key={uuidv4()} className="hashtag-list-item">
+                <li key={uuidv4()} className="hashtag-list-item noto">
                   # 강렬한
                 </li>
               ))}
@@ -58,12 +58,12 @@ function CategoryListItem() {
 
       {/*  */}
       <div className="info-description-wrapper flex justify-space-between">
-        <span className="playlist-title ellipsis inline-block">
+        <span className="playlist-title ellipsis inline-block noto">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet quod
           recusandae provident velit laborum repellat enim dolores at a sed
           deleniti, doloribus distinctio obcaecati quos in eos odio nam nihil!
         </span>
-        <span className="playlist-count">+999</span>
+        <span className="playlist-count noto">+999</span>
       </div>
     </div>
   );

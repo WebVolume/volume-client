@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 function CategoryList() {
   return (
     <div className="category-list">
-      <p className="category-list--title ellipsis">
+      <p className="category-list--title ellipsis noto">
         # Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio,
         repudiandae ipsa similique repellendus ullam vel, ad aut, inventore
         cumque nesciunt fugit deserunt cupiditate! Incidunt distinctio amet
