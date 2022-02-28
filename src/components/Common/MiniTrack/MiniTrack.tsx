@@ -12,8 +12,8 @@ const MiniTrack = () => {
         <img src={testImg} alt="trackImg" className="mini-track__img" />
       </a>
       <div className="mini-track-info flex column justify-space-between f-one">
-        <p className="mini-track-info__singer fs-14">Lora</p>
-        <a href="" className="mini-track-info__title fs-16">
+        <p className="mini-track-info__singer fs-14 ellipsis">Lora</p>
+        <a href="" className="mini-track-info__title fs-16 ellipsis">
           BTS 힙한 팝송 노래
         </a>
         <ul className="mini-track-info__icon-container flex">

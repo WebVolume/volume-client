@@ -7,8 +7,8 @@ const TrackBar = () => {
   return (
     <li className="track-bar">
       <div className="track-bar-info flex align-center">
-        <p className="track-bar-info__singer fs-18">Losa-</p>
-        <p className="track-bar-info__title fs-18">12:45(Stripped)</p>
+        <p className="track-bar-info__singer fs-18 ellipsis">Losa-</p>
+        <p className="track-bar-info__title fs-18 ellipsis">12:45(Stripped)</p>
         <button className="track-bar-info__play-btn flex justify-center align-center">
           <img
             src={playBtn}

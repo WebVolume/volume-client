@@ -6,10 +6,12 @@
     border-radius: 8px;
     margin-bottom: vw(6px);
     &__singer {
+      max-width: vw(150px);
       opacity: 0.5;
       margin-left: vw(17px);
     }
     &__title {
+      max-width: vw(400px);
       margin-left: vw(5px);
     }
     &__play-btn {
@@ -38,9 +40,11 @@
       height: vw-t(39px);
       margin-bottom: vw-t(8px);
       &__singer {
+        max-width: vw-t(100px);
         margin-left: vw-t(11px);
       }
       &__title {
+        max-width: vw-t(330px);
         margin-left: vw-t(5px);
       }
       &__play-btn {
@@ -64,10 +68,12 @@
       height: vw-p(28px);
       margin-bottom: vw-p(6px);
       &__singer {
+        max-width: vw-p(50px);
         margin-left: vw-p(8px);
         font-size: vw-p(12px);
       }
       &__title {
+        max-width: vw-p(120px);
         margin-left: vw-p(3px);
         font-size: vw-p(12px);
       }

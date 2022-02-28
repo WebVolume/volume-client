@@ -18,7 +18,9 @@ const InlineTrack = () => {
       />
       <div className="likes-track__info flex f-one column">
         <div className="likes-track-header flex align-center justify-space-between">
-          <p className="likes-track-header__uploader fs-18">Upload : Losa</p>
+          <p className="likes-track-header__uploader fs-18 ellipsis">
+            Upload : Losa
+          </p>
           <ul className="likes-track-header__icons-container flex row align-center">
             <li className="likes-track-header__icon">
               <a href="" className="likes-track-header__icon-btn">
@@ -63,10 +65,10 @@ const InlineTrack = () => {
           </ul>
         </div>
         <div className="likes-track-title">
-          <p className="likes-track-title__name fs-24 w-600 inline-block">
+          <p className="likes-track-title__name fs-24 w-600 inline-block ellipsis">
             12:45(Stripped)
           </p>
-          <p className="likes-track-title__singer fs-20 w-600 inline-block">
+          <p className="likes-track-title__singer fs-20 w-600 inline-block ellipsis">
             ethan
           </p>
         </div>

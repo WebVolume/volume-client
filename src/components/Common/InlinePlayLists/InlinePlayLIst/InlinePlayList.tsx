@@ -17,7 +17,9 @@ const InlinePlayList = () => {
       ></img>
       <div className="inline-play-list-info">
         <div className="inline-play-list-info__header flex align-center">
-          <p className="inline-play-list-info__uploader fs-18">Upload : Losa</p>
+          <p className="inline-play-list-info__uploader fs-18 ellipsis">
+            Upload : Losa
+          </p>
           <ul className="inline-play-list-info__icons-container flex align-center">
             <li className="inline-play-list-info__icon-item">
               <a href="">
@@ -57,7 +59,9 @@ const InlinePlayList = () => {
             </li>
           </ul>
         </div>
-        <p className="inline-play-list-info__name w-600 fs-24">플리제목</p>
+        <p className="inline-play-list-info__name w-600 fs-24 ellipsis">
+          플리제목
+        </p>
         <TrackBarList />
       </div>
     </div>

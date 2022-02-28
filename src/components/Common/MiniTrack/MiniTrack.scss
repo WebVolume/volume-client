@@ -1,5 +1,4 @@
 .mini-track {
-  width: vw(394px); //78+368+48
   height: vw(78px);
   margin-bottom: vw(32px);
   &__img {
@@ -10,7 +9,11 @@
   .mini-track-info {
     height: 100%;
     &__singer {
+      max-width: vw(242px);
       opacity: 0.5;
+    }
+    &__title {
+      max-width: vw(242px);
     }
     &__icon-item {
       margin-right: vw(18px);
@@ -22,7 +25,6 @@
     &__icon {
       width: vw(24px);
       height: vw(24px);
-      // margin-left: auto;
       margin-right: vw(10px);
     }
   }
@@ -48,6 +50,12 @@
       margin-right: vw-t(10px);
     }
     .mini-track-info {
+      &__singer {
+        max-width: vw-t(531px);
+      }
+      &__title {
+        max-width: vw-t(531px);
+      }
       &__icon-item {
         height: vw-t(24px);
         margin-right: vw-t(18px);
@@ -80,9 +88,11 @@
     }
     .mini-track-info {
       &__singer {
+        max-width: vw-p(222px);
         font-size: vw-p(12px);
       }
       &__title {
+        max-width: vw-p(222px);
         font-size: vw-p(14px);
       }
 

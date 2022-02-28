@@ -12,6 +12,7 @@
     .likes-track-header {
       margin-bottom: vw(5px);
       &__uploader {
+        max-width: vw(400px);
         opacity: 0.5;
       }
       &__icon {
@@ -27,6 +28,10 @@
   .likes-track-title {
     &__name {
       margin-right: vw(59px);
+      max-width: vw(441px);
+    }
+    &__singer {
+      max-width: vw(123px);
     }
   }
   .likes-track-main {
@@ -66,6 +71,9 @@
     }
     .likes-track-header {
       margin-bottom: vw-t(3px);
+      &__uploader {
+        max-width: vw-t(300px);
+      }
       &__icon {
         margin-left: vw-t(26px);
         &-btn-img {
@@ -76,8 +84,12 @@
     }
     .likes-track-title {
       &__name {
+        max-width: vw-t(434px);
         margin-right: vw-t(16px);
         font-size: vw-t(18px);
+      }
+      &__singer {
+        max-width: vw-t(57px);
       }
       margin-bottom: vw-t(19px);
     }
@@ -111,6 +123,7 @@
     .likes-track-header {
       margin-bottom: 0;
       &__uploader {
+        max-width: vw-p(150px);
         font-size: vw-p(11px);
       }
       &__icon {
@@ -124,8 +137,13 @@
     .likes-track-title {
       transform: translateY(vw(-60px));
       &__name {
+        max-width: vw-p(152px);
         margin-right: vw-p(8px);
       }
+      &__singer {
+        max-width: vw-p(50px);
+      }
+      margin-top: vw-p(10px);
       margin-bottom: vw-p(5px);
     }
     .likes-track-main {
