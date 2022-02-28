@@ -25,6 +25,7 @@ const MiniTrack = () => {
               <img
                 src={emptyHeartIcon}
                 alt="emptyHeartIcon"
+                title="좋아요"
                 className="mini-track-info__icon"
               />
             </button>
@@ -38,6 +39,7 @@ const MiniTrack = () => {
               <img
                 src={emptyPlayIcon}
                 alt="emptyPlayIcon"
+                title="재생횟수"
                 className="mini-track-info__icon"
               />
             </button>

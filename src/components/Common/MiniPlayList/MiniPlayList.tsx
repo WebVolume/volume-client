@@ -22,6 +22,7 @@ const MiniPlayList = () => {
             <img
               src={emptyHeartIcon}
               alt="emptyHeartIcon"
+              title="좋아요"
               className="mini-play-list-info__icon"
             />
           </button>

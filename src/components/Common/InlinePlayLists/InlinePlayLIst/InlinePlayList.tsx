@@ -26,6 +26,7 @@ const InlinePlayList = () => {
                 <img
                   src={heartIcon}
                   alt="하트버튼"
+                  title="좋아요"
                   className="inline-play-list-info__icon-img"
                 />
               </a>
@@ -35,6 +36,7 @@ const InlinePlayList = () => {
                 <img
                   src={addPlaylistIcon}
                   alt="플레이리스트에추가버튼"
+                  title="플레이리스트에 추가"
                   className="inline-play-list-info__icon-img"
                 />
               </a>
@@ -44,6 +46,7 @@ const InlinePlayList = () => {
                 <img
                   src={addRepostIcon}
                   alt="리포스트버튼"
+                  title="리포스트하기"
                   className="inline-play-list-info__icon-img"
                 />
               </a>
@@ -53,6 +56,7 @@ const InlinePlayList = () => {
                 <img
                   src={etcIcon}
                   alt="그외버튼"
+                  title="삭제 / 신고"
                   className="inline-play-list-info__icon-img"
                 />
               </a>

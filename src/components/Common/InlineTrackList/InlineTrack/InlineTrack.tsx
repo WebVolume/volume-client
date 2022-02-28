@@ -58,7 +58,7 @@ const InlineTrack = () => {
                   src={etcIcon}
                   className="likes-track-header__icon-btn-img"
                   alt="그외버튼"
-                  title="희윤님께 버튼"
+                  title="삭제 / 신고"
                 />
               </a>
             </li>

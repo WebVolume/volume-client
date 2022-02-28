@@ -13,6 +13,7 @@ const TrackBar = () => {
           <img
             src={playBtn}
             alt="재생버튼"
+            title="재생횟수"
             className="track-bar-info__play-btn-img"
           />
         </button>
