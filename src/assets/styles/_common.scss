@@ -19,6 +19,10 @@ body {
   display: none;
 }
 
+.notVisible {
+  visibility: hidden;
+}
+
 .ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;

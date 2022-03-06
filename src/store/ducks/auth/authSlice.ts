@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 import { signIn } from "./authThunk";
 
 export interface InitialStateType {
@@ -26,15 +27,18 @@ const authSlice = createSlice({
       .addCase(signIn.pending, state => {
         state.loading = true;
         state.error = false;
+        // console.log("pending");
       })
       .addCase(signIn.fulfilled, (state, action) => {
         state.loading = false;
-        console.log(action.payload);
+        localStorage.setItem("isLoggedIn", JSON.stringify(action.payload));
+        // console.log("signInFufil");
       })
       .addCase(signIn.rejected, (state, action) => {
         state.loading = false;
         state.error = true;
-        console.log(action.error);
+        // console.log("siginReject");
+        // console.log(action.payload);
       })
 });
 

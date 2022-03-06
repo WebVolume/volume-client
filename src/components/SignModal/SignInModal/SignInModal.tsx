@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
 import "./SignInModal.scss";
+import { signIn } from "@store/ducks/auth/authThunk";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "@store/index";
 
 const SignInModal = (props: any) => {
+  const dispatch = useDispatch();
+  const loginError = useSelector(({ auth }: RootState) => auth.error);
+
+  const [form, setForm] = useState({
+    id: "",
+    password: ""
+  });
+
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const showLoginError = useMemo(() => {
+    const prefix = "login-form__message fs-14";
+    return loginError ? prefix + "visible" : prefix + " notVisible";
+  }, [loginError]);
+
   return (
     <div
       className="signin-dimmer flex justify-center align-center fc-black noto"
@@ -14,24 +34,33 @@ const SignInModal = (props: any) => {
         <p className="modal-container__login-title fs-28 w-600 mont-alt">
           Login
         </p>
-        <div className="login-form">
+        <form className="login-form">
           <input
+            name="id"
             type="text"
             className="login-form__email-input modal-box fs-16"
-            placeholder=" 이메일"
+            placeholder="이메일"
+            onChange={onChange}
           />
           <input
+            name="password"
             type="password"
             className="login-form__password-input modal-box fs-16"
             placeholder=" 비밀번호"
+            autoComplete="off"
+            onChange={onChange}
           />
-          <p className="login-form__message fs-14">
-            아이디 또는 비밀번호가 달라요.
-          </p>
-          <button className="modal-container__continue-btn modal-box fs-16 fc-white">
+          <p className={showLoginError}>아이디 또는 비밀번호가 달라요.</p>
+          <button
+            className="modal-container__continue-btn modal-box fs-16 fc-white"
+            onClick={e => {
+              e.preventDefault();
+              dispatch(signIn(form));
+            }}
+          >
             로그인하기
           </button>
-        </div>
+        </form>
         <div className="find-and-signup-container flex ">
           <button className="find-and-signup-container__find-account-btn modal-box fs-16">
             이메일,비밀번호찾기
