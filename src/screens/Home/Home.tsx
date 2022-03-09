@@ -4,8 +4,10 @@ import hamburgerIcon from "@ico/hamburger.svg";
 import rightArrowIcon from "@ico/rightArrow.svg";
 import { useState } from "react";
 import { SignInModal, SignUpModal } from "@components/SignModal";
+import { Navigate } from "react-router-dom";
 
 function Home() {
+  const isAuth = localStorage.getItem("isLoggedIn");
   const [signInModalVisible, setsingInModalVisible] = useState(false);
   const [signUpModalVisible, setsingUpModalVisible] = useState(false);
   const [asideTapVisible, setAsideTapVisible] = useState(false);
@@ -20,7 +22,7 @@ function Home() {
   const handleAsideTapVisible = () => {
     setAsideTapVisible(!asideTapVisible);
   };
-  return (
+  return !isAuth ? (
     <div className="home-wrapper fc-white mont-alt">
       {signInModalVisible && (
         <SignInModal handleSignInModalVisible={handleSignInModalVisible} />
@@ -85,6 +87,8 @@ function Home() {
         </button>
       </main>
     </div>
+  ) : (
+    <Navigate to="main" />
   );
 }
 

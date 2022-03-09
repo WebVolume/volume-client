@@ -1,9 +1,10 @@
-import { Outlet } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 import * as Common from "@components/Common";
 import "./Main.scss";
 
 function Main() {
-  return (
+  const isAuth = localStorage.getItem("isLoggedIn");
+  return isAuth ? (
     <div className="main-screen">
       <Common.TopNav />
 
@@ -11,6 +12,8 @@ function Main() {
         <Outlet />
       </main>
     </div>
+  ) : (
+    <Navigate to="/" />
   );
 }
 

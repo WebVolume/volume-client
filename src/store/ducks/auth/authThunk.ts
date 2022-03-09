@@ -1,17 +1,18 @@
+import { SignInResponseType, SignInRequestType } from "./auth.type";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const signIn = createAsyncThunk<any, any>(
+export const signIn = createAsyncThunk<SignInResponseType, SignInRequestType>(
   "auth/signIn",
   async (payload, { rejectWithValue, getState }) => {
-    // TODO: call API here
-    return await axios
-      .post("https://volume-server-api.herokuapp.com/api/login", payload)
-      .then(function (response) {
-        return response.data;
-      })
-      .catch(function (error) {
-        return rejectWithValue(error);
-      });
+    try {
+      const { data } = await axios.post<SignInResponseType>(
+        "https://volume-server-api.herokuapp.com/api/login",
+        payload
+      );
+      return data;
+    } catch (error) {
+      return rejectWithValue(error);
+    }
   }
 );

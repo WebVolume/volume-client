@@ -3,12 +3,12 @@ import { createSlice } from "@reduxjs/toolkit";
 import { signIn } from "./authThunk";
 
 export interface InitialStateType {
-  userInfo: any | null;
+  userInfo: string | null;
   loading: boolean;
   error: boolean;
 }
 
-const initialState = {
+const initialState: InitialStateType = {
   userInfo: null,
   loading: false,
   error: false
@@ -31,6 +31,7 @@ const authSlice = createSlice({
       })
       .addCase(signIn.fulfilled, (state, action) => {
         state.loading = false;
+        state.userInfo = action.payload.id;
         localStorage.setItem("isLoggedIn", JSON.stringify(action.payload));
         // console.log("signInFufil");
       })
