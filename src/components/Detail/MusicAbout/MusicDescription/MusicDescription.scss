@@ -8,7 +8,7 @@
     max-width: vw(651px);
 
     white-space: pre-line;
-    line-height: 22px;
+    line-height: vw(22px);
   }
 
   .music-des-categorys {
@@ -21,7 +21,7 @@
       border-radius: 24px;
 
       text-align: center;
-      line-height: 28px;
+      line-height: vw(28px);
       & + .music-des-categorys__item {
         margin-left: vw(17px);
       }

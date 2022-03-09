@@ -18,6 +18,9 @@
 
     background-color: $BLUE_2461;
     border-radius: 8px;
+    &:hover {
+      background-color: $BLUE_5887;
+    }
   }
   &-header {
     margin-top: vw(25px);
