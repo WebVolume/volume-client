@@ -5,6 +5,7 @@ import MiniTrack from "./MiniTrack";
 import InPlayList from "./InPlayLIst";
 import InlineTrackList from "./InlineTrackList";
 import InlinePlayLists from "./InlinePlayLists";
+import CircleList from "./CircleList";
 export {
   TopNav,
   RelateTrackList,
@@ -12,5 +13,6 @@ export {
   MiniTrack,
   InPlayList,
   InlineTrackList,
-  InlinePlayLists
+  InlinePlayLists,
+  CircleList
 };

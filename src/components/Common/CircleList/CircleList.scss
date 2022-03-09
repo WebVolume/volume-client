@@ -1,0 +1,23 @@
+@for $i from 0 to 7 {
+  .circle-list-ul__li#{$i} {
+    position: absolute;
+    width: vw(74px);
+    height: vw(74px);
+    border-radius: 50%;
+    transform: translateX(vw($i * 50px));
+  }
+}
+
+.circle-list {
+  margin: vw(28px) 0 vw(59px) vw(28px);
+
+  &-header {
+    margin-bottom: vw(39px);
+    &__more-btn {
+      margin-right: vw(20px);
+    }
+  }
+  &__empty {
+    height: vw(74px);
+  }
+}

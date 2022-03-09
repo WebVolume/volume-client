@@ -1,4 +1,4 @@
-import { InPlayList, RelateTrackList } from "@components/Common";
+import { InPlayList, RelateTrackList, CircleList } from "@components/Common";
 import { MusicAbout, MusicInfo, MusicSpinner } from "@components/Detail";
 import "./Detail.scss";
 
@@ -14,6 +14,8 @@ const Detail = () => {
         <div className="detail-bottom-right-container">
           <RelateTrackList />
           <InPlayList />
+          <CircleList title="Likes" />
+          <CircleList title="Repots" />
         </div>
       </div>
     </div>
