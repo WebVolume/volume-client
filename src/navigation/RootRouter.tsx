@@ -3,7 +3,7 @@ import * as Screens from "../screens";
 // import * as Components from "../components";
 
 const RootRouter = () => {
-  const { Profile, Search, Library, Dashboard, Main } = Screens.Main;
+  const { Detail, Profile, Search, Library, Dashboard, Main } = Screens.Main;
 
   return (
     <Routes>
@@ -23,6 +23,7 @@ const RootRouter = () => {
           <Route path="playlists" element={<Profile.PlayLists />} />
           <Route path="reposts" element={<Profile.Reposts />} />
         </Route>
+        <Route path="detail/*" element={<Detail />}></Route>
       </Route>
     </Routes>
   );

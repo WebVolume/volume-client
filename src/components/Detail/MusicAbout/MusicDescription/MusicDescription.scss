@@ -1,0 +1,30 @@
+.music-des-container {
+  margin-bottom: vw(55px);
+
+  &__description {
+    margin-top: vw(15px);
+    margin-bottom: vw(30px);
+
+    max-width: vw(651px);
+
+    white-space: pre-line;
+    line-height: 22px;
+  }
+
+  .music-des-categorys {
+    &__item {
+      max-width: vw(62px);
+      width: vw(62px);
+      height: vw(28px);
+
+      border: 1px solid $GRAY_DB;
+      border-radius: 24px;
+
+      text-align: center;
+      line-height: 28px;
+      & + .music-des-categorys__item {
+        margin-left: vw(17px);
+      }
+    }
+  }
+}

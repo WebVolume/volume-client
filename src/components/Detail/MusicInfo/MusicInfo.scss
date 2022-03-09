@@ -1,0 +1,22 @@
+.music-info-wrapper {
+  margin-left: vw(82px);
+
+  width: vw(456px);
+
+  .music-info-description {
+    margin-top: vw(75px);
+
+    &__singer {
+      margin-left: vw(22px);
+    }
+    &__lyrics {
+      margin-top: vw(42px);
+
+      white-space: pre-wrap;
+
+      overflow: scroll;
+      line-height: vw(37px); //fix__
+      max-height: vw(535px);
+    }
+  }
+}

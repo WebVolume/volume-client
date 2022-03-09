@@ -1,0 +1,40 @@
+.music-comment-list {
+  width: 100%;
+  &__input {
+    margin-right: vw(13px);
+
+    width: vw(540px);
+    height: vw(48px);
+
+    border: 1px solid $GARY_BC;
+    border-radius: 8px;
+
+    text-indent: vw(20px);
+  }
+
+  &__add-btn {
+    width: vw(99px);
+    height: vw(48px);
+
+    background-color: $BLUE_2461;
+    border-radius: 8px;
+  }
+  &-header {
+    margin-top: vw(25px);
+    padding-bottom: vw(16px);
+
+    border-bottom: 0.5px solid $WHITE_FF;
+
+    &__comment-img {
+      margin-right: vw(16px);
+      margin-left: vw(10px);
+      width: vw(18px);
+      height: vw(18px);
+    }
+  }
+
+  &-ul {
+    padding-top: vw(30px);
+    padding-left: vw(15px);
+  }
+}

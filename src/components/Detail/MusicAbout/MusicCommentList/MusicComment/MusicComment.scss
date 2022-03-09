@@ -1,0 +1,19 @@
+.music-comment {
+  margin-bottom: vw(30px);
+  &__img {
+    margin-right: vw(25px);
+    width: vw(52px);
+    height: vw(52px);
+
+    border-radius: 50%;
+  }
+  &-main {
+    width: vw(500px);
+    &__id {
+      margin-bottom: vw(9px);
+    }
+  }
+  &__date {
+    margin-left: auto;
+  }
+}

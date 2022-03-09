@@ -1,0 +1,40 @@
+.music-spinner {
+  position: relative;
+  margin-left: vw(57px);
+
+  width: vw(712px);
+  height: vw(712px);
+
+  border-radius: 50%;
+  border: 3px solid $WHITE_FF;
+
+  &__disk {
+    position: absolute;
+
+    width: vw(700px);
+    height: vw(700px);
+
+    border-radius: 50%;
+  }
+  &__album-img {
+    width: vw(177px);
+    height: vw(177px);
+
+    border-radius: 50%;
+  }
+  &__play-btn {
+    position: absolute;
+
+    width: vw(78px);
+    height: vw(78px);
+    background-color: $WHITE_FF;
+    opacity: 0.8;
+
+    border-radius: 50%;
+
+    &-img {
+      width: vw(30px); //fix__
+      height: vw(30px); //fix__
+    }
+  }
+}
