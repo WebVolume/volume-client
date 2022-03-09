@@ -9,13 +9,11 @@
     top: vw(169px);
   }
   @mixin uploadBtn {
-    background: $BLACK_00;
-    opacity: 0.8;
+    background: $GARY_32;
     padding: vw(8px) vw(11px);
     p {
       white-space: nowrap;
     }
-    // filter: blur(66px);
   }
   &__user-name {
     @include userBox();
