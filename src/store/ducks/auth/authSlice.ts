@@ -1,15 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import { signIn } from "./authThunk";
-
+import { signIn, getKakaoInfo, getKakaoToken } from "./authThunk";
 export interface InitialStateType {
   userInfo: string | null;
   loading: boolean;
+  kakaoEmail: string | null;
+  kakaoToken: string | null;
   error: boolean;
 }
 
 const initialState: InitialStateType = {
   userInfo: null,
+  kakaoEmail: null,
+  kakaoToken: null,
   loading: false,
   error: false
 };
@@ -27,19 +30,40 @@ const authSlice = createSlice({
       .addCase(signIn.pending, state => {
         state.loading = true;
         state.error = false;
-        // console.log("pending");
       })
       .addCase(signIn.fulfilled, (state, action) => {
         state.loading = false;
         state.userInfo = action.payload.id;
         localStorage.setItem("isLoggedIn", JSON.stringify(action.payload));
-        // console.log("signInFufil");
       })
       .addCase(signIn.rejected, (state, action) => {
         state.loading = false;
         state.error = true;
-        // console.log("siginReject");
-        // console.log(action.payload);
+      })
+      .addCase(getKakaoToken.pending, state => {
+        state.loading = true;
+        state.error = false;
+      })
+      .addCase(getKakaoToken.fulfilled, (state, action) => {
+        state.loading = false;
+        state.kakaoToken = action.payload.access_token;
+      })
+      .addCase(getKakaoToken.rejected, (state, action) => {
+        state.loading = false;
+        state.error = true;
+      })
+      .addCase(getKakaoInfo.pending, state => {
+        state.loading = true;
+        state.error = false;
+      })
+      .addCase(getKakaoInfo.fulfilled, (state, action) => {
+        state.loading = false;
+        console.log(action.payload);
+        state.kakaoEmail = action.payload.email;
+      })
+      .addCase(getKakaoInfo.rejected, (state, action) => {
+        state.loading = false;
+        state.error = true;
       })
 });
 

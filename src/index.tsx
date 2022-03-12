@@ -6,6 +6,12 @@ import { BrowserRouter } from "react-router-dom";
 import store from "./store";
 import { Provider } from "react-redux";
 
+declare global {
+  interface Window {
+    Kakao: any;
+    //이부분 타입 어떻게..
+  }
+}
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

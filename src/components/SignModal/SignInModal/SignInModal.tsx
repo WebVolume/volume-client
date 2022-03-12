@@ -3,6 +3,7 @@ import "./SignInModal.scss";
 import { signIn } from "@store/ducks/auth/authThunk";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@store/index";
+import { KAKAO_AUTH_URL } from "@store/ducks/auth/authThunk";
 
 const SignInModal = (props: any) => {
   const dispatch = useDispatch();
@@ -76,7 +77,7 @@ const SignInModal = (props: any) => {
             구글로 시작하기
           </button>
           <button className="simple-login-form__kakao-login-btn modal-box fs-16">
-            카카오톡으로 시작하기
+            <a href={KAKAO_AUTH_URL}>카카오톡으로 시작하기</a>
           </button>
         </div>
       </div>

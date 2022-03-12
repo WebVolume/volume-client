@@ -8,7 +8,7 @@ const RootRouter = () => {
     <Routes>
       {/* 로그인 전 */}
       <Route path="/" element={<Screens.Home />} />
-
+      <Route path="/oauth/kakao" element={<Screens.KakaoRedirectHandler />} />
       {/* 로그인 이후 화면 */}
       <Route path="main/*" element={<Main />}>
         <Route index element={<Dashboard />} />

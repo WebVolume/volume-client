@@ -2,14 +2,21 @@ import "./Home.scss";
 import logoImg from "../../assets/images/volume.png";
 import hamburgerIcon from "@ico/hamburger.svg";
 import rightArrowIcon from "@ico/rightArrow.svg";
-import { useState } from "react";
-import { SignInModal, SignUpModal } from "@components/SignModal";
+import { useEffect, useState } from "react";
+import {
+  SignInModal,
+  SignUpModal,
+  SocialSignUpModal
+} from "@components/SignModal";
 import { Navigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { RootState } from "@store/index";
 
 function Home() {
   const isAuth = localStorage.getItem("isLoggedIn");
   const [signInModalVisible, setsingInModalVisible] = useState(false);
   const [signUpModalVisible, setsingUpModalVisible] = useState(false);
+  const [socialSignUpVisible, setSocialSignUpVisible] = useState(false);
   const [asideTapVisible, setAsideTapVisible] = useState(false);
   const handleSignInModalVisible = () => {
     setsingInModalVisible(!signInModalVisible);
@@ -19,9 +26,20 @@ function Home() {
     setsingUpModalVisible(!signUpModalVisible);
     setAsideTapVisible(false);
   };
+  const handleSocialSignUpVisible = () => {
+    setSocialSignUpVisible(!socialSignUpVisible);
+    setAsideTapVisible(false);
+  };
   const handleAsideTapVisible = () => {
     setAsideTapVisible(!asideTapVisible);
   };
+
+  const kakaoEmail = useSelector(({ auth }: RootState) => auth.kakaoEmail);
+
+  useEffect(() => {
+    if (kakaoEmail) setSocialSignUpVisible(true);
+  }, [kakaoEmail]);
+
   return !isAuth ? (
     <div className="home-wrapper fc-white mont-alt">
       {signInModalVisible && (
@@ -29,6 +47,11 @@ function Home() {
       )}
       {signUpModalVisible && (
         <SignUpModal handleSignUpModalVisible={handleSignUpModalVisible} />
+      )}
+      {socialSignUpVisible && (
+        <SocialSignUpModal
+          handleSocialSignUpVisible={handleSocialSignUpVisible}
+        />
       )}
       <header className="header-container flex align-center">
         <p className="header-container__logo-title fs-36">Volume</p>
