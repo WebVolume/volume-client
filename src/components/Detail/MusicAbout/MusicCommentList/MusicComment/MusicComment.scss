@@ -17,3 +17,24 @@
     margin-left: auto;
   }
 }
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .music-comment {
+    // max-width: vw-t(472px);
+    margin-bottom: vw-t(33px);
+    &__img {
+      margin-right: vw-t(40px);
+      width: vw-t(52px);
+      height: vw-t(52px);
+    }
+    &-main {
+      width: vw-t(342px);
+      &__id {
+        margin-bottom: vw-t(9px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+}

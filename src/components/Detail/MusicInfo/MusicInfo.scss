@@ -20,3 +20,29 @@
     }
   }
 }
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .music-info-wrapper {
+    margin: 0;
+
+    width: vw-t(679px);
+
+    .music-info-description {
+      margin-top: vw-t(30px);
+
+      &__singer {
+        margin-left: vw-t(22px);
+      }
+      &__lyrics {
+        margin-top: vw-t(21px);
+        max-height: vw-t(135px);
+
+        font-size: vw-t(22px);
+        line-height: vw-t(27px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+}

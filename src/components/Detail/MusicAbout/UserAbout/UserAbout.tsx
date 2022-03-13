@@ -6,7 +6,7 @@ import trackIcon from "@ico/track.svg";
 
 const UserAbout = () => {
   return (
-    <div className="user-about-container">
+    <div className="user-about-container flex column align-center">
       <img
         className="user-about-container__user-img"
         src={testImg}
@@ -21,7 +21,9 @@ const UserAbout = () => {
               src={followerIcon}
               alt=""
             />
-            <div className="user-about-icon-list__follower fs-15">10</div>
+            <div className="user-about-icon-list__follower fs-15 ellipsis">
+              100000
+            </div>
           </li>
           <li className="user-about-icon-list__item flex align-center">
             <img
@@ -29,7 +31,9 @@ const UserAbout = () => {
               src={trackIcon}
               alt=""
             />
-            <div className="user-about-icon-list__tracks fs-15">100</div>
+            <div className="user-about-icon-list__tracks fs-15 ellipsis">
+              10000
+            </div>
           </li>
         </ul>
         <div className="user-about-container__follow-btn flex justify-center align-center fs-14">

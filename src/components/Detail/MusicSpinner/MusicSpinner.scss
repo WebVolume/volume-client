@@ -8,14 +8,6 @@
   border-radius: 50%;
   border: 3px solid $WHITE_FF;
 
-  &__disk {
-    position: absolute;
-
-    width: vw(700px);
-    height: vw(700px);
-
-    border-radius: 50%;
-  }
   &__album-img {
     width: vw(177px);
     height: vw(177px);
@@ -35,6 +27,72 @@
     &-img {
       width: vw(30px); //fix__
       height: vw(30px); //fix__
+    }
+  }
+}
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .music-spinner {
+    margin-bottom: vw-t(40px);
+
+    width: vw-t(484px);
+    height: vw-t(484px);
+
+    &__album-img {
+      width: vw-t(120px);
+      height: vw-t(120px);
+    }
+    &__play-btn {
+      width: vw-t(52px);
+      height: vw-t(52px);
+
+      &-img {
+        width: vw-t(20px);
+        height: vw-t(20px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .music-spinner {
+    position: relative;
+    margin-left: vw-p(57px);
+
+    width: vw-p(712px);
+    height: vw-p(712px);
+
+    border-radius: 50%;
+    border: 3px solid $WHITE_FF;
+
+    &__disk {
+      position: absolute;
+
+      width: vw-p(700px);
+      height: vw-p(700px);
+
+      border-radius: 50%;
+    }
+    &__album-img {
+      width: vw-p(177px);
+      height: vw-p(177px);
+
+      border-radius: 50%;
+    }
+    &__play-btn {
+      position: absolute;
+
+      width: vw-p(78px);
+      height: vw-p(78px);
+      background-color: $WHITE_FF;
+      opacity: 0.8;
+
+      border-radius: 50%;
+
+      &-img {
+        width: vw-p(30px); //fix__
+        height: vw-p(30px); //fix__
+      }
     }
   }
 }

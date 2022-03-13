@@ -31,3 +31,37 @@
     }
   }
 }
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .music-info-icon-container {
+    .left-container {
+      &__icon {
+        width: vw-t(34px);
+        height: vw-t(34px);
+
+        & + .left-container__icon {
+          margin-left: vw-t(16px);
+        }
+        &-img {
+          width: vw-t(24px);
+          height: vw-t(24px);
+        }
+      }
+    }
+    .right-container {
+      &__icon {
+        & + .right-container__icon {
+          margin-left: vw-t(17px);
+        }
+        &-img {
+          width: vw-t(24px);
+          height: vw-t(24px);
+          margin-right: vw-t(5px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+}

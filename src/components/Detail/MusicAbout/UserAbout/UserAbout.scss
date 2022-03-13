@@ -4,7 +4,7 @@
   &__user-img {
     margin-bottom: vw(9px);
 
-    width: vw(116px);
+    width: vw(97px);
     height: vw(116px);
 
     border-radius: 50%;
@@ -21,7 +21,9 @@
   .user-about-icon-list {
     margin-bottom: vw(10px);
 
+    max-width: vw(118px);
     &__item {
+      max-width: vw(59px);
       margin-right: vw(11px);
     }
 
@@ -41,4 +43,51 @@
     background-color: $DARK_GRAY;
     border-radius: 5px;
   }
+}
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .user-about-container {
+    margin-right: vw-t(55px);
+
+    &__user-img {
+      margin-bottom: vw-t(8px);
+
+      width: vw-t(97px);
+      height: vw-t(97px);
+    }
+
+    &__user-name {
+      max-width: vw-t(97px);
+
+      margin-bottom: vw-t(8px);
+    }
+
+    .user-about-icon-list {
+      margin-bottom: vw-t(8px);
+
+      max-width: vw-t(97px);
+      &__item {
+        max-width: vw-t(49px);
+        margin-right: vw-t(9px);
+      }
+
+      &__tracks-img,
+      &__follower-img {
+        margin-right: 0;
+
+        width: vw-t(20px);
+        height: vw-t(20px);
+      }
+    }
+
+    &__follow-btn {
+      margin: auto;
+
+      width: vw-t(97px);
+      height: vw-t(28px);
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
 }

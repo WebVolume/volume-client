@@ -5,7 +5,6 @@ import playBtnImg from "@ico/play-fill-black.svg";
 const MusicSpinner = () => {
   return (
     <div className="music-spinner flex justify-center align-center">
-      <div className="music-spinner__disk"></div>
       <img src={testImg} alt="albumImg" className="music-spinner__album-img" />
       <div className="music-spinner__play-btn flex justify-center align-center">
         <img

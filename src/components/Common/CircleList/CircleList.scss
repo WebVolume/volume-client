@@ -21,3 +21,30 @@
     height: vw(74px);
   }
 }
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  @for $i from 0 to 13 {
+    .circle-list-ul__li#{$i} {
+      position: absolute;
+      left: vw-t(67px);
+      width: vw-t(74px);
+      height: vw-t(74px);
+      border-radius: 50%;
+      transform: translateX(vw-t($i * 50px));
+    }
+  }
+
+  .circle-list {
+    margin: vw-t(28px) 0 vw-t(59px) vw-t(28px);
+
+    &-header {
+      margin-bottom: vw-t(39px);
+      &__more-btn {
+        margin-right: vw-t(20px);
+      }
+    }
+    &__empty {
+      height: vw-t(74px);
+    }
+  }
+}

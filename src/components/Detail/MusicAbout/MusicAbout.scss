@@ -3,3 +3,14 @@
 
   width: vw(865px);
 }
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .music-about-container {
+    margin: vw-t(18px) vw-t(41px) vw-t(28px) vw-t(40px);
+
+    width: vw-t(683px);
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+}

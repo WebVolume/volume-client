@@ -3,4 +3,34 @@
     margin-top: vw(31px);
     margin-bottom: vw(260px);
   }
+  .detail-bottom-right-container {
+    width: vw(415px);
+  }
+}
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .detail-screen {
+    .detail-top-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: vw-t(32px);
+      margin-bottom: vw-t(127px); // 49+78
+    }
+    .detail-bottom-container {
+      width: 100%;
+      flex-direction: column;
+    }
+    .detail-bottom-right-container {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .detail-screen {
+    .detail-top-container {
+      margin-top: vw-t(32px);
+      margin-bottom: vw-t(127px); // 49+78
+    }
+  }
 }
