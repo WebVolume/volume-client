@@ -1,24 +1,26 @@
 .likes-track {
   width: vw(877px);
-  height: vw(194px);
+  height: vw(206px);
   margin-bottom: vw(30px);
   &__album-img {
     width: vw(206px);
-    height: vw(194px);
+    height: vw(206px);
     margin-right: vw(34px);
   }
   &__info {
-    flex: 1;
+    max-height: vw(206px);
     .likes-track-header {
       margin-bottom: vw(5px);
       &__uploader {
+        max-width: vw(400px);
         opacity: 0.5;
       }
-      &__icons-container {
-        margin-left: auto;
-      }
-      &__icon-item {
+      &__icon {
         margin-left: vw(31px);
+        &-btn-img {
+          width: vw(24px);
+          height: vw(24px);
+        }
       }
     }
   }
@@ -26,33 +28,34 @@
   .likes-track-title {
     &__name {
       margin-right: vw(59px);
+      max-width: vw(441px);
     }
-    margin-bottom: vw(34px);
+    &__singer {
+      max-width: vw(123px);
+    }
   }
   .likes-track-main {
-    height: vw(85px);
     &__play-btn {
       width: vw(52px);
       height: vw(52px);
       border-radius: 50%;
       background-color: $BLUE_2A6F;
-      margin-right: vw(70px);
-      margin-left: vw(15px);
+      margin-right: vw(60px);
+      margin-left: vw(10px);
     }
     &__play-btn-img {
       width: vw(20px); // fix
       height: vw(20px); // fix
     }
     &__lyrics {
-      height: 100%;
       line-height: vw(30px); //22+8
       white-space: pre-line;
-      overflow: hidden;
     }
     &__date {
-      margin-top: auto;
+      margin-top: 10%;
       margin-left: auto;
       opacity: 0.5;
+      white-space: nowrap;
     }
   }
 }
@@ -60,22 +63,33 @@
   .likes-track {
     margin: vw-t(40px);
     width: vw-t(684px);
-    height: vw-t(141px);
+    height: vw-t(150px);
     &__album-img {
       width: vw-t(150px);
-      height: vw-t(141px);
+      height: vw-t(150px);
       margin-right: vw-t(25px);
     }
     .likes-track-header {
       margin-bottom: vw-t(3px);
-      &__icon-item {
+      &__uploader {
+        max-width: vw-t(300px);
+      }
+      &__icon {
         margin-left: vw-t(26px);
+        &-btn-img {
+          width: vw-t(32px);
+          height: vw-t(32px);
+        }
       }
     }
     .likes-track-title {
       &__name {
+        max-width: vw-t(434px);
         margin-right: vw-t(16px);
         font-size: vw-t(18px);
+      }
+      &__singer {
+        max-width: vw-t(57px);
       }
       margin-bottom: vw-t(19px);
     }
@@ -109,23 +123,27 @@
     .likes-track-header {
       margin-bottom: 0;
       &__uploader {
+        max-width: vw-p(150px);
         font-size: vw-p(11px);
       }
-      &__icon-item {
-        width: vw-p(24px);
-        height: vw-p(24px);
+      &__icon {
         margin-left: vw-p(15px);
-      }
-      &__heart-btn-img {
-        width: vw-p(24px);
-        height: vw-p(24px);
+        &-btn-img {
+          width: vw-p(24px);
+          height: vw-p(24px);
+        }
       }
     }
     .likes-track-title {
       transform: translateY(vw(-60px));
       &__name {
+        max-width: vw-p(152px);
         margin-right: vw-p(8px);
       }
+      &__singer {
+        max-width: vw-p(50px);
+      }
+      margin-top: vw-p(10px);
       margin-bottom: vw-p(5px);
     }
     .likes-track-main {
@@ -137,6 +155,9 @@
       &__play-btn-img {
         width: vw-p(15px); // fix
         height: vw-p(15px); // fix
+      }
+      &__date {
+        font-size: vw-p(9.7px);
       }
     }
   }

@@ -1,5 +1,4 @@
 .mini-track {
-  width: vw(394px); //78+368+48
   height: vw(78px);
   margin-bottom: vw(32px);
   &__img {
@@ -8,25 +7,25 @@
     margin-right: vw(10px);
   }
   .mini-track-info {
+    height: 100%;
     &__singer {
-      margin-bottom: vw(5px);
+      max-width: vw(242px);
       opacity: 0.5;
     }
-    &__icon-container {
-      white-space: nowrap;
-      margin-top: vw(15px);
+    &__title {
+      max-width: vw(242px);
     }
     &__icon-item {
       margin-right: vw(18px);
     }
     &__icon-btn {
       padding: 0;
+      height: vw(24px);
     }
     &__icon {
       width: vw(24px);
       height: vw(24px);
       margin-right: vw(10px);
-      padding: 0;
     }
   }
   &__play-btn {
@@ -34,8 +33,6 @@
     height: vw(48px);
     border-radius: 50%;
     background: $BLACK_2F;
-    margin-left: auto;
-    margin-right: vw(15px);
   }
   &__play-icon {
     width: vw(20px);
@@ -54,12 +51,13 @@
     }
     .mini-track-info {
       &__singer {
-        margin-bottom: vw-t(5px);
+        max-width: vw-t(531px);
       }
-      &__icon-container {
-        margin-top: vw-t(15px);
+      &__title {
+        max-width: vw-t(531px);
       }
       &__icon-item {
+        height: vw-t(24px);
         margin-right: vw-t(18px);
       }
       &__icon {
@@ -81,7 +79,6 @@
 }
 @media screen and (max-width: $PHONE_CRITERIA) {
   .mini-track {
-    // width: 100%;
     height: vw-p(78px);
     margin-bottom: vw-p(32px);
     &__img {
@@ -91,16 +88,16 @@
     }
     .mini-track-info {
       &__singer {
-        margin-bottom: vw-p(5px);
+        max-width: vw-p(222px);
         font-size: vw-p(12px);
       }
       &__title {
+        max-width: vw-p(222px);
         font-size: vw-p(14px);
       }
-      &__icon-container {
-        margin-top: vw-p(9px);
-      }
+
       &__icon-item {
+        height: vw-p(24px);
         margin-right: vw-p(18px);
       }
       &__icon {
