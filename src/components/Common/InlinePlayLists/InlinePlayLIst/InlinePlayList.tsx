@@ -17,13 +17,16 @@ const InlinePlayList = () => {
       ></img>
       <div className="inline-play-list-info">
         <div className="inline-play-list-info__header flex align-center">
-          <p className="inline-play-list-info__uploader fs-18">Upload : Losa</p>
+          <p className="inline-play-list-info__uploader fs-18 ellipsis">
+            Upload : Losa
+          </p>
           <ul className="inline-play-list-info__icons-container flex align-center">
             <li className="inline-play-list-info__icon-item">
               <a href="">
                 <img
                   src={heartIcon}
                   alt="하트버튼"
+                  title="좋아요"
                   className="inline-play-list-info__icon-img"
                 />
               </a>
@@ -33,6 +36,7 @@ const InlinePlayList = () => {
                 <img
                   src={addPlaylistIcon}
                   alt="플레이리스트에추가버튼"
+                  title="플레이리스트에 추가"
                   className="inline-play-list-info__icon-img"
                 />
               </a>
@@ -42,6 +46,7 @@ const InlinePlayList = () => {
                 <img
                   src={addRepostIcon}
                   alt="리포스트버튼"
+                  title="리포스트하기"
                   className="inline-play-list-info__icon-img"
                 />
               </a>
@@ -51,13 +56,16 @@ const InlinePlayList = () => {
                 <img
                   src={etcIcon}
                   alt="그외버튼"
+                  title="삭제 / 신고"
                   className="inline-play-list-info__icon-img"
                 />
               </a>
             </li>
           </ul>
         </div>
-        <p className="inline-play-list-info__name w-600 fs-24">플리제목</p>
+        <p className="inline-play-list-info__name w-600 fs-24 ellipsis">
+          플리제목
+        </p>
         <TrackBarList />
       </div>
     </div>
