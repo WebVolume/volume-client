@@ -37,4 +37,18 @@
 }
 
 @media screen and (max-width: $PHONE_CRITERIA) {
+  .music-comment {
+    margin-bottom: vw-p(40px);
+    &__img {
+      margin-right: vw-p(9px);
+      width: vw-p(52px);
+      height: vw-p(52px);
+    }
+    &-main {
+      width: vw-p(255px);
+      &__id {
+        margin-bottom: vw-p(2px);
+      }
+    }
+  }
 }

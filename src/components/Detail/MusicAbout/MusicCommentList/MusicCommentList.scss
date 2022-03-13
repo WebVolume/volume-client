@@ -77,4 +77,35 @@
 }
 
 @media screen and (max-width: $PHONE_CRITERIA) {
+  .music-comment-list {
+    &__input {
+      margin-right: vw-p(13px);
+
+      width: vw-p(256px);
+      height: vw-p(48px);
+
+      text-indent: vw-p(20px);
+    }
+
+    &__add-btn {
+      width: vw-p(72px);
+      height: vw-p(48px);
+    }
+    &-header {
+      margin-top: vw-p(28px);
+      padding-bottom: vw-p(15px);
+
+      &__comment-img {
+        margin-right: vw-p(23px);
+        margin-left: vw-p(10px);
+        width: vw-p(18px);
+        height: vw-p(18px);
+      }
+    }
+
+    &-ul {
+      padding-top: vw-p(28px);
+      padding-left: 0;
+    }
+  }
 }

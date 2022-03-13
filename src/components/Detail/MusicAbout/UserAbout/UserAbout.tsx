@@ -6,14 +6,14 @@ import trackIcon from "@ico/track.svg";
 
 const UserAbout = () => {
   return (
-    <div className="user-about-container flex column align-center">
+    <div className="user-about-container flex align-center">
       <img
         className="user-about-container__user-img"
         src={testImg}
         alt="유저이미지"
       />
-      <p className="user-about-container__user-name fs-18 ellipsis ">Gwen</p>
       <div className="user-about-detail">
+        <p className="user-about-container__user-name fs-18 ellipsis ">Gwen</p>
         <ul className="user-about-icon-list flex">
           <li className="user-about-icon-list__item flex align-center">
             <img

@@ -29,8 +29,8 @@
 @media screen and (max-width: $PHONE_CRITERIA) {
   .detail-screen {
     .detail-top-container {
-      margin-top: vw-t(32px);
-      margin-bottom: vw-t(127px); // 49+78
+      margin-top: vw-p(32px);
+      margin-bottom: vw-p(145px);
     }
   }
 }

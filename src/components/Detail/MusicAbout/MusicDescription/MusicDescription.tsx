@@ -4,7 +4,7 @@ import "./MusicDescription.scss";
 const MusicDescription = () => {
   return (
     <div className="music-des-container">
-      <pre className="music-des-container__description fs-18">
+      <pre className="music-des-container__description">
         {`스텔라를 보여준 매력적인 노래입니다. 
         쿵쿵하는 음악을 듣고 싶은 모두에게 추천 합니다.`}
       </pre>

@@ -7,6 +7,7 @@
 
     max-width: vw(651px);
 
+    font-size: vw(18px);
     white-space: pre-line;
     line-height: vw(22px);
   }
@@ -39,6 +40,7 @@
 
       max-width: vw-t(531px);
 
+      font-size: vw-t(16px);
       line-height: vw-t(19px);
     }
 
@@ -58,4 +60,29 @@
 }
 
 @media screen and (max-width: $PHONE_CRITERIA) {
+  .music-des-container {
+    margin-bottom: vw-p(93px);
+    &__description {
+      margin-bottom: vw-p(10px);
+
+      max-width: vw-p(355px);
+
+      font-size: vw-p(12px);
+      line-height: vw-p(14px);
+    }
+
+    .music-des-categorys {
+      &__item {
+        max-width: vw-p(57px);
+        width: vw-p(57px);
+        height: vw-p(26px);
+
+        font-size: vw-p(12px);
+        line-height: vw-p(26px);
+        & + .music-des-categorys__item {
+          margin-left: vw-p(16px);
+        }
+      }
+    }
+  }
 }

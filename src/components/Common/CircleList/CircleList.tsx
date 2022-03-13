@@ -17,7 +17,7 @@ const CircleList = ({ title }: any) => {
         {dummy.map((color, index) => (
           <li
             style={{ background: color }}
-            className={`circle-list-ul__li${index} inline-block`}
+            className={`circle-list-ul__li${index}`}
           ></li>
         ))}
       </ul>

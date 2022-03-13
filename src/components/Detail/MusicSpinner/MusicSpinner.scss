@@ -56,42 +56,22 @@
 
 @media screen and (max-width: $PHONE_CRITERIA) {
   .music-spinner {
-    position: relative;
-    margin-left: vw-p(57px);
+    margin: auto;
+    margin-bottom: vw-p(32px);
+    width: vw-p(350px);
+    height: vw-p(350px);
 
-    width: vw-p(712px);
-    height: vw-p(712px);
-
-    border-radius: 50%;
-    border: 3px solid $WHITE_FF;
-
-    &__disk {
-      position: absolute;
-
-      width: vw-p(700px);
-      height: vw-p(700px);
-
-      border-radius: 50%;
-    }
     &__album-img {
-      width: vw-p(177px);
-      height: vw-p(177px);
-
-      border-radius: 50%;
+      width: vw-p(87px);
+      height: vw-p(87px);
     }
     &__play-btn {
-      position: absolute;
-
-      width: vw-p(78px);
-      height: vw-p(78px);
-      background-color: $WHITE_FF;
-      opacity: 0.8;
-
-      border-radius: 50%;
+      width: vw-p(38px);
+      height: vw-p(38px);
 
       &-img {
-        width: vw-p(30px); //fix__
-        height: vw-p(30px); //fix__
+        width: vw-p(15px);
+        height: vw-p(15px);
       }
     }
   }

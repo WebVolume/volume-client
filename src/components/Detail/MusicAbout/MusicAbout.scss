@@ -13,4 +13,12 @@
 }
 
 @media screen and (max-width: $PHONE_CRITERIA) {
+  .music-about-container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 vw-p(18px);
+
+    width: vw-p(355px);
+  }
 }
