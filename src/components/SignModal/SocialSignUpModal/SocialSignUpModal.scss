@@ -12,9 +12,13 @@
       margin-bottom: vw(46px);
     }
     &__id-input {
-      margin-bottom: vw(43px);
+      margin-bottom: vw(20px);
+    }
+    &__empty-msg {
+      color: $RED_FF1D;
     }
     &__name-input {
+      margin-top: vw(20px);
       margin-bottom: vw(18px);
     }
     &__email-input {
@@ -39,9 +43,10 @@
         margin-bottom: vw-t(45px);
       }
       &__id-input {
-        margin-bottom: vw-t(43px);
+        margin-bottom: vw-t(20px);
       }
       &__name-input {
+        margin-top: vw-t(20px);
         margin-bottom: vw-t(18px);
       }
       &__email-input {
@@ -68,9 +73,10 @@
         margin-bottom: vw-p(34px);
       }
       &__id-input {
-        margin-bottom: vw-p(33px);
+        margin-bottom: vw-p(15px);
       }
       &__name-input {
+        margin-top: vw-p(15px);
         margin-bottom: vw-p(14px);
       }
       &__email-input {

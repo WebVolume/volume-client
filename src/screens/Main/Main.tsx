@@ -1,10 +1,13 @@
 import { Navigate, Outlet } from "react-router-dom";
 import * as Common from "@components/Common";
 import "./Main.scss";
+import { useSelector } from "react-redux";
+import { RootState } from "@store/index";
 
 function Main() {
-  const isAuth = localStorage.getItem("isLoggedIn");
-  return isAuth ? (
+  const userInfo = useSelector(({ auth }: RootState) => auth.userInfo);
+
+  return userInfo ? (
     <div className="main-screen">
       <Common.TopNav />
 

@@ -1,0 +1,51 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.kakao-redirect {
+  background: url(../../assets/images/background.png) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  &__dimmer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: $DIMMBER_BACK;
+    background-size: cover;
+  }
+  &__loading-spinner {
+    width: vw(98px);
+    height: vw(98px);
+    animation: spin 2s linear infinite;
+  }
+}
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .kakao-redirect {
+    &__loading-spinner {
+      width: vw-t(98px);
+      height: vw-t(98px);
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .kakao-redirect {
+    &__loading-spinner {
+      width: vw-p(98px);
+      height: vw-p(98px);
+    }
+  }
+}

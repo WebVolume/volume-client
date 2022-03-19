@@ -1,18 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import { signIn, getKakaoInfo, getKakaoToken } from "./authThunk";
+import {
+  signIn,
+  signUp,
+  getKakaoInfo,
+  getKakaoToken,
+  checkDuplication
+} from "./authThunk";
 export interface InitialStateType {
   userInfo: string | null;
   loading: boolean;
   kakaoEmail: string | null;
-  kakaoToken: string | null;
   error: boolean;
 }
 
 const initialState: InitialStateType = {
   userInfo: null,
   kakaoEmail: null,
-  kakaoToken: null,
   loading: false,
   error: false
 };
@@ -23,6 +27,9 @@ const authSlice = createSlice({
   reducers: {
     clearUserState: state => {
       state.userInfo = null;
+    },
+    getUserStateFromLocal: state => {
+      state.userInfo = localStorage.getItem("userInfo");
     }
   },
   extraReducers: build =>
@@ -34,7 +41,8 @@ const authSlice = createSlice({
       .addCase(signIn.fulfilled, (state, action) => {
         state.loading = false;
         state.userInfo = action.payload.id;
-        localStorage.setItem("isLoggedIn", JSON.stringify(action.payload));
+        // 차후에 백엔드에서 작업해주면 바꿔야함.
+        localStorage.setItem("userInfo", JSON.stringify(action.payload));
       })
       .addCase(signIn.rejected, (state, action) => {
         state.loading = false;
@@ -46,7 +54,6 @@ const authSlice = createSlice({
       })
       .addCase(getKakaoToken.fulfilled, (state, action) => {
         state.loading = false;
-        state.kakaoToken = action.payload.access_token;
       })
       .addCase(getKakaoToken.rejected, (state, action) => {
         state.loading = false;
@@ -58,14 +65,45 @@ const authSlice = createSlice({
       })
       .addCase(getKakaoInfo.fulfilled, (state, action) => {
         state.loading = false;
-        console.log(action.payload);
-        state.kakaoEmail = action.payload.email;
+        // state.kakaoEmail = action.payload.email;
       })
       .addCase(getKakaoInfo.rejected, (state, action) => {
         state.loading = false;
         state.error = true;
       })
+      .addCase(checkDuplication.pending, state => {
+        state.loading = true;
+        state.error = false;
+      })
+      .addCase(checkDuplication.fulfilled, (state, action) => {
+        state.loading = false;
+        if (action.payload.exist) {
+          // 차후에 백엔드에서 작업해주면 바꿔야함.
+          state.userInfo = action.payload.email;
+          localStorage.setItem("userInfo", JSON.stringify(action.payload));
+        } else {
+          state.kakaoEmail = action.payload.email;
+        }
+      })
+      .addCase(checkDuplication.rejected, (state, action) => {
+        state.loading = false;
+        state.error = true;
+      })
+      .addCase(signUp.pending, state => {
+        state.loading = true;
+        state.error = false;
+      })
+      .addCase(signUp.fulfilled, (state, action) => {
+        state.loading = false;
+        // 차후에 백엔드에서 작업해주면 바꿔야함.
+        state.userInfo = action.payload.id;
+        localStorage.setItem("userInfo", JSON.stringify(action.payload));
+      })
+      .addCase(signUp.rejected, (state, action) => {
+        state.loading = false;
+        state.error = true;
+      })
 });
 
-export const { clearUserState } = authSlice.actions;
+export const { clearUserState, getUserStateFromLocal } = authSlice.actions;
 export default authSlice.reducer;

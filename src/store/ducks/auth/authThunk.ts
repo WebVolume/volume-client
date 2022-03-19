@@ -1,4 +1,11 @@
-import { SignInResponseType, SignInRequestType } from "./auth.type";
+import {
+  SignInResponseType,
+  SignInRequestType,
+  SignUpRequestType,
+  SignUpResponseType,
+  CheckDuplicationResponseType,
+  CheckDuplicationRequestType
+} from "./auth.type";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
@@ -37,6 +44,7 @@ export const getKakaoToken = createAsyncThunk(
       );
       window.Kakao.init(CLIENT_ID);
       window.Kakao.Auth.setAccessToken(data.access_token);
+      dispatch(getKakaoInfo());
       return data;
     } catch (error) {
       return rejectWithValue(error);
@@ -48,12 +56,43 @@ export const getKakaoToken = createAsyncThunk(
 // kapi는 CORS가 닫혀있어.. SDK 사용하였습니다.
 export const getKakaoInfo = createAsyncThunk(
   "auth/getKakaoInfo",
-  async (payload, { rejectWithValue, getState }) => {
+  async (payload, { dispatch, rejectWithValue, getState }) => {
     try {
       const response = await window.Kakao.API.request({
         url: "/v2/user/me"
       });
+      dispatch(checkDuplication({ email: response.kakao_account.email }));
       return response.kakao_account;
+    } catch (error) {
+      return rejectWithValue(error);
+    }
+  }
+);
+
+export const checkDuplication = createAsyncThunk<
+  CheckDuplicationResponseType,
+  CheckDuplicationRequestType
+>("auth/checkDuplication", async (payload, { rejectWithValue, getState }) => {
+  try {
+    const { data } = await axios.post(
+      `https://volume-server-api.herokuapp.com/api/signup/checkDuplication`,
+      payload
+    );
+    return data;
+  } catch (error) {
+    return rejectWithValue(error);
+  }
+});
+
+export const signUp = createAsyncThunk<SignUpResponseType, SignUpRequestType>(
+  "auth/signUp",
+  async (payload, { rejectWithValue, getState }) => {
+    try {
+      const { data } = await axios.post(
+        `https://volume-server-api.herokuapp.com/api/signup`,
+        payload
+      );
+      return data;
     } catch (error) {
       return rejectWithValue(error);
     }

@@ -8,12 +8,12 @@ import {
   SignUpModal,
   SocialSignUpModal
 } from "@components/SignModal";
-import { Navigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { Navigate, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@store/index";
+import { getUserStateFromLocal } from "@store/ducks/auth/authSlice";
 
 function Home() {
-  const isAuth = localStorage.getItem("isLoggedIn");
   const [signInModalVisible, setsingInModalVisible] = useState(false);
   const [signUpModalVisible, setsingUpModalVisible] = useState(false);
   const [socialSignUpVisible, setSocialSignUpVisible] = useState(false);
@@ -34,13 +34,26 @@ function Home() {
     setAsideTapVisible(!asideTapVisible);
   };
 
-  const kakaoEmail = useSelector(({ auth }: RootState) => auth.kakaoEmail);
+  const { kakaoEmail, userInfo } = useSelector(({ auth }: RootState) => ({
+    kakaoEmail: auth.kakaoEmail,
+    userInfo: auth.userInfo
+  }));
 
   useEffect(() => {
     if (kakaoEmail) setSocialSignUpVisible(true);
   }, [kakaoEmail]);
 
-  return !isAuth ? (
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (userInfo) navigate("./main");
+  }, [userInfo]);
+
+  useEffect(() => {
+    dispatch(getUserStateFromLocal());
+  }, []);
+
+  return !userInfo ? (
     <div className="home-wrapper fc-white mont-alt">
       {signInModalVisible && (
         <SignInModal handleSignInModalVisible={handleSignInModalVisible} />
@@ -83,7 +96,7 @@ function Home() {
           </button>
           <button
             className="home-sign-container__signup-btn fs-24"
-            onClick={handleSignInModalVisible}
+            onClick={handleSignUpModalVisible}
           >
             Sign up
           </button>
