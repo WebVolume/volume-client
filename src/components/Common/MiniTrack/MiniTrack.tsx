@@ -47,7 +47,7 @@ const MiniTrack = () => {
           </li>
         </ul>
       </div>
-      <button className="mini-track__play-btn">
+      <button className="mini-track__play-btn flex align-center justify-center">
         <img
           src={fullPlayIcon}
           alt="fullPlayIcon"

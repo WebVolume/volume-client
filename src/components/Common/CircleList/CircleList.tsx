@@ -3,8 +3,6 @@ import "./CircleList.scss";
 import { PlayList as testColor } from "@constants/Colors";
 const CircleList = ({ title }: any) => {
   let dummy = testColor.concat(testColor).concat(testColor);
-  console.log(dummy);
-  console.log(title);
   return (
     <div className="circle-list flex column">
       <div className="circle-list-header flex justify-space-between">
