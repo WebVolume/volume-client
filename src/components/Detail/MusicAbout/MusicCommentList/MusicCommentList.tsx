@@ -5,6 +5,19 @@ import MusicComment from "./MusicComment";
 import { v4 as uuidv4 } from "uuid";
 
 const MusicCommentList = () => {
+  const autoResizeTextarea = () => {
+    let textarea = document.getElementById("autoTextarea");
+    if (textarea) {
+      let fs = document.defaultView
+        ?.getComputedStyle(textarea)
+        .getPropertyValue("font-size");
+      textarea.style.height = "auto";
+      let height = textarea.scrollHeight;
+      textarea.style.height = `${
+        height + parseInt(fs !== undefined ? fs : "0")
+      }px`;
+    }
+  };
   const dummy = [
     {
       id: "user_1245",
@@ -32,7 +45,13 @@ const MusicCommentList = () => {
   ];
   return (
     <div className="music-comment-list mont">
-      <input type="text" className="music-comment-list__input fs-16 fc-white" />
+      <textarea
+        id="autoTextarea"
+        className="music-comment-list__input fc-white"
+        maxLength={500}
+        onKeyDown={autoResizeTextarea}
+        onKeyUp={autoResizeTextarea}
+      />
       <button className="music-comment-list__add-btn fs-18">등록</button>
       <div className="music-comment-list-header flex align-center">
         <img
