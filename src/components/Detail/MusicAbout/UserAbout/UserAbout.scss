@@ -20,20 +20,23 @@
   }
 
   .user-about-icon-list {
+    justify-content: space-between;
     margin-bottom: vw(10px);
 
     max-width: vw(118px);
     &__item {
       max-width: vw(59px);
-      margin-right: vw(11px);
     }
 
     &__tracks-img,
     &__follower-img {
-      margin-right: vw(3px);
-
       width: vw(24px);
       height: vw(24px);
+    }
+
+    &__tracks,
+    &__follower {
+      font-size: vw(15px);
     }
   }
 
@@ -69,7 +72,7 @@
       max-width: vw-t(97px);
       &__item {
         max-width: vw-t(49px);
-        margin-right: vw-t(9px);
+        // margin-right: vw-t(9px);
       }
 
       &__tracks-img,
@@ -79,6 +82,11 @@
         width: vw-t(20px);
         height: vw-t(20px);
       }
+    }
+
+    &__tracks,
+    &__follower {
+      font-size: vw-t(12px);
     }
 
     &__follow-btn {
@@ -98,7 +106,7 @@
 
     &__user-img {
       margin-bottom: 0;
-      margin-right: vw-p(32px);
+      // margin-right: vw-p(32px);
       width: vw-p(97px);
       height: vw-p(97px);
     }
@@ -115,18 +123,21 @@
       max-width: vw-p(97px);
       &__item {
         max-width: vw-p(49px);
-        margin-right: vw-p(11px);
+        margin-right: 0;
 
         font-size: vw-p(12px);
       }
 
       &__tracks-img,
       &__follower-img {
-        margin-right: vw-p(3px);
-
         width: vw-p(20px);
         height: vw-p(20px);
       }
+    }
+
+    &__tracks,
+    &__follower {
+      font-size: vw-p(12px);
     }
 
     &__follow-btn {

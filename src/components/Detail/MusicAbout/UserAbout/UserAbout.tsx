@@ -7,11 +7,13 @@ import trackIcon from "@ico/track.svg";
 const UserAbout = () => {
   return (
     <div className="user-about-container flex align-center">
-      <img
-        className="user-about-container__user-img"
-        src={testImg}
-        alt="유저이미지"
-      />
+      <a href="" title="유저페이지로 이동">
+        <img
+          className="user-about-container__user-img"
+          src={testImg}
+          alt="유저이미지"
+        />
+      </a>
       <div className="user-about-detail">
         <p className="user-about-container__user-name fs-18 ellipsis ">Gwen</p>
         <ul className="user-about-icon-list flex">
@@ -19,7 +21,7 @@ const UserAbout = () => {
             <img
               className="user-about-icon-list__follower-img"
               src={followerIcon}
-              alt=""
+              alt="user-follower-count-icon"
             />
             <div className="user-about-icon-list__follower fs-15 ellipsis">
               100000
@@ -29,16 +31,14 @@ const UserAbout = () => {
             <img
               className="user-about-icon-list__tracks-img"
               src={trackIcon}
-              alt=""
+              alt="user-track-count-icon"
             />
-            <div className="user-about-icon-list__tracks fs-15 ellipsis">
-              10000
-            </div>
+            <div className="user-about-icon-list__tracks ellipsis">10000</div>
           </li>
         </ul>
-        <div className="user-about-container__follow-btn flex justify-center align-center fs-14">
+        <button className="user-about-container__follow-btn flex justify-center align-center fs-14">
           팔로우 취소
-        </div>
+        </button>
       </div>
     </div>
   );
