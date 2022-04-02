@@ -1,6 +1,8 @@
 import React from "react";
 import { MiniTrack } from "@components/Common";
 import "./RelateTrackList.scss";
+import { v4 as uuidv4 } from "uuid";
+
 const RelateTrackList = () => {
   return (
     <div className="relate-track-list mont">
@@ -16,7 +18,7 @@ const RelateTrackList = () => {
       <ul>
         {[1, 2, 3].map(list => {
           return (
-            <li>
+            <li key={uuidv4()}>
               <MiniTrack />
             </li>
           );

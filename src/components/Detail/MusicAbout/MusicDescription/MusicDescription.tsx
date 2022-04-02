@@ -1,5 +1,6 @@
 import React from "react";
 import "./MusicDescription.scss";
+import { v4 as uuidv4 } from "uuid";
 
 const MusicDescription = () => {
   return (
@@ -10,7 +11,10 @@ const MusicDescription = () => {
       </pre>
       <ul className="music-des-categorys flex">
         {["매력", "POP"].map(catogory => (
-          <li className="music-des-categorys__item fs-14 ellipsis">
+          <li
+            className="music-des-categorys__item fs-14 ellipsis"
+            key={uuidv4()}
+          >
             {catogory}
           </li>
         ))}

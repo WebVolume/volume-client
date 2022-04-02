@@ -2,6 +2,7 @@ import React from "react";
 import "./MusicCommentList.scss";
 import commentIcon from "@ico/comment.svg";
 import MusicComment from "./MusicComment";
+import { v4 as uuidv4 } from "uuid";
 
 const MusicCommentList = () => {
   const dummy = [
@@ -44,7 +45,13 @@ const MusicCommentList = () => {
       <ul className="music-comment-list-ul">
         <li className="music-comment-list-li__li">
           {dummy.map(({ id, content, date, reply }) => (
-            <MusicComment id={id} content={content} date={date} reply={reply} />
+            <MusicComment
+              id={id}
+              content={content}
+              date={date}
+              reply={reply}
+              key={uuidv4()}
+            />
           ))}
         </li>
       </ul>

@@ -1,6 +1,8 @@
 import React from "react";
 import "./CircleList.scss";
 import { PlayList as testColor } from "@constants/Colors";
+import { v4 as uuidv4 } from "uuid";
+
 const CircleList = ({ title }: any) => {
   let dummy = testColor.concat(testColor).concat(testColor);
   return (
@@ -16,6 +18,7 @@ const CircleList = ({ title }: any) => {
           <li
             style={{ background: color }}
             className={`circle-list-ul__li${index}`}
+            key={uuidv4()}
           ></li>
         ))}
       </ul>
