@@ -7,9 +7,13 @@
     transform: translateX(vw($i * 50px));
   }
 }
-
+@for $i from 7 to 13 {
+  .circle-list-ul__li#{$i} {
+    display: none;
+  }
+}
 .circle-list {
-  margin: vw(28px) 0 vw(59px) vw(28px);
+  margin: vw(38px) 0 vw(59px) vw(28px);
 
   &-header {
     margin-bottom: vw(39px);
@@ -35,7 +39,7 @@
   }
 
   .circle-list {
-    margin: vw-t(28px) 0 vw-t(59px) vw-t(28px);
+    margin: vw-t(46px) 0 vw-t(59px) vw-t(28px);
 
     &-header {
       margin-bottom: vw-t(39px);
@@ -65,7 +69,7 @@
   }
 
   .circle-list {
-    margin: vw-p(20px) vw-p(20px) vw-p(65px) vw-p(20px);
+    margin: vw-p(54px) vw-p(20px) vw-p(65px) vw-p(20px);
 
     &-header {
       margin-bottom: vw-p(25px);

@@ -2,9 +2,31 @@ import React from "react";
 import "./CircleList.scss";
 import { PlayList as testColor } from "@constants/Colors";
 import { v4 as uuidv4 } from "uuid";
-
+import dummyImg1 from "@images/dummys/dummy-album-art-big.png";
+import dummyImg2 from "@images/dummys/dummy-album-art.png";
+import dummyImg3 from "@images/dummys/dummy-playlist.png";
+import dummyImg4 from "@images/dummys/dummy-profile.jpeg";
 const CircleList = ({ title }: any) => {
-  let dummy = testColor.concat(testColor).concat(testColor);
+  let dummys = [
+    { id: 1, img: dummyImg1 },
+    { id: 2, img: dummyImg2 },
+    { id: 3, img: dummyImg3 },
+    { id: 4, img: dummyImg4 },
+    { id: 1, img: dummyImg1 },
+    { id: 2, img: dummyImg2 },
+    { id: 3, img: dummyImg3 },
+    { id: 4, img: dummyImg4 },
+    { id: 1, img: dummyImg1 },
+    { id: 2, img: dummyImg2 },
+    { id: 3, img: dummyImg3 },
+    { id: 4, img: dummyImg4 },
+    { id: 1, img: dummyImg1 },
+    { id: 2, img: dummyImg2 },
+    { id: 3, img: dummyImg3 },
+    { id: 4, img: dummyImg4 }
+  ].splice(0, 13);
+  //최대 13개
+
   return (
     <div className="circle-list flex column">
       <div className="circle-list-header flex justify-space-between">
@@ -14,12 +36,16 @@ const CircleList = ({ title }: any) => {
         <button className="circle-list-header__more-btn fs-14">더보기</button>
       </div>
       <ul className="circle-list-ul">
-        {dummy.map((color, index) => (
-          <li
-            style={{ background: color }}
-            className={`circle-list-ul__li${index}`}
-            key={uuidv4()}
-          ></li>
+        {dummys.map((dummy, index) => (
+          // index 부분 차후 유저 id나 특정값으로 변경
+          <a href={dummy.id + "번"} title="해당유저로 이동">
+            <img
+              src={dummy.img}
+              className={`circle-list-ul__li${index}`}
+              key={uuidv4()}
+              alt="유저 프로필 이미지"
+            ></img>
+          </a>
         ))}
       </ul>
       <div className="circle-list__empty"></div>
