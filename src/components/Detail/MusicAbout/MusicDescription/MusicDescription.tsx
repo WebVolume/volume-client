@@ -11,12 +11,14 @@ const MusicDescription = () => {
       </pre>
       <ul className="music-des-categorys flex">
         {["매력", "POP"].map(catogory => (
-          <li
+          <a
+            href=""
             className="music-des-categorys__item fs-14 ellipsis"
             key={uuidv4()}
+            title="해당 태그로 검색하기"
           >
             {catogory}
-          </li>
+          </a>
         ))}
       </ul>
     </div>

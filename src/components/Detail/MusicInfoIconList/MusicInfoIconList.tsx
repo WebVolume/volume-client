@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MusicInfoIconList.scss";
 import emptyHeartIcon from "@ico/heart.svg";
 import addPlayListIcon from "@ico/add-playlist.svg";
@@ -9,38 +9,55 @@ import fullPlayIcon from "@ico/play-fill.svg";
 import repeatIcon from "@ico/repeat.svg";
 
 const MusicInfoIconList = () => {
+  const [musicLike, setMusicLike] = useState(false);
+  const handleMusicLike = () => {
+    setMusicLike(() => !musicLike);
+  };
   return (
     <div className="music-info-icon-container flex align-center justify-space-between">
       <div className="left-container">
         <ul className="flex">
-          <li className="left-container__icon flex align-center justify-center">
+          <button
+            className="left-container__icon flex align-center justify-center"
+            title={musicLike ? "좋아요 취소" : "좋아요"}
+            onClick={handleMusicLike}
+          >
             <img
               className="left-container__icon-img"
-              src={emptyHeartIcon}
-              alt="emptyHeartIcon"
+              src={musicLike ? fullHeartIcon : emptyHeartIcon}
+              alt="하트 아이콘"
             />
-          </li>
-          <li className="left-container__icon flex align-center justify-center">
+          </button>
+          <button
+            className="left-container__icon flex align-center justify-center"
+            title="플레이 리스트에 추가"
+          >
             <img
               className="left-container__icon-img"
               src={addPlayListIcon}
-              alt="addPlayListIcon"
+              alt="플레이 리스트에 추가 아이콘"
             />
-          </li>
-          <li className="left-container__icon flex align-center justify-center">
+          </button>
+          <button
+            className="left-container__icon flex align-center justify-center"
+            title="리포스트 하기"
+          >
             <img
               className="left-container__icon-img"
               src={addRepostIcon}
-              alt="plusIcon"
+              alt="리포스트 아이콘"
             />
-          </li>
-          <li className="left-container__icon flex align-center justify-center">
+          </button>
+          <button
+            className="left-container__icon flex align-center justify-center"
+            title="추가기능"
+          >
             <img
               className="left-container__icon-img"
               src={etcIcon}
-              alt="etcIcon"
+              alt="추가기능 아이콘"
             />
-          </li>
+          </button>
         </ul>
       </div>
       <div className="right-container">
