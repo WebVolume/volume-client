@@ -26,18 +26,17 @@ export const signIn = createAsyncThunk<SignInResponseType, SignInRequestType>(
   }
 );
 
-const CLIENT_ID = "f31b9f81fdf64d528eaafa1878d102c3";
+const CLIENT_ID = process.env.REACT_APP_KAKAO_CLIENT_ID;
 const REDIRECT_URI = "http://localhost:3000/oauth/kakao"; // 변경해야함.
 export const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=code`;
 
 export const getKakaoToken = createAsyncThunk(
   "auth/getKakaoToken",
   async (payload, { dispatch, rejectWithValue, getState }) => {
-    let grant_type = "authorization_code";
-    let client_id = "f31b9f81fdf64d528eaafa1878d102c3";
+    let grant_type = process.env.REACT_APP_KAKAO_CLIENT_ID;
     try {
       const { data } = await axios.post(
-        `https://kauth.kakao.com/oauth/token?grant_type=${grant_type}&client_id=${client_id}&redirect_uri=http://localhost:3000/oauth/kakao&code=${payload}`,
+        `https://kauth.kakao.com/oauth/token?grant_type=${grant_type}&client_id=${CLIENT_ID}&redirect_uri=http://localhost:3000/oauth/kakao&code=${payload}`,
         {
           headers: {
             "Content-type": "application/x-www-form-urlencoded;charset=utf-8"
