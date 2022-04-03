@@ -5,14 +5,18 @@ import emptyHeartIcon from "@ico/heart.svg";
 import fullHeartIcon from "@ico/heart_fill.svg";
 import fullPlayIcon from "@ico/play-fill.svg";
 import repeatIcon from "@ico/repeat.svg";
-import React, { useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import "./MusicInfoIconList.scss";
 
 const MusicInfoIconList = () => {
   const [musicLike, setMusicLike] = useState(false);
-  const handleMusicLike = () => {
+  const handleMusicLike = useCallback(() => {
     setMusicLike(() => !musicLike);
-  };
+  }, [musicLike]);
+  const heartIcon = useMemo(
+    () => (musicLike ? fullHeartIcon : emptyHeartIcon),
+    [musicLike]
+  );
   return (
     <div className="music-info-icon-container flex align-center justify-space-between">
       <div className="left-container">
@@ -24,7 +28,7 @@ const MusicInfoIconList = () => {
           >
             <img
               className="left-container__icon-img"
-              src={musicLike ? fullHeartIcon : emptyHeartIcon}
+              src={heartIcon}
               alt="하트 아이콘"
             />
           </button>
