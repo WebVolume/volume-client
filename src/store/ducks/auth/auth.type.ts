@@ -9,12 +9,12 @@ export interface SignInResponseType {
   id: string;
 }
 
-export interface CheckDuplicationRequestType {
+export interface CheckUserExistRequestType {
   email?: string | null;
   id?: string | null;
 }
 
-export interface CheckDuplicationResponseType {
+export interface CheckUserExistResponseType {
   exist: boolean;
   type: string;
   id: string | null;
@@ -23,7 +23,7 @@ export interface CheckDuplicationResponseType {
 
 export interface SignUpRequestType {
   id: string;
-  username: string;
+  userName: string;
   email: string | null;
   password?: string;
   kakao?: boolean;
@@ -31,4 +31,15 @@ export interface SignUpRequestType {
 
 export interface SignUpResponseType {
   id: string;
+}
+
+export interface CheckIdDuplicationRequestType {
+  id: string;
+}
+
+export interface CheckIdDuplicationResponseType {
+  exist: boolean;
+  type: string;
+  id: string | null;
+  email: string | null;
 }

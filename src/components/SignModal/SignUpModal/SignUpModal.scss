@@ -6,11 +6,14 @@
       margin-bottom: vw(66px);
     }
     &__id-duplication-check {
-      position: relative;
-      text-align: end;
-      right: vw(32px);
-      top: vw(30px);
+      position: absolute;
+
+      top: vw(145px);
+      left: vw(398px);
+
       color: $BLUE_1472;
+
+      font-size: vw(16px);
     }
     &__password-auth-input {
       margin-bottom: vw(6px);
@@ -28,6 +31,10 @@
       padding: vw(5px) vw(2px);
       margin-bottom: vw(2px);
     }
+
+    .usable {
+      color: $BLUE_1472;
+    }
   }
 }
 
@@ -39,8 +46,10 @@
         margin-bottom: vw-t(66px);
       }
       &__id-duplication-check {
-        right: vw-t(32px);
-        top: vw-t(30px);
+        top: vw-t(154px);
+        left: vw-t(300px);
+
+        font-size: vw-t(16px);
       }
       &__password-auth-input {
         margin-bottom: vw-t(6px);
@@ -67,7 +76,9 @@
         font-size: vw-p(28px);
       }
       &__id-duplication-check {
-        top: vw-p(23px);
+        top: vw-p(92px);
+        left: vw-p(216px);
+
         font-size: vw-p(12px);
       }
       &__password-auth-input {
