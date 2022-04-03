@@ -1,8 +1,7 @@
-import React from "react";
-import "./UserAbout.scss";
-import testImg from "../../../../assets/images/background.png";
 import followerIcon from "@ico/mypage.svg";
 import trackIcon from "@ico/track.svg";
+import testImg from "../../../../assets/images/background.png";
+import "./UserAbout.scss";
 
 const UserAbout = () => {
   return (

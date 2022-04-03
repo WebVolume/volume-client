@@ -1,4 +1,3 @@
-import React from "react";
 import testImg from "@images/background.png";
 import "./MusicComment.scss";
 

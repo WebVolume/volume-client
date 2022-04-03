@@ -1,7 +1,7 @@
-import React from "react";
 import "./MusicSpinner.scss";
 import testImg from "@images/background.png";
 import playBtnImg from "@ico/play-fill-black.svg";
+
 const MusicSpinner = () => {
   return (
     <div className="music-spinner flex justify-center align-center">

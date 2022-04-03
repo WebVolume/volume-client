@@ -1,8 +1,7 @@
-import React from "react";
-import "./MusicCommentList.scss";
 import commentIcon from "@ico/comment.svg";
-import MusicComment from "./MusicComment";
 import { v4 as uuidv4 } from "uuid";
+import MusicComment from "./MusicComment";
+import "./MusicCommentList.scss";
 
 const MusicCommentList = () => {
   const autoResizeTextarea = () => {

@@ -1,4 +1,3 @@
-import React from "react";
 import "./MusicAbout.scss";
 import MusicCommentList from "./MusicCommentList";
 import MusicDescription from "./MusicDescription";
