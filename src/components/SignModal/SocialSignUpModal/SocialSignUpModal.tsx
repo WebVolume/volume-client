@@ -1,21 +1,20 @@
 import { signUp } from "@store/ducks/auth/authThunk";
 import { RootState } from "@store/index";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./SocialSignUpModal.scss";
 
 const SocialSignUpModal = (props: any) => {
-  const { kakaoEmail, duplicateError } = useSelector(({ auth }: RootState) => ({
-    kakaoEmail: auth.kakaoEmail,
-    duplicateError: auth.error
-  }));
+  const socialEmail = useSelector(({ auth }: RootState) => auth.socialEmail);
+
   const dispatch = useDispatch();
   const [formEmptyError, setFormEmptyErrorVisible] = useState(false);
 
   const [form, setForm] = useState({
     id: "",
     userName: "",
-    email: kakaoEmail,
+    email: socialEmail,
+    //변경요청
     kakao: true
   });
 
@@ -35,11 +34,6 @@ const SocialSignUpModal = (props: any) => {
       dispatch(signUp(form));
     }
   };
-
-  useEffect(() => {
-    if (duplicateError)
-      alert("이미 가입된 아이디가 존재합니다! 다른 아이디를 입력해주세요");
-  }, [duplicateError]);
 
   return (
     <div
@@ -66,7 +60,7 @@ const SocialSignUpModal = (props: any) => {
         <p className={showEmptyError}>아이디와 이름을 모두 입력해주세요</p>
         <input
           type="text"
-          name="username"
+          name="userName"
           className="social-modal-container__name-input modal-box fs-18"
           placeholder="이름"
           onChange={onChange}
@@ -75,7 +69,7 @@ const SocialSignUpModal = (props: any) => {
           type="text"
           className="social-modal-container__email-input modal-box fs-18"
           placeholder="이메일"
-          value={`${kakaoEmail}`}
+          value={`${socialEmail}`}
           readOnly
         />
 

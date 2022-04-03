@@ -1,9 +1,10 @@
 import React, { useMemo, useState } from "react";
 import "./SignInModal.scss";
-import { signIn } from "@store/ducks/auth/authThunk";
+import { checkUserExist, signIn } from "@store/ducks/auth/authThunk";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@store/index";
 import { KAKAO_AUTH_URL } from "@store/ducks/auth/authThunk";
+import GoogleLogin from "react-google-login";
 
 const SignInModal = (props: any) => {
   const dispatch = useDispatch();
@@ -23,6 +24,14 @@ const SignInModal = (props: any) => {
     return loginError ? prefix + "visible" : prefix + " notVisible";
   }, [loginError]);
 
+  const onSuccess = async (response: any) => {
+    // kakao 부분 백엔드가 바꿔주면 변경
+    dispatch(checkUserExist({ email: response.profileObj.email, kakao: true }));
+  };
+
+  const onFailure = async (error: any) => {
+    alert("구글 로그인에 실패하였습니다.");
+  };
   return (
     <div
       className="signin-dimmer flex justify-center align-center fc-black noto"
@@ -73,9 +82,20 @@ const SignInModal = (props: any) => {
         <p className="modal-container__or flex align-center">또는</p>
         <div className="simple-login-form">
           <p className="simple-login-form__title fs-18">간편로그인</p>
-          <button className="simple-login-form__google-login-btn modal-box fs-16">
-            구글로 시작하기
-          </button>
+          <GoogleLogin
+            clientId="487116735373-3p94f9a8buuqinjt0ume6t00334jnbpr.apps.googleusercontent.com"
+            onSuccess={onSuccess}
+            onFailure={onFailure}
+            className="simple-login-form__google-login-btn modal-box fs-16"
+            render={renderProps => (
+              <button
+                className="simple-login-form__google-login-btn modal-box fs-16"
+                onClick={renderProps.onClick}
+              >
+                구글로 시작하기
+              </button>
+            )}
+          ></GoogleLogin>
           <button className="simple-login-form__kakao-login-btn modal-box fs-16">
             <a href={KAKAO_AUTH_URL}>카카오톡으로 시작하기</a>
           </button>

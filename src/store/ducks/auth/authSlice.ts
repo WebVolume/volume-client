@@ -11,14 +11,14 @@ import {
 export interface InitialStateType {
   userInfo: string | null;
   loading: boolean;
-  kakaoEmail: string | null;
+  socialEmail: string | null;
   error: boolean;
   usableId: boolean;
 }
 
 const initialState: InitialStateType = {
   userInfo: null,
-  kakaoEmail: null,
+  socialEmail: null,
   loading: false,
   error: false,
   usableId: true
@@ -70,7 +70,7 @@ const authSlice = createSlice({
       })
       .addCase(getKakaoInfo.fulfilled, (state, action) => {
         state.loading = false;
-        // state.kakaoEmail = action.payload.email;
+        // state.socialEmail = action.payload.email;
       })
       .addCase(getKakaoInfo.rejected, (state, action) => {
         state.loading = false;
@@ -88,7 +88,7 @@ const authSlice = createSlice({
           state.userInfo = action.payload.email;
           localStorage.setItem("userInfo", JSON.stringify(action.payload));
         } else {
-          state.kakaoEmail = action.payload.email;
+          state.socialEmail = action.payload.email;
         }
       })
       .addCase(checkUserExist.rejected, (state, action) => {

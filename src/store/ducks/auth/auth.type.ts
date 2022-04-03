@@ -12,6 +12,7 @@ export interface SignInResponseType {
 export interface CheckUserExistRequestType {
   email?: string | null;
   id?: string | null;
+  kakao?: boolean;
 }
 
 export interface CheckUserExistResponseType {

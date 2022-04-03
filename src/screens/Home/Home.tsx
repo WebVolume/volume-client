@@ -34,14 +34,17 @@ function Home() {
     setAsideTapVisible(!asideTapVisible);
   };
 
-  const { kakaoEmail, userInfo } = useSelector(({ auth }: RootState) => ({
-    kakaoEmail: auth.kakaoEmail,
+  const { socialEmail, userInfo } = useSelector(({ auth }: RootState) => ({
+    socialEmail: auth.socialEmail,
     userInfo: auth.userInfo
   }));
 
   useEffect(() => {
-    if (kakaoEmail) setSocialSignUpVisible(true);
-  }, [kakaoEmail]);
+    if (socialEmail) {
+      setsingInModalVisible(false);
+      setSocialSignUpVisible(true);
+    }
+  }, [socialEmail]);
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
