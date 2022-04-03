@@ -1,5 +1,6 @@
 import "./MusicDescription.scss";
 import { v4 as uuidv4 } from "uuid";
+import { Link } from "react-router-dom";
 
 const MusicDescription = () => {
   return (
@@ -10,14 +11,14 @@ const MusicDescription = () => {
       </pre>
       <ul className="music-des-categorys flex">
         {["매력", "POP"].map(catogory => (
-          <a
-            href=""
+          <Link
+            to=""
             className="music-des-categorys__item fs-14 ellipsis"
             key={uuidv4()}
-            title="해당 태그로 검색하기"
+            title={`${catogory} 태그로 검색하기`}
           >
             {catogory}
-          </a>
+          </Link>
         ))}
       </ul>
     </div>

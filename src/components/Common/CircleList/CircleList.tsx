@@ -1,6 +1,4 @@
-import React from "react";
 import "./CircleList.scss";
-import { PlayList as testColor } from "@constants/Colors";
 import { v4 as uuidv4 } from "uuid";
 import dummyImg1 from "@images/dummys/dummy-album-art-big.png";
 import dummyImg2 from "@images/dummys/dummy-album-art.png";
@@ -42,11 +40,11 @@ const CircleList = ({ title }: any) => {
           <Link
             to={`/main/profile/${dummy.id}`}
             title={`${dummy.id} 유저로 이동`}
+            key={uuidv4()}
           >
             <img
               src={dummy.img}
               className={`circle-list-ul__li${index}`}
-              key={uuidv4()}
               alt="유저 프로필 이미지"
             ></img>
           </Link>

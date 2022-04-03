@@ -47,7 +47,11 @@ const MiniTrack = () => {
           </li>
         </ul>
       </div>
-      <button className="mini-track__play-btn flex align-center justify-center">
+      <button
+        className="mini-track__play-btn flex align-center justify-center"
+        title="해당 트랙 재생하기"
+      >
+        {/* 차후 변경 ~ 트랙으로 재생*/}
         <img
           src={fullPlayIcon}
           alt="fullPlayIcon"

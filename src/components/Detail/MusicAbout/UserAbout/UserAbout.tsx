@@ -1,18 +1,20 @@
 import followerIcon from "@ico/mypage.svg";
 import trackIcon from "@ico/track.svg";
-import testImg from "../../../../assets/images/background.png";
+import testImg from "@images/background.png";
+import { Link } from "react-router-dom";
 import "./UserAbout.scss";
 
 const UserAbout = () => {
   return (
     <div className="user-about-container flex align-center">
-      <a href="" title="유저페이지로 이동">
+      {/* 차후 ~~ 유저페이지로 이동 */}
+      <Link to="" title="유저페이지로 이동">
         <img
           className="user-about-container__user-img"
           src={testImg}
           alt="유저이미지"
         />
-      </a>
+      </Link>
       <div className="user-about-detail">
         <p className="user-about-container__user-name fs-18 ellipsis ">Gwen</p>
         <ul className="user-about-icon-list flex">
