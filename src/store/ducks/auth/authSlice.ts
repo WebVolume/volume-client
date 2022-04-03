@@ -5,20 +5,23 @@ import {
   signUp,
   getKakaoInfo,
   getKakaoToken,
-  checkDuplication
+  checkUserExist,
+  checkIdDuplication
 } from "./authThunk";
 export interface InitialStateType {
   userInfo: string | null;
   loading: boolean;
   kakaoEmail: string | null;
   error: boolean;
+  usableId: boolean;
 }
 
 const initialState: InitialStateType = {
   userInfo: null,
   kakaoEmail: null,
   loading: false,
-  error: false
+  error: false,
+  usableId: true
 };
 
 const authSlice = createSlice({
@@ -48,6 +51,7 @@ const authSlice = createSlice({
         state.loading = false;
         state.error = true;
       })
+
       .addCase(getKakaoToken.pending, state => {
         state.loading = true;
         state.error = false;
@@ -59,6 +63,7 @@ const authSlice = createSlice({
         state.loading = false;
         state.error = true;
       })
+
       .addCase(getKakaoInfo.pending, state => {
         state.loading = true;
         state.error = false;
@@ -71,11 +76,12 @@ const authSlice = createSlice({
         state.loading = false;
         state.error = true;
       })
-      .addCase(checkDuplication.pending, state => {
+
+      .addCase(checkUserExist.pending, state => {
         state.loading = true;
         state.error = false;
       })
-      .addCase(checkDuplication.fulfilled, (state, action) => {
+      .addCase(checkUserExist.fulfilled, (state, action) => {
         state.loading = false;
         if (action.payload.exist) {
           // 차후에 백엔드에서 작업해주면 바꿔야함.
@@ -85,10 +91,11 @@ const authSlice = createSlice({
           state.kakaoEmail = action.payload.email;
         }
       })
-      .addCase(checkDuplication.rejected, (state, action) => {
+      .addCase(checkUserExist.rejected, (state, action) => {
         state.loading = false;
         state.error = true;
       })
+
       .addCase(signUp.pending, state => {
         state.loading = true;
         state.error = false;
@@ -100,6 +107,19 @@ const authSlice = createSlice({
         localStorage.setItem("userInfo", JSON.stringify(action.payload));
       })
       .addCase(signUp.rejected, (state, action) => {
+        state.loading = false;
+        state.error = true;
+      })
+
+      .addCase(checkIdDuplication.pending, state => {
+        state.loading = true;
+        state.error = false;
+      })
+      .addCase(checkIdDuplication.fulfilled, (state, action) => {
+        state.loading = false;
+        state.usableId = !action.payload.exist;
+      })
+      .addCase(checkIdDuplication.rejected, (state, action) => {
         state.loading = false;
         state.error = true;
       })

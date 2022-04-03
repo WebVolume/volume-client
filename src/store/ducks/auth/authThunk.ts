@@ -3,8 +3,10 @@ import {
   SignInRequestType,
   SignUpRequestType,
   SignUpResponseType,
-  CheckDuplicationResponseType,
-  CheckDuplicationRequestType
+  CheckUserExistResponseType,
+  CheckUserExistRequestType,
+  CheckIdDuplicationResponseType,
+  CheckIdDuplicationRequestType
 } from "./auth.type";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
@@ -61,7 +63,7 @@ export const getKakaoInfo = createAsyncThunk(
       const response = await window.Kakao.API.request({
         url: "/v2/user/me"
       });
-      dispatch(checkDuplication({ email: response.kakao_account.email }));
+      dispatch(checkUserExist({ email: response.kakao_account.email }));
       return response.kakao_account;
     } catch (error) {
       return rejectWithValue(error);
@@ -69,10 +71,10 @@ export const getKakaoInfo = createAsyncThunk(
   }
 );
 
-export const checkDuplication = createAsyncThunk<
-  CheckDuplicationResponseType,
-  CheckDuplicationRequestType
->("auth/checkDuplication", async (payload, { rejectWithValue, getState }) => {
+export const checkUserExist = createAsyncThunk<
+  CheckUserExistResponseType,
+  CheckUserExistRequestType
+>("auth/checkUserExist", async (payload, { rejectWithValue, getState }) => {
   try {
     const { data } = await axios.post(
       `https://volume-server-api.herokuapp.com/api/signup/checkDuplication`,
@@ -98,3 +100,18 @@ export const signUp = createAsyncThunk<SignUpResponseType, SignUpRequestType>(
     }
   }
 );
+
+export const checkIdDuplication = createAsyncThunk<
+  CheckIdDuplicationResponseType,
+  CheckIdDuplicationRequestType
+>("auth/checkIdDuplication", async (payload, { rejectWithValue, getState }) => {
+  try {
+    const { data } = await axios.post(
+      `https://volume-server-api.herokuapp.com/api/signup/checkDuplication`,
+      payload
+    );
+    return data;
+  } catch (error) {
+    return rejectWithValue(error);
+  }
+});
