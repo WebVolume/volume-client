@@ -14,7 +14,7 @@ const SocialSignUpModal = (props: any) => {
 
   const [form, setForm] = useState({
     id: "",
-    username: "",
+    userName: "",
     email: kakaoEmail,
     kakao: true
   });
@@ -29,7 +29,7 @@ const SocialSignUpModal = (props: any) => {
   }, [formEmptyError]);
 
   const submitSignUp = () => {
-    if (!form.id || !form.username) {
+    if (!form.id || !form.userName) {
       setFormEmptyErrorVisible(true);
     } else {
       dispatch(signUp(form));
