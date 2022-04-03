@@ -1,16 +1,18 @@
 import testImg from "@images/background.png";
 import "./MusicComment.scss";
+import { Link } from "react-router-dom";
 
 const MusicComment = ({ id, content, date, reply }: any) => {
   return (
     <div className="music-comment flex">
-      <a href="" title="해당 유저로 이동">
+      {/* 임시값입니다! */}
+      <Link to="" title={`${id} 유저로 이동`}>
         <img
           src={testImg}
           alt="유저 프로필 이미지"
           className="music-comment__img"
         />
-      </a>
+      </Link>
 
       <div className="music-comment-main">
         <p className="music-comment-main__id fs-14">{id}</p>

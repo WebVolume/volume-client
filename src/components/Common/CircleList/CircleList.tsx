@@ -6,6 +6,7 @@ import dummyImg1 from "@images/dummys/dummy-album-art-big.png";
 import dummyImg2 from "@images/dummys/dummy-album-art.png";
 import dummyImg3 from "@images/dummys/dummy-playlist.png";
 import dummyImg4 from "@images/dummys/dummy-profile.jpeg";
+import { Link } from "react-router-dom";
 const CircleList = ({ title }: any) => {
   let dummys = [
     { id: 1, img: dummyImg1 },
@@ -38,14 +39,17 @@ const CircleList = ({ title }: any) => {
       <ul className="circle-list-ul">
         {dummys.map((dummy, index) => (
           // index 부분 차후 유저 id나 특정값으로 변경
-          <a href={dummy.id + "번"} title="해당유저로 이동">
+          <Link
+            to={`/main/profile/${dummy.id}`}
+            title={`${dummy.id} 유저로 이동`}
+          >
             <img
               src={dummy.img}
               className={`circle-list-ul__li${index}`}
               key={uuidv4()}
               alt="유저 프로필 이미지"
             ></img>
-          </a>
+          </Link>
         ))}
       </ul>
       <div className="circle-list__empty"></div>
