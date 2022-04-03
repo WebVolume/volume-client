@@ -2,6 +2,7 @@ import followerIcon from "@ico/mypage.svg";
 import trackIcon from "@ico/track.svg";
 import testImg from "@images/background.png";
 import { Link } from "react-router-dom";
+import getCounts from "@utils/getCounts";
 import "./UserAbout.scss";
 
 const UserAbout = () => {
@@ -25,7 +26,7 @@ const UserAbout = () => {
               alt="user-follower-count-icon"
             />
             <div className="user-about-icon-list__follower fs-15 ellipsis">
-              100000
+              {getCounts(10000)}
             </div>
           </li>
           <li className="user-about-icon-list__item flex align-center">
@@ -34,7 +35,9 @@ const UserAbout = () => {
               src={trackIcon}
               alt="user-track-count-icon"
             />
-            <div className="user-about-icon-list__tracks ellipsis">10000</div>
+            <div className="user-about-icon-list__tracks ellipsis">
+              {getCounts(9999)}
+            </div>
           </li>
         </ul>
         <button className="user-about-container__follow-btn flex justify-center align-center fs-14">

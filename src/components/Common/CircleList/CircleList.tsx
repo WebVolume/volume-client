@@ -5,6 +5,7 @@ import dummyImg2 from "@images/dummys/dummy-album-art.png";
 import dummyImg3 from "@images/dummys/dummy-playlist.png";
 import dummyImg4 from "@images/dummys/dummy-profile.jpeg";
 import { Link } from "react-router-dom";
+import getCounts from "@utils/getCounts";
 const CircleList = ({ title }: any) => {
   let dummys = [
     { id: 1, img: dummyImg1 },
@@ -30,7 +31,7 @@ const CircleList = ({ title }: any) => {
     <div className="circle-list flex column">
       <div className="circle-list-header flex justify-space-between">
         <div className="circle-list-header__title inline-block fs-18">
-          {`300 ${title}`}
+          {`${getCounts(300)} ${title}`}
         </div>
         <button className="circle-list-header__more-btn fs-14">더보기</button>
       </div>

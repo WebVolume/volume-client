@@ -5,7 +5,8 @@ import emptyHeartIcon from "@ico/heart.svg";
 import fullHeartIcon from "@ico/heart_fill.svg";
 import fullPlayIcon from "@ico/play-fill.svg";
 import repeatIcon from "@ico/repeat.svg";
-import React, { useCallback, useMemo, useState } from "react";
+import getCounts from "@utils/getCounts";
+import { useCallback, useMemo, useState } from "react";
 import "./MusicInfoIconList.scss";
 
 const MusicInfoIconList = () => {
@@ -72,7 +73,7 @@ const MusicInfoIconList = () => {
               src={fullHeartIcon}
               alt="fullHeartIcon"
             />
-            <p>50</p>
+            <p>{getCounts(1111412412)}</p>
           </li>
           <li className="right-container__icon flex align-center">
             <img
@@ -80,7 +81,7 @@ const MusicInfoIconList = () => {
               src={fullPlayIcon}
               alt="fullPlayIcon"
             />
-            <p>50</p>
+            <p>{getCounts(3)}</p>
           </li>
           <li className="right-container__icon flex align-center">
             <img
@@ -88,7 +89,7 @@ const MusicInfoIconList = () => {
               src={repeatIcon}
               alt="repeatIcon"
             />
-            <p>50</p>
+            <p>{getCounts(9999998)}</p>
           </li>
         </ul>
       </div>
