@@ -1,6 +1,8 @@
 import React from "react";
 import "./InPlayList.scss";
 import MiniPlayList from "@components/Common/MiniPlayList";
+import { v4 as uuidv4 } from "uuid";
+
 const InPlayList = () => {
   return (
     <div className="in-play-list mont">
@@ -13,7 +15,7 @@ const InPlayList = () => {
       <ul className="mini-play-list-ul">
         {[1, 2, 3].map(list => {
           return (
-            <li>
+            <li key={uuidv4()}>
               <MiniPlayList />
             </li>
           );

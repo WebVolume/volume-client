@@ -1,9 +1,9 @@
-import React from "react";
 import "./MiniTrack.scss";
 import testImg from "@images/background.png";
 import emptyPlayIcon from "@ico/play.svg";
 import emptyHeartIcon from "@ico/heart.svg";
 import fullPlayIcon from "@ico/play-fill.svg";
+import getCounts from "@utils/getCounts";
 
 const MiniTrack = () => {
   return (
@@ -29,7 +29,9 @@ const MiniTrack = () => {
                 className="mini-track-info__icon"
               />
             </button>
-            <p className="mini-track-info__likes-count fs-14">102</p>
+            <p className="mini-track-info__likes-count fs-14">
+              {getCounts(123)}
+            </p>
           </li>
           <li className="mini-track-info__icon-item flex align-center">
             <button
@@ -43,11 +45,17 @@ const MiniTrack = () => {
                 className="mini-track-info__icon"
               />
             </button>
-            <p className="mini-track-info__play-count fs-14">102</p>
+            <p className="mini-track-info__play-count fs-14">
+              {getCounts(1239999)}
+            </p>
           </li>
         </ul>
       </div>
-      <button className="mini-track__play-btn">
+      <button
+        className="mini-track__play-btn flex align-center justify-center"
+        title="해당 트랙 재생하기"
+      >
+        {/* 차후 변경 ~ 트랙으로 재생*/}
         <img
           src={fullPlayIcon}
           alt="fullPlayIcon"

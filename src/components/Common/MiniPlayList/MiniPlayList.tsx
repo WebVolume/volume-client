@@ -1,7 +1,7 @@
-import React from "react";
 import "./MiniPlayList.scss";
 import testImg from "@images/background.png";
 import emptyHeartIcon from "@ico/heart.svg";
+import getCounts from "@utils/getCounts";
 
 const MiniPlayList = () => {
   return (
@@ -26,7 +26,9 @@ const MiniPlayList = () => {
               className="mini-play-list-info__icon"
             />
           </button>
-          <p className="mini-play-list-info__likes-count fs-14">102</p>
+          <p className="mini-play-list-info__likes-count fs-14">
+            {getCounts(1239999)}
+          </p>
         </div>
       </div>
     </div>

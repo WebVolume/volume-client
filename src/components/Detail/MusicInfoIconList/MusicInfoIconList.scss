@@ -1,0 +1,95 @@
+.music-info-icon-container {
+  .left-container {
+    &__icon {
+      width: vw(34px);
+      height: vw(34px);
+
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 6px;
+
+      & + .left-container__icon {
+        margin-left: vw(16px);
+      }
+      &-img {
+        width: vw(24px);
+        height: vw(24px);
+      }
+    }
+  }
+  .right-container {
+    &__icon {
+      color: rgb(255, 255, 255, 0.5);
+
+      & + .right-container__icon {
+        margin-left: vw(17px);
+      }
+      &-img {
+        width: vw(24px);
+        height: vw(24px);
+        margin-right: vw(5px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .music-info-icon-container {
+    .left-container {
+      &__icon {
+        width: vw-t(34px);
+        height: vw-t(34px);
+
+        & + .left-container__icon {
+          margin-left: vw-t(16px);
+        }
+        &-img {
+          width: vw-t(24px);
+          height: vw-t(24px);
+        }
+      }
+    }
+    .right-container {
+      &__icon {
+        & + .right-container__icon {
+          margin-left: vw-t(17px);
+        }
+        &-img {
+          width: vw-t(24px);
+          height: vw-t(24px);
+          margin-right: vw-t(5px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .music-info-icon-container {
+    .left-container {
+      &__icon {
+        width: vw-p(24px);
+        height: vw-p(24px);
+
+        & + .left-container__icon {
+          margin-left: vw-p(16px);
+        }
+        &-img {
+          width: vw-p(17px);
+          height: vw-p(17px);
+        }
+      }
+    }
+    .right-container {
+      &__icon {
+        & + .right-container__icon {
+          margin-left: vw-p(14px);
+        }
+        &-img {
+          width: vw-p(17px);
+          height: vw-p(17px);
+          margin-right: vw-p(4px);
+        }
+      }
+    }
+  }
+}

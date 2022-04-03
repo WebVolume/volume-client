@@ -1,0 +1,24 @@
+.music-about-container {
+  margin-top: vw(28px);
+
+  width: vw(865px);
+}
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .music-about-container {
+    margin: vw-t(18px) vw-t(41px) vw-t(28px) vw-t(40px);
+
+    width: vw-t(683px);
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .music-about-container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 vw-p(18px);
+
+    width: vw-p(355px);
+  }
+}

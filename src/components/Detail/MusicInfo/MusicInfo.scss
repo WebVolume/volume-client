@@ -1,0 +1,72 @@
+.music-info-wrapper {
+  margin-left: vw(82px);
+
+  width: vw(456px);
+
+  .music-info-description {
+    margin-top: vw(75px);
+
+    &__singer {
+      margin-left: vw(22px);
+    }
+    &__lyrics {
+      margin-top: vw(42px);
+
+      white-space: pre-wrap;
+
+      overflow: scroll;
+      line-height: vw(37px); //fix__
+      max-height: vw(535px);
+    }
+  }
+}
+
+@media screen and (max-width: $TABLET_CRITERIA) {
+  .music-info-wrapper {
+    margin: 0;
+
+    width: vw-t(679px);
+
+    .music-info-description {
+      margin-top: vw-t(30px);
+
+      &__singer {
+        margin-left: vw-t(22px);
+      }
+      &__lyrics {
+        margin-top: vw-t(21px);
+        max-height: vw-t(135px);
+
+        font-size: vw-t(22px);
+        line-height: vw-t(27px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $PHONE_CRITERIA) {
+  .music-info-wrapper {
+    margin: 0 vw-p(20px);
+    max-width: vw-p(391px);
+
+    .music-info-description {
+      margin-top: vw-p(23px);
+
+      &__title {
+        font-size: vw-p(24px);
+      }
+      &__singer {
+        margin-left: vw-p(18px);
+
+        font-size: vw-p(12px);
+      }
+      &__lyrics {
+        margin-top: vw-p(7px);
+        max-height: vw-p(135px);
+
+        font-size: vw-p(14px);
+        line-height: vw-p(16.8px);
+      }
+    }
+  }
+}

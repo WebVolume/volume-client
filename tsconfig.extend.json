@@ -9,7 +9,8 @@
       "@ico/*": ["./assets/images/ico/*"],
       "@images/*": ["./assets/images/*"],
       "@svgs/*": ["./assets/svgs/*"],
-      "@constants/*": ["./constants/*"]
+      "@constants/*": ["./constants/*"],
+      "@utils/*": ["./utils/*"]
     }
   }
 }
