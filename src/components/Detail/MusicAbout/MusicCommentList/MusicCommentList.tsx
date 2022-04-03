@@ -1,22 +1,10 @@
 import commentIcon from "@ico/comment.svg";
 import { v4 as uuidv4 } from "uuid";
+import CommentTextArea from "./CommentTextArea";
 import MusicComment from "./MusicComment";
 import "./MusicCommentList.scss";
 
 const MusicCommentList = () => {
-  const autoResizeTextarea = () => {
-    let textarea = document.getElementById("autoTextarea");
-    if (textarea) {
-      let fs = document.defaultView
-        ?.getComputedStyle(textarea)
-        .getPropertyValue("font-size");
-      textarea.style.height = "auto";
-      let height = textarea.scrollHeight;
-      textarea.style.height = `${
-        height + parseInt(fs !== undefined ? fs : "0")
-      }px`;
-    }
-  };
   const dummy = [
     {
       id: "user_1245",
@@ -44,13 +32,7 @@ const MusicCommentList = () => {
   ];
   return (
     <div className="music-comment-list mont">
-      <textarea
-        id="autoTextarea"
-        className="music-comment-list__input fc-white"
-        maxLength={500}
-        onKeyDown={autoResizeTextarea}
-        onKeyUp={autoResizeTextarea}
-      />
+      <CommentTextArea />
       <button className="music-comment-list__add-btn fs-18">등록</button>
       <div className="music-comment-list-header flex align-center">
         <img
